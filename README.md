@@ -79,7 +79,7 @@ NOTE: One need to adapt the configuration file by providing the paths to the scr
 
 
 
-Advance Features
+Advanced Features
 ================
 
 For these features more information about the input resources and how they can be created for new language pairs can be found in specific readme files under the relevant resource folders (all under 'lang_resources') which could be downloaded from: http://www.quest.dcs.shef.ac.uk/

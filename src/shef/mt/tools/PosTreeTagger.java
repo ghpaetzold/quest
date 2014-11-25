@@ -86,11 +86,11 @@ public class PosTreeTagger extends PosTagger {
 
                 bwXPos.newLine();
                 bwPosLemm.newLine();
-               //if (line != null){ 
+               if (line != null){ 
                 bw.write(line);
                 
                 bw.newLine();}
-            //}
+            }
 
             brOut.close();
            // bw.flush();

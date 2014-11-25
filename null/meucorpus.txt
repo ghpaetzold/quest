@@ -1,0 +1,1 @@
+/home/gustavo/Documents/quest/quest/./lang_resources/english/meucorpus.txt
