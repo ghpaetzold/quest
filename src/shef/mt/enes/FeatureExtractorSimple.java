@@ -29,6 +29,7 @@ import org.apache.commons.cli.*;
 
 import java.io.*;
 import java.lang.Runtime;
+import shef.mt.tools.NGramExecIRSTLM;
 import shef.mt.util.NGramSorter;
 
 /**
@@ -116,7 +117,7 @@ public class FeatureExtractorSimple {
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
         FeatureExtractorSimple fe = new FeatureExtractorSimple(args);
-
+        
         fe.run();
         long end = System.currentTimeMillis();
         Logger.log("processing completed in " + (end - start) / 1000 + " sec");
@@ -331,8 +332,8 @@ public class FeatureExtractorSimple {
      */
     private static void runNGramPPL(String sourceOutput, String targetOutput) {
         // required by BB features 8-13
-        NGramExec nge = new NGramExec(
-                resourceManager.getString("tools.ngram.path"), forceRun);
+        NGramExecIRSTLM nge = new NGramExecIRSTLM(resourceManager.getString("tools.irstlm.path"), forceRun);
+//        NGramExec nge = new NGramExec(resourceManager.getString("tools.ngram.path"), forceRun);
         System.out.println("runNgramPPL");
         
         File f = new File(sourceFile);
@@ -344,6 +345,7 @@ public class FeatureExtractorSimple {
         nge.runNGramPerplex(targetFile, targetOutput,
                 resourceManager.getString(targetLang + ".lm"));
     }
+    
 
     /**
      * Computes the perplexity and log probability for the POS tagged target
@@ -462,12 +464,6 @@ public class FeatureExtractorSimple {
         esTok.run();
         targetFile = esTok.getTok();
         System.out.println(targetFile);
-
-        // Normalize files to avoid strange characters in UTF-8 that may break the PoS tagger
-        //normalize_utf8();
-        System.out.println("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-        System.out.println("Lm for source language: " + resourceManager.getProperty(sourceLang + ".lm"));
-        System.out.println("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 
         FeatureExtractorSimple.produceMissingResources();
 
