@@ -329,19 +329,15 @@ public class FeatureExtractorSimple {
      * Computes the perplexity and log probability for the source file Required
      * by features 8-13
      */
-    private static void runNGramPPL() {
+    private static void runNGramPPL(String sourceOutput, String targetOutput) {
         // required by BB features 8-13
         NGramExec nge = new NGramExec(
                 resourceManager.getString("tools.ngram.path"), forceRun);
         System.out.println("runNgramPPL");
+        
         File f = new File(sourceFile);
-        String sourceOutput = input
-                + File.separator + sourceLang + File.separator + f.getName()
-                + ".ppl";
         f = new File(targetFile);
-        String targetOutput = input
-                + File.separator + targetLang + File.separator + f.getName()
-                + ".ppl";
+        
         nge.runNGramPerplex(sourceFile, sourceOutput,
                 resourceManager.getString(sourceLang + ".lm"));
         System.out.println(resourceManager.getString(targetLang + ".lm"));
@@ -470,7 +466,7 @@ public class FeatureExtractorSimple {
         // Normalize files to avoid strange characters in UTF-8 that may break the PoS tagger
         //normalize_utf8();
         System.out.println("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-        System.out.println("Lm for source language: " + resourceManager.getProperty(sourceLang + ".adfas"));
+        System.out.println("Lm for source language: " + resourceManager.getProperty(sourceLang + ".lm"));
         System.out.println("\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 
         FeatureExtractorSimple.produceMissingResources();
@@ -832,7 +828,7 @@ public class FeatureExtractorSimple {
         String pplPOSTargetPath = resourceManager.getString("input")
                 + File.separator + targetLang + File.separator + targetFileName + PosTagger.getXPOS()
                 + resourceManager.getString("tools.ngram.output.ext");
-        runNGramPPL();
+        runNGramPPL(pplSourcePath, pplTargetPath);
 
         FileModel fm = new FileModel(sourceFile,
                 resourceManager.getString(sourceLang + ".corpus"));
@@ -1261,7 +1257,7 @@ public class FeatureExtractorSimple {
         String pplPOSTargetPath = resourceManager.getString("input")
                 + File.separator + targetLang + File.separator + targetFileName + PosTagger.getXPOS()
                 + resourceManager.getString("tools.ngram.output.ext");
-        runNGramPPL();
+        runNGramPPL(pplSourcePath, pplTargetPath);
 
         PPLProcessor pplProcSource = new PPLProcessor(pplSourcePath,
                 new String[]{"logprob", "ppl", "ppl1"});

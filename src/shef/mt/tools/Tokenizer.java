@@ -97,7 +97,7 @@ public class Tokenizer extends Resource {
                 br.close();
             }
 
-            process.getOutputStream().close();
+            //process.getOutputStream().close();
 
             // Let the process finish
             process.waitFor();

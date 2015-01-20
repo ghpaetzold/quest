@@ -9,9 +9,9 @@ targetLang.default 	= spanish
 
 output				= output/test
 input 				= input/test
-resourcesPath 		= lang_resources
+resourcesPath 		= /home/gustavo/Documents/quest/quest/lang_resources
 featureConfig.bb 	= config/features/features_blackbox_79.xml
-featureConfig.bb 	= config/features/features_blackbox_IR.xml
+featureConfig.bb 	= config/features/features_blackbox_79.xml
 featureConfig.gb 	= config/features/features_glassbox.xml
 featureConfig.all 	= config/features/features_all_cleaned.xml
 
@@ -29,7 +29,7 @@ spanish.ngramScript.path 				= /home/gustavo/Documents/srilm/bin/i686-m64/ngram
 spanish.ngram.outputFolder 				= spanish
 spanish.ngram.outputFileExt 			= ngram
 
-!spanish.lm                                                              = ./lang_resources/spanish/lm.nc.es
+spanish.lm	= ./lang_resources/spanish/lm.nc.es
 
 spanish.poslm 							= ./lang_resources/spanish/pos_lm.es
 spanish.LMPosPerplexity.outputFileExt 	= pos.ppl
@@ -45,7 +45,7 @@ spanish.truecase.model 					= ./lang_resources/spanish/truecase-model.es
 english.ngram                                                   = ./lang_resources/english/ngram-counts.europarl-nc.en.proc
 english.tokenizer                                               = ./lang_resources/tokenizer/tokenizer.perl
 english.lowercase                                               = ./lang_resources/tokenizer/lowercase.perl
-!english.corpus                                                  = ./lang_resources/english/europarl-nc.en
+english.corpus                                                  = ./lang_resources/english/europarl-nc.en
 english.corpus                                                  = ./lang_resources/english/meucorpus.txt
 english.truecase                                                = ./lang_resources/tokenizer/truecase.perl
 english.truecase.model                                  = ./lang_resources/english/truecase-model.en
@@ -64,9 +64,7 @@ english.ngramCountScript.path 			= /home/gustavo/Documents/srilm/bin/i686-m64/ng
 english.ngram.outputFolder 				= english
 english.ngram.outputFileExt 			= ngram
 
-!english.lm                                                              = ./lang_resources/english/lm.nc.en
-
-!resources for pairs of languages
+english.lm	= ./lang_resources/english/lm.nc.en
 
 pair.englishspanish.giza.path                   = ./lang_resources/giza/lex.e2s
 
@@ -74,23 +72,15 @@ tools.ngram.path 						= /home/gustavo/Documents/srilm/bin/i686-m64/
 tools.ngram.output.ext 					= .ppl
 ngramsize       = 3
 
-!resources for topic model features
-! TM must set to 1 if using topic modeling features
 TM = 0 
 spanish.topic.distribution      = ./lang_resources/wmt12.test.es
 english.topic.distribution      = ./lang_resources/wmt12.test.en
 
 featureConfig.parser = config/features/features_parser.xml
 mode = parser
-! BP must be set to 1 if using berkeley parser features
 BP = 0
-! resources for spanish
 
-!Spanish grammar can be trained on the Ancora spanish http://clic.ub.edu/corpus/ancora
-!Fetch pretrained model
 spanish.bparser.grammar                         = ./lang_resources/spa_ancora.gr
-!Kbest defines how many trees may be explored, and it is useful if the k is used as a feature.
-!It generally makes parsing much slower
 spanish.bparser.kbest                                   = 600
 
 
@@ -111,7 +101,7 @@ target.ngramValueList					= ./lang_resources/spanish/ngram-target
 
 
 !resources for Global lexicon
-! GL must be set to 1 if using global lexicon features
+
 GL = 0
 pair.englishspanish.glmodel.path                        = ./lang_resources/glmodel
 pair.englishspanish.glmodel.minweight                   = 0.5
