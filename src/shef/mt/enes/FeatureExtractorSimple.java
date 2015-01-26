@@ -117,7 +117,7 @@ public class FeatureExtractorSimple {
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
         FeatureExtractorSimple fe = new FeatureExtractorSimple(args);
-        
+
         fe.run();
         long end = System.currentTimeMillis();
         Logger.log("processing completed in " + (end - start) / 1000 + " sec");
@@ -332,20 +332,19 @@ public class FeatureExtractorSimple {
      */
     private static void runNGramPPL(String sourceOutput, String targetOutput) {
         // required by BB features 8-13
-        NGramExecIRSTLM nge = new NGramExecIRSTLM(resourceManager.getString("tools.irstlm.path"), forceRun);
+        NGramExecIRSTLM nge = new NGramExecIRSTLM(resourceManager.getString("tools.irstlm.path") + File.separator + "bin" + File.separator, forceRun);
 //        NGramExec nge = new NGramExec(resourceManager.getString("tools.ngram.path"), forceRun);
         System.out.println("runNgramPPL");
-        
+
         File f = new File(sourceFile);
         f = new File(targetFile);
-        
+
         nge.runNGramPerplex(sourceFile, sourceOutput,
                 resourceManager.getString(sourceLang + ".lm"));
         System.out.println(resourceManager.getString(targetLang + ".lm"));
         nge.runNGramPerplex(targetFile, targetOutput,
                 resourceManager.getString(targetLang + ".lm"));
     }
-    
 
     /**
      * Computes the perplexity and log probability for the POS tagged target
@@ -471,6 +470,74 @@ public class FeatureExtractorSimple {
 
     private static void produceMissingResources() {
         //Check if source LM is missing:
+//        if (resourceManager.getProperty(sourceLang + ".lm") == null) {
+//            if (resourceManager.getProperty("tools.irstlm.path") != null) {
+//                if (resourceManager.getProperty(sourceLang + ".corpus") != null) {
+//                    if (resourceManager.getProperty("resourcesPath") != null) {
+//                        System.out.println("Building LM for the " + sourceLang + " language...");
+//                        System.out.println("Corpus used: " + resourceManager.getProperty(sourceLang + ".corpus"));
+//
+//                        //Set IRSTLM environment variable:
+//                        String irstlm = resourceManager.getProperty("tools.irstlm.path");
+//                        if (!irstlm.endsWith(File.separator)) {
+//                            irstlm += File.separator;
+//                        }
+//
+//                        //Call language model creation:
+//                        String[] args = new String[]{
+//                            irstlm + "bin" + File.separator + "build-lm.sh",
+//                            "-i",
+//                            resourceManager.getProperty(sourceLang + ".corpus"),
+//                            "-o",
+////                            "/home/gustavo/Documents/TESTANDOESSAMERDA_lm.gz",
+//                            resourceManager.getProperty("resourcesPath")
+//                            + File.separator + sourceLang + "_lm.gz",
+//                            "-b"};
+//                        try {
+//                            Process process = Runtime.getRuntime().exec(args);
+//                            process.waitFor();
+//                        } catch (IOException e) {
+//                            System.out.println("Error running IRSTLM.");
+//                            e.printStackTrace();
+//                        } catch (InterruptedException e) {
+//                            System.out.println("Error waiting for IRSTLM to finish its execution.");
+//                            e.printStackTrace();
+//                        }
+//                        //Call gunzip:
+//                        args = new String[]{
+//                            "gunzip",
+//                            "-d",
+//                            "-c",
+//                            resourceManager.getProperty("resourcesPath")
+//                            + File.separator + sourceLang + "_lm.gz",
+//                            ">",
+//                            resourceManager.getProperty("resourcesPath")
+//                            + File.separator + sourceLang + "_lm.lm"};
+//                        try {
+//                            Process process = Runtime.getRuntime().exec(args);
+//                            process.waitFor();
+//                            resourceManager.setProperty(sourceLang + ".lm",
+//                                    resourceManager.getProperty("resourcesPath")
+//                                    + File.separator + sourceLang + "_lm.lm");
+//                            System.out.println("LM successfully built! Saved at: " + resourceManager.getProperty("resourcesPath")
+//                                    + File.separator + sourceLang + "_lm.lm");
+//                        } catch (IOException e) {
+//                            System.out.println("Error running Gunzip");
+//                            e.printStackTrace();
+//                        } catch (InterruptedException e) {
+//                            System.out.println("Error waiting for Gunzip to finish its execution.");
+//                            e.printStackTrace();
+//                        }
+//                    } else {
+//                        System.out.println("Missing source Language Model and resources path is not defined!");
+//                    }
+//                } else {
+//                    System.out.println("Missing source Language Model and corpus is not available!");
+//                }
+//            } else {
+//                System.out.println("Missing source Language Model and SRILM is not available!");
+//            }
+//        }
         if (resourceManager.getProperty(sourceLang + ".lm") == null) {
             if (resourceManager.getProperty("tools.ngram.path") != null) {
                 if (resourceManager.getProperty(sourceLang + ".corpus") != null) {
@@ -513,6 +580,75 @@ public class FeatureExtractorSimple {
         }
 
         //Check if target LM is missing:
+//        if (resourceManager.getProperty(targetLang + ".lm") == null) {
+//            if (resourceManager.getProperty("tools.ngram.path") != null) {
+//                if (resourceManager.getProperty(targetLang + ".corpus") != null) {
+//                    if (resourceManager.getProperty("resourcesPath") != null) {
+//                        System.out.println("Building LM for the " + targetLang + " language...");
+//                        System.out.println("Corpus used: " + resourceManager.getProperty(targetLang + ".corpus"));
+//                        
+//                        //Set IRSTLM environment variable:
+//                        String irstlm = resourceManager.getProperty("tools.irstlm.path");
+//                        if (!irstlm.endsWith(File.separator)) {
+//                            irstlm += File.separator;
+//                        }
+//
+//                        //Call language model creation:
+//                        String[] args = new String[]{
+//                            irstlm + "bin" + File.separator + "build-lm.sh",
+//                            "-i",
+//                            resourceManager.getProperty(targetLang + ".corpus"),
+//                            "-o",
+//                            
+//                            resourceManager.getProperty("resourcesPath")
+//                            + File.separator + targetLang + "_lm.gz",
+//                            "-b"};
+//                        try {
+//                            Process process = Runtime.getRuntime().exec(args);
+//                            process.waitFor();
+//                        } catch (IOException e) {
+//                            System.out.println("Error running IRSTLM.");
+//                            e.printStackTrace();
+//                        } catch (InterruptedException e) {
+//                            System.out.println("Error waiting for IRSTLM to finish its execution.");
+//                            e.printStackTrace();
+//                        }
+//                        //Call gunzip:
+//                        args = new String[]{
+//                            "gunzip",
+//                            "-d",
+//                            "-c",
+//                            resourceManager.getProperty("resourcesPath")
+//                            + File.separator + targetLang + "_lm.gz",
+//                            ">",
+//                            resourceManager.getProperty("resourcesPath")
+//                            + File.separator + targetLang + "_lm.lm"};
+//                        try {
+//                            Process process = Runtime.getRuntime().exec(args);
+//                            process.waitFor();
+//                            resourceManager.setProperty(targetLang + ".lm",
+//                                    resourceManager.getProperty("resourcesPath")
+//                                    + File.separator + targetLang + "_lm.lm");
+//                            System.out.println("LM successfully built! Saved at: " + resourceManager.getProperty("resourcesPath")
+//                                    + File.separator + targetLang + "_lm.lm");
+//                        } catch (IOException e) {
+//                            System.out.println("Error running Gunzip");
+//                            e.printStackTrace();
+//                        } catch (InterruptedException e) {
+//                            System.out.println("Error waiting for Gunzip to finish its execution.");
+//                            e.printStackTrace();
+//                        }
+//                    } else {
+//                        System.out.println("Missing source Language Model and resources path is not defined!");
+//                    }
+//                } else {
+//                    System.out.println("Missing source Language Model and corpus is not available!");
+//                }
+//            } else {
+//                System.out.println("Missing source Language Model and SRILM is not available!");
+//            }
+//        }
+        //Check if target LM is missing:
         if (resourceManager.getProperty(targetLang + ".lm") == null) {
             if (resourceManager.getProperty("tools.ngram.path") != null) {
                 if (resourceManager.getProperty(targetLang + ".corpus") != null) {
@@ -553,7 +689,7 @@ public class FeatureExtractorSimple {
                 System.out.println("Missing source Language Model and SRILM is not available!");
             }
         }
-        
+
         //Check if source NGRAM file is missing:
         if (resourceManager.getProperty(sourceLang + ".ngram") == null) {
             if (resourceManager.getProperty("tools.ngram.path") != null) {
@@ -573,10 +709,10 @@ public class FeatureExtractorSimple {
                         try {
                             Process process = Runtime.getRuntime().exec(args);
                             process.waitFor();
-                            
+
                             String spath = resourceManager.getProperty("resourcesPath") + "/" + sourceLang + "_ngram.ngram";
                             NGramSorter.run(spath, 4, 3, 2, spath);
-                            
+
                             resourceManager.setProperty(sourceLang + ".ngram", spath + ".clean");
                             System.out.println("NGRAM successfully built! Saved at: " + spath + ".clean");
                         } catch (IOException e) {
@@ -596,7 +732,7 @@ public class FeatureExtractorSimple {
                 System.out.println("Missing source NGRAM file and SRILM is not available!");
             }
         }
-        
+
         //Check if target NGRAM file is missing:
         if (resourceManager.getProperty(targetLang + ".ngram") == null) {
             if (resourceManager.getProperty("tools.ngram.path") != null) {
@@ -616,10 +752,10 @@ public class FeatureExtractorSimple {
                         try {
                             Process process = Runtime.getRuntime().exec(args);
                             process.waitFor();
-                            
+
                             String spath = resourceManager.getProperty("resourcesPath") + "/" + targetLang + "_ngram.ngram";
                             NGramSorter.run(spath, 4, 3, 2, spath);
-                            
+
                             resourceManager.setProperty(targetLang + ".ngram", spath + ".clean");
                             System.out.println("NGRAM successfully built! Saved at: " + spath + ".clean");
                         } catch (IOException e) {
