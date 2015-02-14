@@ -41,16 +41,16 @@ public class LanguageModel {
         //freqs.add(freq);
     }
 
-    public static int getCutOff(int ngramSize, int pos) {
+    public int getCutOff(int ngramSize, int pos) {
         return cutOffs[ngramSize - 1][pos - 1];
     }
 
-    public static int getFreq(String word) {
+    public int getFreq(String word) {
         String[] split = word.split(" ");
         return ngrams[split.length - 1].get(word);
     }
 
-    public static int getFreq(String ngram, int size) {
+    public int getFreq(String ngram, int size) {
         if (ngrams[size - 1].get(ngram) == null) {
             return 0;
         }

@@ -25,7 +25,7 @@ import shef.mt.tools.ResourceManager;
  */
 public class FeatureManager {
 
-    private static HashMap<String, Feature> features;
+    static HashMap<String, Feature> features;
     private static HashSet<String> featureList;
     private static FeatureLoader featureLoader;
     private static String featureConfig;
