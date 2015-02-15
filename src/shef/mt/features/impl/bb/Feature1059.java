@@ -42,8 +42,9 @@ public class Feature1059 extends Feature {
             return;
         }
         int count = 0;
+        LanguageModel lm = (LanguageModel)source.getValue("ngramcounts");
         for (String ngram : unique) {
-            if (LanguageModel.getFreq(ngram, size) > 0) {
+            if (lm.getFreq(ngram, size) > 0) {
                 count++;
             }
         }

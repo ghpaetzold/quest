@@ -39,8 +39,9 @@ public class Feature1058 extends Feature {
         ArrayList<String> ngrams = source.getNGrams(size);
         HashSet<String> unique = new HashSet<String>(ngrams);
         int count = 0;
+        LanguageModel lm = (LanguageModel)source.getValue("ngramcounts");
         for (String ngram : unique) {
-            if (LanguageModel.getFreq(ngram, size) > 0) {
+            if (lm.getFreq(ngram, size) > 0) {
                 count++;
             }
         }

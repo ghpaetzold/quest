@@ -8,6 +8,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 import shef.mt.features.impl.Feature;
+import static shef.mt.features.impl.bb.Feature1049.size;
 import shef.mt.features.util.Sentence;
 import shef.mt.tools.LanguageModel;
 
@@ -47,11 +48,12 @@ public class Feature1051 extends Feature {
         int count = 0;
         int freq;
         int totalFreq = 0;
-        int cutOffLow = LanguageModel.getCutOff(size, quart - 1);
-        int cutOffHigh = LanguageModel.getCutOff(size, quart);
+        LanguageModel lm = (LanguageModel) source.getValue("ngramcounts");
+        int cutOffLow = lm.getCutOff(size, quart - 1);
+        int cutOffHigh = lm.getCutOff(size, quart);
         while (it.hasNext()) {
             ngram = it.next();
-            freq = LanguageModel.getFreq(ngram, size);
+            freq = lm.getFreq(ngram, size);
             if (freq <= cutOffHigh && freq > cutOffLow) {
                 count++;
             }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features>
+	<feature index="WCE1001" description="" class="shef.mt.features.impl.wce.WordLevelFeature1001"></feature>
+	<feature index="WCE1002" description="" class="shef.mt.features.impl.wce.WordLevelFeature1002"></feature>
+	<feature index="WCE1003" description="" class="shef.mt.features.impl.wce.WordLevelFeature1003"></feature>
+	<feature index="WCE1004" description="" class="shef.mt.features.impl.wce.WordLevelFeature1004"></feature>
+	<feature index="WCE1005" description="" class="shef.mt.features.impl.wce.WordLevelFeature1005"></feature>
+	<feature index="WCE1006" description="" class="shef.mt.features.impl.wce.WordLevelFeature1006"></feature>
+	<feature index="WCE1007" description="" class="shef.mt.features.impl.wce.WordLevelFeature1007"></feature>
+	<feature index="WCE1008" description="" class="shef.mt.features.impl.wce.WordLevelFeature1008"></feature>
+</features>

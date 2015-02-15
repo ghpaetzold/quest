@@ -95,7 +95,6 @@ public class FeatureManager {
             // else throw an exception feature argument not found
         }
 
-        System.out.println("number of features:" + features.size());
 //		System.out.println(features.keySet());
     }
 
@@ -119,7 +118,7 @@ public class FeatureManager {
             plus = featureArgs.substring(0, separator).trim();
             minus = featureArgs.substring(separator + 1).trim();
         }
-        System.out.println("featureArgs=" + featureArgs + "   plus=" + plus + "  minus=" + minus);
+        
         try {
             featureList = parseArgs(plus);
             HashSet minusArgs = parseArgs(minus);

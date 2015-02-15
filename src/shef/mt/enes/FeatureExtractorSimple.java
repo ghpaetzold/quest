@@ -1232,6 +1232,11 @@ public class FeatureExtractorSimple {
         if (gbMode == 1) {
             gbXML = initialiseGBResources();
         }
+        
+        //Run SRILM on ngram count files:
+        LanguageModel[] ngramModels = this.getNGramModels();
+        LanguageModel ngramModelSource = ngramModels[0];
+        LanguageModel ngramModelTarget = ngramModels[1];
 
         String nbestSentPath = resourceManager.getString("input")
                 + File.separator + targetLang + File.separator + "temp";
@@ -1332,6 +1337,9 @@ public class FeatureExtractorSimple {
                 pplProcTarget.processNextSentence(targetSent);
 
                 pplPosTarget.processNextSentence(targetSent);
+                
+                sourceSent.setValue("ngramcounts", ngramModelSource);
+                targetSent.setValue("ngramcounts", ngramModelTarget);
 
 //				coh.processNextSentence(targetSent);
                 mtop.processNextSentence(sourceSent);
@@ -1373,6 +1381,18 @@ public class FeatureExtractorSimple {
         } else {
             runAll();
         }
+    }
+    
+    private LanguageModel[] getNGramModels() {
+        //Create ngram file processors:
+        NGramProcessor sourceNgp = new NGramProcessor(resourceManager.getString(sourceLang + ".ngram"));
+        NGramProcessor targetNgp = new NGramProcessor(resourceManager.getString(targetLang + ".ngram"));
+
+        //Generate resulting handlers:
+        LanguageModel[] result = new LanguageModel[]{sourceNgp.run(), targetNgp.run()};
+
+        //Return handlers:
+        return result;
     }
 
 }

@@ -1,7 +1,6 @@
 package shef.mt.enes;
 
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.pipeline.TokenizerAnnotator;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -11,7 +10,6 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.apache.commons.cli.CommandLine;
@@ -21,20 +19,22 @@ import org.apache.commons.cli.OptionBuilder;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 import org.apache.commons.cli.PosixParser;
-import shef.mt.features.util.FeatureManager;
+import shef.mt.features.util.Sentence;
 import shef.mt.features.util.WordLevelFeatureManager;
 import shef.mt.tools.AlignmentProcessor;
 import shef.mt.tools.LanguageModel;
 import shef.mt.tools.NGramExec;
 import shef.mt.tools.NGramProcessor;
+import shef.mt.tools.NgramCountProcessor;
 import shef.mt.tools.PPLProcessor;
-import shef.mt.tools.Tokenizer;
+import shef.mt.tools.ParsingProcessor;
+import shef.mt.tools.SenseProcessor;
 import shef.mt.util.NGramSorter;
 import shef.mt.util.PropertiesManager;
+import wlv.mt.tools.ResourceManager;
 
 /**
  * Main class for the word-level feature extraction pipeline.
- *
  * @author GustavoH
  */
 public class WordLevelFeatureExtractor {
@@ -58,12 +58,13 @@ public class WordLevelFeatureExtractor {
     private StanfordCoreNLP targetPipe;
 
     public WordLevelFeatureExtractor(String[] args) {
+        //Parse command line arguments:
         this.parseArguments(args);
 
+        //Setup main folders:
         workDir = System.getProperty("user.dir");
         input = workDir + File.separator + resourceManager.getString("input");
         output = workDir + File.separator + resourceManager.getString("output");
-
         System.out.println("Work dir: " + workDir);
         System.out.println("Input folder: " + input);
         System.out.println("Output folder: " + output);
@@ -83,12 +84,21 @@ public class WordLevelFeatureExtractor {
     }
 
     public void run() {
+        //Set output writer for feature values:
+        String outputPath = this.output + File.separator + "output.txt";
+        BufferedWriter outWriter = null;
+        try {
+            outWriter = new BufferedWriter(new FileWriter(outputPath));
+        } catch (IOException ex) {
+            Logger.getLogger(WordLevelFeatureExtractor.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
         //Build input and output folders:
         this.constructFolders();
 
         //Lowercase input files:
         this.preProcess();
-        
+
         //Produce missing resources:
         this.produceMissingResources();
 
@@ -98,12 +108,68 @@ public class WordLevelFeatureExtractor {
         PPLProcessor pplProcTarget = pplProcessors[1];
 
         //Run SRILM on ngram count files:
-        LanguageModel[] ngramModels = this.getNGramModels();
-        LanguageModel ngramModelSource = ngramModels[0];
-        LanguageModel ngramModelTarget = ngramModels[1];
+        NgramCountProcessor[] ngramProcessors = this.getNgramProcessors();
+        NgramCountProcessor ngramProcessorSource = ngramProcessors[0];
+        NgramCountProcessor ngramProcessorTarget = ngramProcessors[1];
 
         //Get alignment processors:
         AlignmentProcessor alignmentProcessor = this.getAlignmentProcessor();
+
+        //Get parsing processors:
+        ParsingProcessor[] parsingProcessors = this.getParsingProcessors();
+        ParsingProcessor parsingSource = parsingProcessors[0];
+        ParsingProcessor parsingTarget = parsingProcessors[1];
+
+        //Get sense processor:
+        SenseProcessor senseProcessor = this.getSenseProcessor();
+
+        try {
+            //Get readers of source and target files input:
+            BufferedReader sourceBR = new BufferedReader(new FileReader(this.sourceFile));
+            BufferedReader targetBR = new BufferedReader(new FileReader(this.targetFile));
+            
+            //Process each sentence pair:
+            int sentenceCounter = 0;
+            while(sourceBR.ready() && targetBR.ready()){
+                //Create source and target sentence objects:
+                Sentence sourceSentence = new Sentence(sourceBR.readLine().trim(), sentenceCounter);
+                Sentence targetSentence = new Sentence(targetBR.readLine().trim(), sentenceCounter);
+                
+                //Add language model perplexity information:
+                pplProcSource.processNextSentence(sourceSentence);
+                pplProcTarget.processNextSentence(targetSentence);
+                
+                //Add ngram counts information:
+                ngramProcessorSource.processNextSentence(sourceSentence);
+                ngramProcessorSource.processNextSentence(targetSentence);
+                
+                //Add alignments information:
+                alignmentProcessor.processNextSentence(targetSentence);
+                
+                //Add POS tags and dependency parses information:
+                parsingSource.processNextSentence(sourceSentence);
+                parsingTarget.processNextSentence(targetSentence);
+                
+                //Add sense information:
+                senseProcessor.processNextSentence(targetSentence);
+                
+                //Run features for sentence pair:
+                String featureValues = featureManager.runFeatures(sourceSentence, targetSentence).trim();
+                outWriter.write(featureValues);
+                outWriter.newLine();
+                
+                //Increase sentence counter:
+                sentenceCounter++;
+            }
+            
+            //Save output:
+            outWriter.close();
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(WordLevelFeatureExtractor.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(WordLevelFeatureExtractor.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }
 
     public void constructFolders() {
@@ -259,12 +325,9 @@ public class WordLevelFeatureExtractor {
             }
 
             if (line.hasOption("mode")) {
-                System.out.println("HAS");
                 String[] modeOpt = line.getOptionValues("mode");
                 setMod(modeOpt[0].trim());
-                System.out.println(getMod());
                 configPath = resourceManager.getString("featureConfig." + getMod());
-                System.out.println("feature config:" + configPath);
                 featureManager = new WordLevelFeatureManager(configPath);
             }
 
@@ -357,43 +420,14 @@ public class WordLevelFeatureExtractor {
     }
 
     private AlignmentProcessor getAlignmentProcessor() {
-        //Create fast_align input file:
-        String inputPath = this.input + File.separator + "source_to_target.inp";
+        //Register feature:
+        ResourceManager.registerResource("alignments");
+        
+        //Get path to alignments file:
+        String alignmentsPath = resourceManager.getProperty("alignments.file");
 
-        //Create fast_align output file:
-        String outputPath = this.input + File.separator + "source_to_target.out";
-
-        try {
-            BufferedReader sourceBR = new BufferedReader(new FileReader(this.sourceFile));
-            BufferedReader targetBR = new BufferedReader(new FileReader(this.targetFile));
-
-            BufferedWriter outputBW = new BufferedWriter(new FileWriter(inputPath));
-
-            while (sourceBR.ready()) {
-                String sourceSentence = sourceBR.readLine().trim();
-                String targetSentence = targetBR.readLine().trim();
-
-                outputBW.write(sourceSentence + " ||| " + targetSentence);
-                outputBW.newLine();
-            }
-
-            sourceBR.close();
-            targetBR.close();
-            outputBW.close();
-
-            //Run fast align on input file:
-            //this.runFastAlign(inputPath, outputPath);
-
-            //Return resulting processor:
-            return new AlignmentProcessor(outputPath);
-
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(WordLevelFeatureExtractor.class.getName()).log(Level.SEVERE, null, ex);
-            return null;
-        } catch (IOException ex) {
-            Logger.getLogger(WordLevelFeatureExtractor.class.getName()).log(Level.SEVERE, null, ex);
-            return null;
-        }
+        //Return AlignmentProcessor:
+        return new AlignmentProcessor(alignmentsPath);
     }
 
     private void runFastAlign(String inputPath, String outputPath) {
@@ -425,6 +459,47 @@ public class WordLevelFeatureExtractor {
     }
 
     private void produceMissingResources() {
+        //Check if alignment file is missing:
+        if (resourceManager.getProperty("alignments.file") == null) {
+            if (resourceManager.getProperty("tools.fast_align.path") != null) {
+                //Create fast_align input file:
+                String inputPath = resourceManager.getProperty("resourcesPath") + File.separator + "source_to_target.inp";
+
+                //Create fast_align output file:
+                String outputPath = resourceManager.getProperty("resourcesPath") + File.separator + "source_to_target.out";
+
+                try {
+                    BufferedReader sourceBR = new BufferedReader(new FileReader(this.sourceFile));
+                    BufferedReader targetBR = new BufferedReader(new FileReader(this.targetFile));
+
+                    BufferedWriter outputBW = new BufferedWriter(new FileWriter(inputPath));
+
+                    while (sourceBR.ready()) {
+                        String sourceSentence = sourceBR.readLine().trim();
+                        String targetSentence = targetBR.readLine().trim();
+
+                        outputBW.write(sourceSentence + " ||| " + targetSentence);
+                        outputBW.newLine();
+                    }
+
+                    sourceBR.close();
+                    targetBR.close();
+                    outputBW.close();
+
+                    //Run fast align on input file:
+                    this.runFastAlign(inputPath, outputPath);
+
+                    //Return resulting processor:
+                    resourceManager.put("alignments.file", outputPath);
+
+                } catch (FileNotFoundException ex) {
+                    Logger.getLogger(WordLevelFeatureExtractor.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    Logger.getLogger(WordLevelFeatureExtractor.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+
         //Check if source LM is missing:
         if (resourceManager.getProperty(sourceLang + ".lm") == null) {
             if (resourceManager.getProperty("tools.ngram.path") != null) {
@@ -433,7 +508,7 @@ public class WordLevelFeatureExtractor {
                         System.out.println("Building LM for the " + sourceLang + " language...");
                         System.out.println("Corpus used: " + resourceManager.getProperty(sourceLang + ".corpus"));
                         String[] args = new String[]{
-                            resourceManager.getProperty("tools.ngram.path") + "/" + "ngram-count",
+                            resourceManager.getProperty("tools.ngram.path") + File.separator + "ngram-count",
                             "-order",
                             resourceManager.getProperty("ngramsize"),
                             "-text",
@@ -446,9 +521,9 @@ public class WordLevelFeatureExtractor {
                             process.waitFor();
                             resourceManager.setProperty(sourceLang + ".lm",
                                     resourceManager.getProperty("resourcesPath")
-                                    + "/" + sourceLang + "_lm.lm");
+                                    + File.separator + sourceLang + "_lm.lm");
                             System.out.println("LM successfully built! Saved at: " + resourceManager.getProperty("resourcesPath")
-                                    + "/" + sourceLang + "_lm.lm");
+                                    + File.separator + sourceLang + "_lm.lm");
                         } catch (IOException e) {
                             System.out.println("Error running SRILM");
                             e.printStackTrace();
@@ -475,22 +550,22 @@ public class WordLevelFeatureExtractor {
                         System.out.println("Building LM for the " + targetLang + " language...");
                         System.out.println("Corpus used: " + resourceManager.getProperty(targetLang + ".corpus"));
                         String[] args = new String[]{
-                            resourceManager.getProperty("tools.ngram.path") + "/" + "ngram-count",
+                            resourceManager.getProperty("tools.ngram.path") + File.separator + "ngram-count",
                             "-order",
                             resourceManager.getProperty("ngramsize"),
                             "-text",
                             resourceManager.getProperty(targetLang + ".corpus"),
                             "-lm",
                             resourceManager.getProperty("resourcesPath")
-                            + "/" + targetLang + "_lm.lm"};
+                            + File.separator + targetLang + "_lm.lm"};
                         try {
                             Process process = Runtime.getRuntime().exec(args);
                             process.waitFor();
                             resourceManager.setProperty(targetLang + ".lm",
                                     resourceManager.getProperty("resourcesPath")
-                                    + "/" + targetLang + "_lm.lm");
+                                    + File.separator + targetLang + "_lm.lm");
                             System.out.println("LM successfully built! Saved at: " + resourceManager.getProperty("resourcesPath")
-                                    + "/" + targetLang + "_lm.lm");
+                                    + File.separator + targetLang + "_lm.lm");
                         } catch (IOException e) {
                             System.out.println("Error running SRILM");
                             e.printStackTrace();
@@ -517,14 +592,14 @@ public class WordLevelFeatureExtractor {
                         System.out.println("Building NGRAM file for the " + sourceLang + " language...");
                         System.out.println("Corpus used: " + resourceManager.getProperty(sourceLang + ".corpus"));
                         String[] args = new String[]{
-                            resourceManager.getProperty("tools.ngram.path") + "/" + "ngram-count",
+                            resourceManager.getProperty("tools.ngram.path") + File.separator + "ngram-count",
                             "-order",
                             resourceManager.getProperty("ngramsize"),
                             "-text",
                             resourceManager.getProperty(sourceLang + ".corpus"),
                             "-write",
                             resourceManager.getProperty("resourcesPath")
-                            + "/" + sourceLang + "_ngram.ngram"};
+                            + File.separator + sourceLang + "_ngram.ngram"};
                         try {
                             Process process = Runtime.getRuntime().exec(args);
                             process.waitFor();
@@ -561,19 +636,19 @@ public class WordLevelFeatureExtractor {
                         System.out.println("Building NGRAM file for the " + targetLang + " language...");
                         System.out.println("Corpus used: " + resourceManager.getProperty(targetLang + ".corpus"));
                         String[] args = new String[]{
-                            resourceManager.getProperty("tools.ngram.path") + "/" + "ngram-count",
+                            resourceManager.getProperty("tools.ngram.path") + File.separator + "ngram-count",
                             "-order",
                             resourceManager.getProperty("ngramsize"),
                             "-text",
                             resourceManager.getProperty(targetLang + ".corpus"),
                             "-write",
                             resourceManager.getProperty("resourcesPath")
-                            + "/" + targetLang + "_ngram.ngram"};
+                            + File.separator + targetLang + "_ngram.ngram"};
                         try {
                             Process process = Runtime.getRuntime().exec(args);
                             process.waitFor();
 
-                            String spath = resourceManager.getProperty("resourcesPath") + "/" + targetLang + "_ngram.ngram";
+                            String spath = resourceManager.getProperty("resourcesPath") + File.separator + targetLang + "_ngram.ngram";
                             NGramSorter.run(spath, 4, Integer.parseInt(resourceManager.getProperty("ngramsize")), 2, spath);
 
                             resourceManager.setProperty(targetLang + ".ngram", spath);
@@ -596,13 +671,59 @@ public class WordLevelFeatureExtractor {
                 System.out.println("Missing source NGRAM file and SRILM is not available!");
             }
         }
+    }
 
-        /*
-         Check if has LM for each language
-         if does not have, check if there is SRILM path
-         if does have, check if there is language.corpus
-         if does have, generate LM and place into resourcesPath + "/" + language + _LM.lm
-         add language.lm = resourcePath + "/" + language + _LM.lm
-         */
+    private ParsingProcessor[] getParsingProcessors() {
+        //Register resources:
+        ResourceManager.registerResource("postags");
+        ResourceManager.registerResource("depcounts");
+        
+        //Get paths to Stanford Parser source language models:
+        String POSModel = (String) resourceManager.getProperty(this.sourceLang + "POSModel");
+        String parseModel = (String) resourceManager.getProperty(this.sourceLang + "parseModel");
+
+        //Create source language ParsingProcessor:
+        ParsingProcessor sourceProcessor = new ParsingProcessor(this.sourceLang, POSModel, parseModel);
+
+        //Get paths to Stanford Parser target language models:
+        POSModel = (String) resourceManager.getProperty(this.targetLang + "POSModel");
+        parseModel = (String) resourceManager.getProperty(this.targetLang + "parseModel");
+
+        //Create target language ParsingProcessor:
+        ParsingProcessor targetProcessor = new ParsingProcessor(this.targetLang, POSModel, parseModel);
+
+        //Return processors:
+        return new ParsingProcessor[]{sourceProcessor, targetProcessor};
+    }
+
+    private SenseProcessor getSenseProcessor() {
+        //Register resource:
+        ResourceManager.registerResource("sensecounts");
+        //Get path to Universal Wordnet:
+        String wordnetPath = this.resourceManager.getProperty("tools.universalwordnet.path");
+
+        //Create SenseProcessor object:
+        SenseProcessor sp = new SenseProcessor(wordnetPath, this.targetLang);
+
+        //Return object:
+        return sp;
+    }
+
+    private NgramCountProcessor[] getNgramProcessors() {
+        //Register resource:
+        ResourceManager.registerResource("ngramcount");
+        
+        //Get source and target Language Models:
+        LanguageModel[] ngramModels = this.getNGramModels();
+        LanguageModel ngramModelSource = ngramModels[0];
+        LanguageModel ngramModelTarget = ngramModels[1];
+        
+        //Create source and target processors:
+        NgramCountProcessor sourceProcessor = new NgramCountProcessor(ngramModelSource);
+        NgramCountProcessor targetProcessor = new NgramCountProcessor(ngramModelTarget);
+        NgramCountProcessor[] result = new NgramCountProcessor[]{sourceProcessor, targetProcessor};
+        
+        //Return processors:
+        return result;
     }
 }

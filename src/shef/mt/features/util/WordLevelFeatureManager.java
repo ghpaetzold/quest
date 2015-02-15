@@ -32,6 +32,9 @@ public class WordLevelFeatureManager extends FeatureManager {
 
         //Create vector for output:
         String[] output = new String[target.getNoTokens()];
+        for(int i=0; i<output.length; i++){
+            output[i] = "";
+        }
         while (it.hasNext()) {
             
             //Get next feature:
@@ -43,7 +46,7 @@ public class WordLevelFeatureManager extends FeatureManager {
             if (f.isComputable()) {
                 f.run(source, target);
                 String[] values = f.getValues();
-                for (int i = 1; i <= values.length; i++) {
+                for (int i = 1; i < values.length; i++) {
                     output[i] += values[i] + '\t';
                 }
             } else {
