@@ -1,21 +1,21 @@
-2015/01/30 15:45:37
+2015/02/16 16:27:16
 Tokenizing the input...
 Executing: java.lang.UNIXProcess@27c170f0
 Transforming the input to true case...
 Executing: java.lang.UNIXProcess@5451c3a8
-Finished tokenising in 0.11 sec
+Finished tokenising in 0.134 sec
 Tokenizing the input...
 Executing: java.lang.UNIXProcess@2626b418
 Transforming the input to true case...
 Executing: java.lang.UNIXProcess@5a07e868
-Finished tokenising in 0.111 sec
+Finished tokenising in 0.109 sec
 output dir exists: output/test
 Running ngram for computing perplexities on input file:/home/gustavo/Documents/quest_irstlm/quest_irtlm/input/test/english/source.en.tok with lm file: /home/gustavo/Documents/quest_resource_generation/vanilla_resources/lang_resources/english_lm.lm
 Executing: /home/gustavo/Documents/irstlm//bin/score-lm -lm /home/gustavo/Documents/quest_resource_generation/vanilla_resources/lang_resources/english_lm.lm
-Finished computing perplexities in 0.126 sec
+Finished computing perplexities in 0.043 sec
 Running ngram for computing perplexities on input file:/home/gustavo/Documents/quest_irstlm/quest_irtlm/input/test/spanish/target.es.tok with lm file: /home/gustavo/Documents/quest_resource_generation/vanilla_resources/lang_resources/spanish_lm.lm
 Executing: /home/gustavo/Documents/irstlm//bin/score-lm -lm /home/gustavo/Documents/quest_resource_generation/vanilla_resources/lang_resources/spanish_lm.lm
-Finished computing perplexities in 0.041 sec
+Finished computing perplexities in 0.039 sec
 Building the word model for the input file
 2896 words identified. Computing frequencies... 
 ***********Initiating PosTagger***************
@@ -25,7 +25,7 @@ Input: /home/gustavo/Documents/quest_irstlm/quest_irtlm/input/test/english/sourc
 Output: /home/gustavo/Documents/quest_irstlm/quest_irtlm/input/test/english/source.en.tok.pos
 Running TreeTagger...
 TreeTagger exited with exit value 0
-TreeTagger completed in 0.37 sec
+TreeTagger completed in 0.353 sec
 ***********Initiating PosTagger***************
 PosTagger parameters: type=target name:shef.mt.tools.PosTreeTagger
 Executable: /home/gustavo/Documents/tree-tagger/cmd/tree-tagger-spanish
@@ -33,13 +33,13 @@ Input: /home/gustavo/Documents/quest_irstlm/quest_irtlm/input/test/spanish/targe
 Output: /home/gustavo/Documents/quest_irstlm/quest_irtlm/input/test/spanish/target.es.tok.pos
 Running TreeTagger...
 TreeTagger exited with exit value 0
-TreeTagger completed in 0.222 sec
+TreeTagger completed in 0.206 sec
 Running ngram for computing perplexities on input file:/home/gustavo/Documents/quest_irstlm/quest_irtlm/input/test/spanish/target.es.tok.pos.XPOS with lm file: /home/gustavo/Documents/quest_resource_generation/vanilla_resources/lang_resources/spanish/pos_lm.es
-Executing: /home/gustavo/Documents/srilm/bin/i686-m64/ngram -lm /home/gustavo/Documents/quest_resource_generation/vanilla_resources/lang_resources/spanish/pos_lm.es -order 3 -debug 1 -ppl /home/gustavo/Documents/quest_irstlm/quest_irtlm/input/test/spanish/target.es.tok.pos.XPOS > /home/gustavo/Documents/quest_irstlm/quest_irtlm/input/test/spanish/target.es.tok.pos.XPOS.ppl
-Finished computing perplexities in 0.004 sec
+Executing: /home/gustavo/Documents/irstlm//bin/score-lm -lm /home/gustavo/Documents/quest_resource_generation/vanilla_resources/lang_resources/spanish/pos_lm.es
+Finished computing perplexities in 0.026 sec
 initiating Giza from file: /home/gustavo/Documents/quest_resource_generation/vanilla_resources/lang_resources/giza/lex.e2s
 Loading Giza...
-Giza loaded in 2.307 sec
+Giza loaded in 2.042 sec
 Loading language model...
 Cut-off frequencies:
 0-grams:
@@ -57,4 +57,4 @@ quartile 1: 2
 quartile 2: 3
 quartile 3: 6
 quartile 4: 75416
-Language model loaded in 10.506 sec
+Language model loaded in 9.192 sec

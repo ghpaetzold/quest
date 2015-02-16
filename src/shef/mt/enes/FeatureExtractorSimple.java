@@ -333,7 +333,6 @@ public class FeatureExtractorSimple {
     private static void runNGramPPL(String sourceOutput, String targetOutput) {
         // required by BB features 8-13
         NGramExecIRSTLM nge = new NGramExecIRSTLM(resourceManager.getString("tools.irstlm.path") + File.separator + "bin" + File.separator, forceRun);
-//        NGramExec nge = new NGramExec(resourceManager.getString("tools.ngram.path"), forceRun);
         System.out.println("runNgramPPL");
 
         File f = new File(sourceFile);
@@ -356,8 +355,10 @@ public class FeatureExtractorSimple {
      * @param posFile file tagged with parts-of-speech
      */
     private String runNGramPPLPos(String posFile) {
-        NGramExec nge = new NGramExec(
-                resourceManager.getString("tools.ngram.path"), forceRun);
+//        NGramExec nge = new NGramExec(
+//                resourceManager.getString("tools.ngram.path"), forceRun);
+       NGramExecIRSTLM nge = new NGramExecIRSTLM(resourceManager.getString("tools.irstlm.path") + File.separator + "bin" + File.separator, forceRun);
+
 
         File f = new File(posFile);
         String posTargetOutput = input
