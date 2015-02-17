@@ -45,12 +45,12 @@ public class LanguageModel {
         return cutOffs[ngramSize - 1][pos - 1];
     }
 
-    public int getFreq(String word) {
+    public Integer getFreq(String word) {
         String[] split = word.split(" ");
         return ngrams[split.length - 1].get(word);
     }
 
-    public int getFreq(String ngram, int size) {
+    public Integer getFreq(String ngram, int size) {
         if (ngrams[size - 1].get(ngram) == null) {
             return 0;
         }

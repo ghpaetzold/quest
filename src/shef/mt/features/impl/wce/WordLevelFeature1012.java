@@ -4,12 +4,12 @@ import java.util.HashMap;
 import shef.mt.features.impl.WordLevelFeature;
 import shef.mt.features.util.Sentence;
 
-public class WordLevelFeature1009 extends WordLevelFeature {
+public class WordLevelFeature1012 extends WordLevelFeature {
 
-    public WordLevelFeature1009() {
-        this.setIndex("WCE1009");
-        this.setIdentifier("SRCALIGNLEFT");
-        this.setDescription("Left bigram aligned to each target word.");
+    public WordLevelFeature1012() {
+        this.setIndex("WCE1012");
+        this.setIdentifier("TRGALIGNLEFT1");
+        this.setDescription("First leftmost target word along with aligned source word.");
         this.addResource("alignments");
     }
 
@@ -32,12 +32,15 @@ public class WordLevelFeature1009 extends WordLevelFeature {
         for (int i = 0; i < targetTokens.length; i++) {
             //Get index of aligned word in source sentence:
             Integer alignedIndex = alignments.get(i);
+            
+            //Get aligned word:
+            String alignedWord = this.getAlignedWord(sourceTokens, alignedIndex);
 
-            //Get left source word:
-            String leftSource = this.getLeftSource(sourceTokens, alignedIndex);
+            //Get left target word:
+            String leftTarget = this.getLeftTarget(targetTokens, i);
 
             //Create value:
-            String value = this.getIdentifier() + "=" + targetTokens[i] + "/" + leftSource;
+            String value = this.getIdentifier() + "=" + alignedWord + "/" + leftTarget;
 
             //Save value:
             result[i] = value;
@@ -46,17 +49,20 @@ public class WordLevelFeature1009 extends WordLevelFeature {
         //Save values produced:
         this.setValues(result);
     }
-
-    private String getLeftSource(String[] tokens, Integer index) {
-        //Determine correct left word:
-        if (index == null) {
+    
+    private String getAlignedWord(String[] tokens, Integer i) {
+        if(i==null){
             return "NULL";
-        } else {
-            if (index == 0) {
-                return "<s>";
-            } else {
-                return tokens[index - 1];
-            }
+        }else{
+            return tokens[i];
+        }
+    }
+
+    private String getLeftTarget(String[] tokens, int i) {
+        if(i<1){
+            return "<s>";
+        }else{
+            return tokens[i-1];
         }
     }
 }

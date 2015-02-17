@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.Set;
-import shef.mt.features.impl.Feature;
 import shef.mt.features.impl.WordLevelFeature;
 import shef.mt.util.Logger;
 

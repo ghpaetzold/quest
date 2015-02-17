@@ -18,7 +18,7 @@ public class WordLevelFeature1006 extends WordLevelFeature{
         //Create vector of resulting values:
         String[] result = new String[target.getNoTokens()];
         
-        //Ge tokens from target sentence:
+        //Get tokens from target sentence:
         String[] tokens = target.getTokens();
         
         //For each token, create ngram:

@@ -10,6 +10,9 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.apache.commons.cli.CommandLine;
@@ -28,13 +31,17 @@ import shef.mt.tools.NGramProcessor;
 import shef.mt.tools.NgramCountProcessor;
 import shef.mt.tools.PPLProcessor;
 import shef.mt.tools.ParsingProcessor;
+import shef.mt.tools.PunctuationProcessor;
+import shef.mt.tools.ResourceManager;
+import shef.mt.tools.ResourceProcessor;
 import shef.mt.tools.SenseProcessor;
+import shef.mt.tools.StopWordsProcessor;
 import shef.mt.util.NGramSorter;
 import shef.mt.util.PropertiesManager;
-import wlv.mt.tools.ResourceManager;
 
 /**
  * Main class for the word-level feature extraction pipeline.
+ *
  * @author GustavoH
  */
 public class WordLevelFeatureExtractor {
@@ -92,7 +99,7 @@ public class WordLevelFeatureExtractor {
         } catch (IOException ex) {
             Logger.getLogger(WordLevelFeatureExtractor.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
         //Build input and output folders:
         this.constructFolders();
 
@@ -102,74 +109,51 @@ public class WordLevelFeatureExtractor {
         //Produce missing resources:
         this.produceMissingResources();
 
-        //Run SRILM on language models:
-        PPLProcessor[] pplProcessors = this.getLMProcessors();
-        PPLProcessor pplProcSource = pplProcessors[0];
-        PPLProcessor pplProcTarget = pplProcessors[1];
-
-        //Run SRILM on ngram count files:
-        NgramCountProcessor[] ngramProcessors = this.getNgramProcessors();
-        NgramCountProcessor ngramProcessorSource = ngramProcessors[0];
-        NgramCountProcessor ngramProcessorTarget = ngramProcessors[1];
-
-        //Get alignment processors:
-        AlignmentProcessor alignmentProcessor = this.getAlignmentProcessor();
-
-        //Get parsing processors:
-        ParsingProcessor[] parsingProcessors = this.getParsingProcessors();
-        ParsingProcessor parsingSource = parsingProcessors[0];
-        ParsingProcessor parsingTarget = parsingProcessors[1];
-
-        //Get sense processor:
-        SenseProcessor senseProcessor = this.getSenseProcessor();
+        //Get required resource processors:
+        ResourceProcessor[][] resourceProcessors = getResourceProcessors();
+        ResourceProcessor[] resourceProcessorsSource = resourceProcessors[0];
+        ResourceProcessor[] resourceProcessorsTarget = resourceProcessors[1];
 
         try {
             //Get readers of source and target files input:
             BufferedReader sourceBR = new BufferedReader(new FileReader(this.sourceFile));
             BufferedReader targetBR = new BufferedReader(new FileReader(this.targetFile));
-            
+
             //Process each sentence pair:
             int sentenceCounter = 0;
-            while(sourceBR.ready() && targetBR.ready()){
+            while (sourceBR.ready() && targetBR.ready()) {
                 //Create source and target sentence objects:
                 Sentence sourceSentence = new Sentence(sourceBR.readLine().trim(), sentenceCounter);
                 Sentence targetSentence = new Sentence(targetBR.readLine().trim(), sentenceCounter);
+
+                //Run processors over source sentence:
+                for(ResourceProcessor processor: resourceProcessorsSource){
+                    processor.processNextSentence(sourceSentence);
+                }
                 
-                //Add language model perplexity information:
-                pplProcSource.processNextSentence(sourceSentence);
-                pplProcTarget.processNextSentence(targetSentence);
-                
-                //Add ngram counts information:
-                ngramProcessorSource.processNextSentence(sourceSentence);
-                ngramProcessorSource.processNextSentence(targetSentence);
-                
-                //Add alignments information:
-                alignmentProcessor.processNextSentence(targetSentence);
-                
-                //Add POS tags and dependency parses information:
-                parsingSource.processNextSentence(sourceSentence);
-                parsingTarget.processNextSentence(targetSentence);
-                
-                //Add sense information:
-                senseProcessor.processNextSentence(targetSentence);
-                
+                //Run processors over target sentence:
+                for(ResourceProcessor processor: resourceProcessorsTarget){
+                    processor.processNextSentence(targetSentence);
+                }
+
                 //Run features for sentence pair:
                 String featureValues = featureManager.runFeatures(sourceSentence, targetSentence).trim();
                 outWriter.write(featureValues);
                 outWriter.newLine();
-                
+
                 //Increase sentence counter:
                 sentenceCounter++;
             }
-            
+
             //Save output:
             outWriter.close();
+            sourceBR.close();
+            targetBR.close();
         } catch (FileNotFoundException ex) {
             Logger.getLogger(WordLevelFeatureExtractor.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
             Logger.getLogger(WordLevelFeatureExtractor.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
     }
 
     public void constructFolders() {
@@ -422,7 +406,7 @@ public class WordLevelFeatureExtractor {
     private AlignmentProcessor getAlignmentProcessor() {
         //Register feature:
         ResourceManager.registerResource("alignments");
-        
+
         //Get path to alignments file:
         String alignmentsPath = resourceManager.getProperty("alignments.file");
 
@@ -441,15 +425,29 @@ public class WordLevelFeatureExtractor {
             inputPath,
             "-d",
             "-o",
-            "-v",
-            ">",
-            outputPath};
+            "-v"};
 
-        //Run fast_align:
         System.out.println("Running fast_align...");
         try {
+            //Run fast_align:
             Process process = Runtime.getRuntime().exec(args);
             process.waitFor();
+            
+            //Create BufferedReader of fast align's output:
+            BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            
+            //Create BufferedWriter to save output:
+            BufferedWriter bw = new BufferedWriter(new FileWriter(outputPath));
+            
+            //Save output file:
+            while(br.ready()){
+                bw.write(br.readLine().trim() + "\n");
+            }
+            
+            //Close reader and writer:
+            br.close();
+            bw.close();
+            
             System.out.println("Created alignment file at: " + outputPath);
         } catch (IOException e) {
             e.printStackTrace();
@@ -607,7 +605,6 @@ public class WordLevelFeatureExtractor {
                             String spath = resourceManager.getProperty("resourcesPath") + "/" + sourceLang + "_ngram.ngram";
                             NGramSorter.run(spath, 4, Integer.parseInt(resourceManager.getProperty("ngramsize")), 2, spath);
 
-                            resourceManager.setProperty(sourceLang + ".ngram", spath);
                             resourceManager.setProperty(sourceLang + ".ngram", spath + ".clean");
                             System.out.println("NGRAM successfully built! Saved at: " + spath + ".clean");
                         } catch (IOException e) {
@@ -651,7 +648,6 @@ public class WordLevelFeatureExtractor {
                             String spath = resourceManager.getProperty("resourcesPath") + File.separator + targetLang + "_ngram.ngram";
                             NGramSorter.run(spath, 4, Integer.parseInt(resourceManager.getProperty("ngramsize")), 2, spath);
 
-                            resourceManager.setProperty(targetLang + ".ngram", spath);
                             resourceManager.setProperty(targetLang + ".ngram", spath + ".clean");
                             System.out.println("NGRAM successfully built! Saved at: " + spath + ".clean");
                         } catch (IOException e) {
@@ -677,17 +673,17 @@ public class WordLevelFeatureExtractor {
         //Register resources:
         ResourceManager.registerResource("postags");
         ResourceManager.registerResource("depcounts");
-        
+
         //Get paths to Stanford Parser source language models:
-        String POSModel = (String) resourceManager.getProperty(this.sourceLang + "POSModel");
-        String parseModel = (String) resourceManager.getProperty(this.sourceLang + "parseModel");
+        String POSModel = resourceManager.getProperty(this.sourceLang + ".POSModel");
+        String parseModel = resourceManager.getProperty(this.sourceLang + ".parseModel");
 
         //Create source language ParsingProcessor:
         ParsingProcessor sourceProcessor = new ParsingProcessor(this.sourceLang, POSModel, parseModel);
 
         //Get paths to Stanford Parser target language models:
-        POSModel = (String) resourceManager.getProperty(this.targetLang + "POSModel");
-        parseModel = (String) resourceManager.getProperty(this.targetLang + "parseModel");
+        POSModel = resourceManager.getProperty(this.targetLang + ".POSModel");
+        parseModel = resourceManager.getProperty(this.targetLang + ".parseModel");
 
         //Create target language ParsingProcessor:
         ParsingProcessor targetProcessor = new ParsingProcessor(this.targetLang, POSModel, parseModel);
@@ -699,6 +695,7 @@ public class WordLevelFeatureExtractor {
     private SenseProcessor getSenseProcessor() {
         //Register resource:
         ResourceManager.registerResource("sensecounts");
+
         //Get path to Universal Wordnet:
         String wordnetPath = this.resourceManager.getProperty("tools.universalwordnet.path");
 
@@ -712,18 +709,132 @@ public class WordLevelFeatureExtractor {
     private NgramCountProcessor[] getNgramProcessors() {
         //Register resource:
         ResourceManager.registerResource("ngramcount");
-        
+
         //Get source and target Language Models:
         LanguageModel[] ngramModels = this.getNGramModels();
         LanguageModel ngramModelSource = ngramModels[0];
         LanguageModel ngramModelTarget = ngramModels[1];
-        
+
         //Create source and target processors:
         NgramCountProcessor sourceProcessor = new NgramCountProcessor(ngramModelSource);
         NgramCountProcessor targetProcessor = new NgramCountProcessor(ngramModelTarget);
         NgramCountProcessor[] result = new NgramCountProcessor[]{sourceProcessor, targetProcessor};
-        
+
         //Return processors:
         return result;
+    }
+
+    private StopWordsProcessor[] getStopWordsProcessors() {
+        //Register resource:
+        ResourceManager.registerResource("stopwords");
+
+        //Get paths to stop word lists:
+        String sourcePath = resourceManager.getProperty(this.sourceLang + ".stopwords");
+        String targetPath = resourceManager.getProperty(this.targetLang + ".stopwords");
+
+        //Generate processors:
+        StopWordsProcessor sourceProcessor = new StopWordsProcessor(sourcePath);
+        StopWordsProcessor targetProcessor = new StopWordsProcessor(targetPath);
+        StopWordsProcessor[] result = new StopWordsProcessor[]{sourceProcessor, targetProcessor};
+
+        //Return processors:
+        return result;
+    }
+
+    private PunctuationProcessor getPunctuationProcessor() {
+        //Register resource:
+        ResourceManager.registerResource("punctuation");
+
+        //Create punctuation processor:
+        PunctuationProcessor processor = new PunctuationProcessor();
+
+        //Return processor:
+        return processor;
+    }
+
+    private ResourceProcessor[][] getResourceProcessors() {
+        //Get required resources:
+        HashSet<String> required = featureManager.getRequiredResources();
+
+        //Allocate source and target processor vectors:
+        ArrayList<ResourceProcessor> sourceProcessors = new ArrayList<ResourceProcessor>();
+        ArrayList<ResourceProcessor> targetProcessors = new ArrayList<ResourceProcessor>();
+
+        if (required.contains("stopwords")) {
+            //Get stopwords processors:
+            StopWordsProcessor[] stopWordsProcessors = this.getStopWordsProcessors();
+            StopWordsProcessor stopWordsProcSource = stopWordsProcessors[0];
+            StopWordsProcessor stopWordsProcTarget = stopWordsProcessors[0];
+
+            //Add them to processor vectors:
+            sourceProcessors.add(stopWordsProcSource);
+            targetProcessors.add(stopWordsProcTarget);
+        }
+
+        if (required.contains("alignments")) {
+            //Get alignment processors:
+            AlignmentProcessor alignmentProcessor = this.getAlignmentProcessor();
+
+            //Add them to processor vectors:
+            targetProcessors.add(alignmentProcessor);
+        }
+
+        if (required.contains("punctuation")) {
+            //Get punctuation processors:
+            PunctuationProcessor punctuationProcessor = this.getPunctuationProcessor();
+
+            //Add them to processor vectors:
+            targetProcessors.add(punctuationProcessor);
+        }
+
+        if (required.contains("ngramcount")) {
+            //Run SRILM on ngram count files:
+            NgramCountProcessor[] ngramProcessors = this.getNgramProcessors();
+            NgramCountProcessor ngramProcessorSource = ngramProcessors[0];
+            NgramCountProcessor ngramProcessorTarget = ngramProcessors[1];
+
+            //Add them to processor vectors:
+            sourceProcessors.add(ngramProcessorSource);
+            targetProcessors.add(ngramProcessorTarget);
+        }
+
+        if (required.contains("logprob") || required.contains("ppl") || required.contains("ppl1")) {
+            //Run SRILM on language models:
+            PPLProcessor[] pplProcessors = this.getLMProcessors();
+            PPLProcessor pplProcSource = pplProcessors[0];
+            PPLProcessor pplProcTarget = pplProcessors[1];
+
+            //Add them to processor vectors:
+            sourceProcessors.add(pplProcSource);
+            targetProcessors.add(pplProcTarget);
+        }
+
+        if (required.contains("postags") || required.contains("depcounts")) {
+            //Get parsing processors:
+            ParsingProcessor[] parsingProcessors = this.getParsingProcessors();
+            ParsingProcessor parsingSource = parsingProcessors[0];
+            ParsingProcessor parsingTarget = parsingProcessors[1];
+
+            //Add them to processor vectors:
+            sourceProcessors.add(parsingSource);
+            targetProcessors.add(parsingTarget);
+        }
+
+        if (required.contains("sensecounts")) {
+            //Get sense processor:
+            SenseProcessor senseProcessor = this.getSenseProcessor();
+
+            //Add them to processor vectors:
+            targetProcessors.add(senseProcessor);
+        }
+        
+        //Transform array lists in vectors:
+        ResourceProcessor[] sourceProcessorVector = new ResourceProcessor[sourceProcessors.size()];
+        ResourceProcessor[] targetProcessorVector = new ResourceProcessor[targetProcessors.size()];
+        sourceProcessorVector = (ResourceProcessor[]) sourceProcessors.toArray(sourceProcessorVector);
+        targetProcessorVector = (ResourceProcessor[]) targetProcessors.toArray(targetProcessorVector);
+        
+        //Return vectors:
+        return new ResourceProcessor[][]{sourceProcessorVector, targetProcessorVector};
     }
 }

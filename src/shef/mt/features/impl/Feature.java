@@ -32,6 +32,7 @@ public abstract class Feature {
 
     public Feature() {
         this.values = new HashMap<Integer, String>();
+        this.resources = new HashSet<String>();
     }
 
     /**
@@ -85,10 +86,10 @@ public abstract class Feature {
      */
     public boolean isComputable() {
         boolean result = true;
-        if (resources == null || resources.size() == 0) {
+        if (getResources() == null || getResources().size() == 0) {
             return true;
         }
-        Iterator<String> it = resources.iterator();
+        Iterator<String> it = getResources().iterator();
         while (result && it.hasNext()) {
             result &= ResourceManager.isRegistered(it.next());
         }
@@ -154,10 +155,7 @@ public abstract class Feature {
     }
 
     public void addResource(String resource) {
-        if (resources == null) {
-            resources = new HashSet<String>();
-        }
-        resources.add(resource);
+        getResources().add(resource);
     }
 
     /**
@@ -172,5 +170,12 @@ public abstract class Feature {
         // José de Souza
         this.values.clear();
         this.featureCounter = 0;
+    }
+
+    /**
+     * @return the resources
+     */
+    public HashSet<String> getResources() {
+        return resources;
     }
 }

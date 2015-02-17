@@ -4,12 +4,12 @@ import java.util.HashMap;
 import shef.mt.features.impl.WordLevelFeature;
 import shef.mt.features.util.Sentence;
 
-public class WordLevelFeature1009 extends WordLevelFeature {
+public class WordLevelFeature1010 extends WordLevelFeature {
 
-    public WordLevelFeature1009() {
-        this.setIndex("WCE1009");
-        this.setIdentifier("SRCALIGNLEFT");
-        this.setDescription("Left bigram aligned to each target word.");
+    public WordLevelFeature1010() {
+        this.setIndex("WCE1010");
+        this.setIdentifier("SRCALIGNRIGHT");
+        this.setDescription("Right bigram aligned to each target word.");
         this.addResource("alignments");
     }
 
@@ -34,10 +34,10 @@ public class WordLevelFeature1009 extends WordLevelFeature {
             Integer alignedIndex = alignments.get(i);
 
             //Get left source word:
-            String leftSource = this.getLeftSource(sourceTokens, alignedIndex);
+            String rightSource = this.getRightSource(sourceTokens, alignedIndex);
 
             //Create value:
-            String value = this.getIdentifier() + "=" + targetTokens[i] + "/" + leftSource;
+            String value = this.getIdentifier() + "=" + targetTokens[i] + "/" + rightSource;
 
             //Save value:
             result[i] = value;
@@ -47,15 +47,15 @@ public class WordLevelFeature1009 extends WordLevelFeature {
         this.setValues(result);
     }
 
-    private String getLeftSource(String[] tokens, Integer index) {
-        //Determine correct left word:
+    private String getRightSource(String[] tokens, Integer index) {
+        //Determine correct right word:
         if (index == null) {
             return "NULL";
         } else {
-            if (index == 0) {
+            if (index == tokens.length-1) {
                 return "<s>";
             } else {
-                return tokens[index - 1];
+                return tokens[index + 1];
             }
         }
     }

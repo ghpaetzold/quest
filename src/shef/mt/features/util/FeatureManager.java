@@ -170,6 +170,35 @@ public class FeatureManager {
             System.out.println(it.next());
         }
     }
+    /*
+    Returns all the resources required by the features stored.
+    */
+    public HashSet<String> getRequiredResources(){
+        //Initialize final set of resources:
+        HashSet<String> result = new HashSet<>();
+        
+        //Get features' indeces:
+        Set<String> fIndeces = features.keySet();
+        ArrayList<String> featureIndeces = new ArrayList<>(fIndeces);
+        Collections.sort(featureIndeces);
+        
+        //Add each feature's required resources to resulting set:
+        Iterator<String> it = featureIndeces.iterator();
+        Feature f;
+        while (it.hasNext()) {
+            String index = it.next();
+            f = features.get(index);
+            
+            //Get feature's required resources:
+            HashSet<String> requiredResources = f.getResources();
+            
+            //Add it to resulting required resources:
+            result.addAll(requiredResources);
+        }
+        
+        //Return resulting set of resources:
+        return result;
+    }
 
     //HACK
     public String runFeatures(Sentence source, Sentence target) {

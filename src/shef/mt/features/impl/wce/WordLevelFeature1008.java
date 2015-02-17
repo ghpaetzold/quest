@@ -24,7 +24,7 @@ public class WordLevelFeature1008 extends WordLevelFeature {
         //Initialized used source word hash:
         HashMap<Integer, Integer> usedAlignments = new HashMap<>();
 
-        //Ge tokens from target sentence:
+        //Ge tokens from sentences:
         String[] sourceTokens = source.getTokens();
         String[] targetTokens = target.getTokens();
         
