@@ -87,7 +87,7 @@ public class WordLevelFeatureExtractor {
 
         //Measure ending time:
         long end = System.currentTimeMillis();
-        System.out.println("processing completed in " + (end - start) / 1000 + " sec");
+        System.out.println("Processing completed in " + (end - start) / 1000 + " seconds.");
     }
 
     public void run() {
@@ -127,12 +127,12 @@ public class WordLevelFeatureExtractor {
                 Sentence targetSentence = new Sentence(targetBR.readLine().trim(), sentenceCounter);
 
                 //Run processors over source sentence:
-                for(ResourceProcessor processor: resourceProcessorsSource){
+                for (ResourceProcessor processor : resourceProcessorsSource) {
                     processor.processNextSentence(sourceSentence);
                 }
-                
+
                 //Run processors over target sentence:
-                for(ResourceProcessor processor: resourceProcessorsTarget){
+                for (ResourceProcessor processor : resourceProcessorsTarget) {
                     processor.processNextSentence(targetSentence);
                 }
 
@@ -432,22 +432,22 @@ public class WordLevelFeatureExtractor {
             //Run fast_align:
             Process process = Runtime.getRuntime().exec(args);
             process.waitFor();
-            
+
             //Create BufferedReader of fast align's output:
             BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            
+
             //Create BufferedWriter to save output:
             BufferedWriter bw = new BufferedWriter(new FileWriter(outputPath));
-            
+
             //Save output file:
-            while(br.ready()){
+            while (br.ready()) {
                 bw.write(br.readLine().trim() + "\n");
             }
-            
+
             //Close reader and writer:
             br.close();
             bw.close();
-            
+
             System.out.println("Created alignment file at: " + outputPath);
         } catch (IOException e) {
             e.printStackTrace();
@@ -457,214 +457,223 @@ public class WordLevelFeatureExtractor {
     }
 
     private void produceMissingResources() {
+        //Get required resources:
+        HashSet<String> required = featureManager.getRequiredResources();
+
         //Check if alignment file is missing:
-        if (resourceManager.getProperty("alignments.file") == null) {
-            if (resourceManager.getProperty("tools.fast_align.path") != null) {
-                //Create fast_align input file:
-                String inputPath = resourceManager.getProperty("resourcesPath") + File.separator + "source_to_target.inp";
+        if (required.contains("alignments")) {
+            if (resourceManager.getProperty("alignments.file") == null) {
+                if (resourceManager.getProperty("tools.fast_align.path") != null) {
+                    //Create fast_align input file:
+                    String inputPath = resourceManager.getProperty("resourcesPath") + File.separator + "source_to_target.inp";
 
-                //Create fast_align output file:
-                String outputPath = resourceManager.getProperty("resourcesPath") + File.separator + "source_to_target.out";
+                    //Create fast_align output file:
+                    String outputPath = resourceManager.getProperty("resourcesPath") + File.separator + "source_to_target.out";
 
-                try {
-                    BufferedReader sourceBR = new BufferedReader(new FileReader(this.sourceFile));
-                    BufferedReader targetBR = new BufferedReader(new FileReader(this.targetFile));
+                    try {
+                        BufferedReader sourceBR = new BufferedReader(new FileReader(this.sourceFile));
+                        BufferedReader targetBR = new BufferedReader(new FileReader(this.targetFile));
 
-                    BufferedWriter outputBW = new BufferedWriter(new FileWriter(inputPath));
+                        BufferedWriter outputBW = new BufferedWriter(new FileWriter(inputPath));
 
-                    while (sourceBR.ready()) {
-                        String sourceSentence = sourceBR.readLine().trim();
-                        String targetSentence = targetBR.readLine().trim();
+                        while (sourceBR.ready()) {
+                            String sourceSentence = sourceBR.readLine().trim();
+                            String targetSentence = targetBR.readLine().trim();
 
-                        outputBW.write(sourceSentence + " ||| " + targetSentence);
-                        outputBW.newLine();
+                            outputBW.write(sourceSentence + " ||| " + targetSentence);
+                            outputBW.newLine();
+                        }
+
+                        sourceBR.close();
+                        targetBR.close();
+                        outputBW.close();
+
+                        //Run fast align on input file:
+                        this.runFastAlign(inputPath, outputPath);
+
+                        //Return resulting processor:
+                        resourceManager.put("alignments.file", outputPath);
+
+                    } catch (FileNotFoundException ex) {
+                        Logger.getLogger(WordLevelFeatureExtractor.class.getName()).log(Level.SEVERE, null, ex);
+                    } catch (IOException ex) {
+                        Logger.getLogger(WordLevelFeatureExtractor.class.getName()).log(Level.SEVERE, null, ex);
                     }
-
-                    sourceBR.close();
-                    targetBR.close();
-                    outputBW.close();
-
-                    //Run fast align on input file:
-                    this.runFastAlign(inputPath, outputPath);
-
-                    //Return resulting processor:
-                    resourceManager.put("alignments.file", outputPath);
-
-                } catch (FileNotFoundException ex) {
-                    Logger.getLogger(WordLevelFeatureExtractor.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (IOException ex) {
-                    Logger.getLogger(WordLevelFeatureExtractor.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
         }
 
         //Check if source LM is missing:
-        if (resourceManager.getProperty(sourceLang + ".lm") == null) {
-            if (resourceManager.getProperty("tools.ngram.path") != null) {
-                if (resourceManager.getProperty(sourceLang + ".corpus") != null) {
-                    if (resourceManager.getProperty("resourcesPath") != null) {
-                        System.out.println("Building LM for the " + sourceLang + " language...");
-                        System.out.println("Corpus used: " + resourceManager.getProperty(sourceLang + ".corpus"));
-                        String[] args = new String[]{
-                            resourceManager.getProperty("tools.ngram.path") + File.separator + "ngram-count",
-                            "-order",
-                            resourceManager.getProperty("ngramsize"),
-                            "-text",
-                            resourceManager.getProperty(sourceLang + ".corpus"),
-                            "-lm",
-                            resourceManager.getProperty("resourcesPath")
-                            + "/" + sourceLang + "_lm.lm"};
-                        try {
-                            Process process = Runtime.getRuntime().exec(args);
-                            process.waitFor();
-                            resourceManager.setProperty(sourceLang + ".lm",
-                                    resourceManager.getProperty("resourcesPath")
-                                    + File.separator + sourceLang + "_lm.lm");
-                            System.out.println("LM successfully built! Saved at: " + resourceManager.getProperty("resourcesPath")
-                                    + File.separator + sourceLang + "_lm.lm");
-                        } catch (IOException e) {
-                            System.out.println("Error running SRILM");
-                            e.printStackTrace();
-                        } catch (InterruptedException e) {
-                            System.out.println("Error waiting for SRILM to finish its execution.");
-                            e.printStackTrace();
+        if (required.contains("logprob") || required.contains("ppl") || required.contains("ppl1")) {
+            if (resourceManager.getProperty(sourceLang + ".lm") == null) {
+                if (resourceManager.getProperty("tools.ngram.path") != null) {
+                    if (resourceManager.getProperty(sourceLang + ".corpus") != null) {
+                        if (resourceManager.getProperty("resourcesPath") != null) {
+                            System.out.println("Building LM for the " + sourceLang + " language...");
+                            System.out.println("Corpus used: " + resourceManager.getProperty(sourceLang + ".corpus"));
+                            String[] args = new String[]{
+                                resourceManager.getProperty("tools.ngram.path") + File.separator + "ngram-count",
+                                "-order",
+                                resourceManager.getProperty("ngramsize"),
+                                "-text",
+                                resourceManager.getProperty(sourceLang + ".corpus"),
+                                "-lm",
+                                resourceManager.getProperty("resourcesPath")
+                                + "/" + sourceLang + "_lm.lm"};
+                            try {
+                                Process process = Runtime.getRuntime().exec(args);
+                                process.waitFor();
+                                resourceManager.setProperty(sourceLang + ".lm",
+                                        resourceManager.getProperty("resourcesPath")
+                                        + File.separator + sourceLang + "_lm.lm");
+                                System.out.println("LM successfully built! Saved at: " + resourceManager.getProperty("resourcesPath")
+                                        + File.separator + sourceLang + "_lm.lm");
+                            } catch (IOException e) {
+                                System.out.println("Error running SRILM");
+                                e.printStackTrace();
+                            } catch (InterruptedException e) {
+                                System.out.println("Error waiting for SRILM to finish its execution.");
+                                e.printStackTrace();
+                            }
+                        } else {
+                            System.out.println("Missing source Language Model and resources path is not defined!");
                         }
                     } else {
-                        System.out.println("Missing source Language Model and resources path is not defined!");
+                        System.out.println("Missing source Language Model and corpus is not available!");
                     }
                 } else {
-                    System.out.println("Missing source Language Model and corpus is not available!");
+                    System.out.println("Missing source Language Model and SRILM is not available!");
                 }
-            } else {
-                System.out.println("Missing source Language Model and SRILM is not available!");
             }
-        }
 
-        //Check if target LM is missing:
-        if (resourceManager.getProperty(targetLang + ".lm") == null) {
-            if (resourceManager.getProperty("tools.ngram.path") != null) {
-                if (resourceManager.getProperty(targetLang + ".corpus") != null) {
-                    if (resourceManager.getProperty("resourcesPath") != null) {
-                        System.out.println("Building LM for the " + targetLang + " language...");
-                        System.out.println("Corpus used: " + resourceManager.getProperty(targetLang + ".corpus"));
-                        String[] args = new String[]{
-                            resourceManager.getProperty("tools.ngram.path") + File.separator + "ngram-count",
-                            "-order",
-                            resourceManager.getProperty("ngramsize"),
-                            "-text",
-                            resourceManager.getProperty(targetLang + ".corpus"),
-                            "-lm",
-                            resourceManager.getProperty("resourcesPath")
-                            + File.separator + targetLang + "_lm.lm"};
-                        try {
-                            Process process = Runtime.getRuntime().exec(args);
-                            process.waitFor();
-                            resourceManager.setProperty(targetLang + ".lm",
-                                    resourceManager.getProperty("resourcesPath")
-                                    + File.separator + targetLang + "_lm.lm");
-                            System.out.println("LM successfully built! Saved at: " + resourceManager.getProperty("resourcesPath")
-                                    + File.separator + targetLang + "_lm.lm");
-                        } catch (IOException e) {
-                            System.out.println("Error running SRILM");
-                            e.printStackTrace();
-                        } catch (InterruptedException e) {
-                            System.out.println("Error waiting for SRILM to finish its execution.");
-                            e.printStackTrace();
+            //Check if target LM is missing:
+            if (resourceManager.getProperty(targetLang + ".lm") == null) {
+                if (resourceManager.getProperty("tools.ngram.path") != null) {
+                    if (resourceManager.getProperty(targetLang + ".corpus") != null) {
+                        if (resourceManager.getProperty("resourcesPath") != null) {
+                            System.out.println("Building LM for the " + targetLang + " language...");
+                            System.out.println("Corpus used: " + resourceManager.getProperty(targetLang + ".corpus"));
+                            String[] args = new String[]{
+                                resourceManager.getProperty("tools.ngram.path") + File.separator + "ngram-count",
+                                "-order",
+                                resourceManager.getProperty("ngramsize"),
+                                "-text",
+                                resourceManager.getProperty(targetLang + ".corpus"),
+                                "-lm",
+                                resourceManager.getProperty("resourcesPath")
+                                + File.separator + targetLang + "_lm.lm"};
+                            try {
+                                Process process = Runtime.getRuntime().exec(args);
+                                process.waitFor();
+                                resourceManager.setProperty(targetLang + ".lm",
+                                        resourceManager.getProperty("resourcesPath")
+                                        + File.separator + targetLang + "_lm.lm");
+                                System.out.println("LM successfully built! Saved at: " + resourceManager.getProperty("resourcesPath")
+                                        + File.separator + targetLang + "_lm.lm");
+                            } catch (IOException e) {
+                                System.out.println("Error running SRILM");
+                                e.printStackTrace();
+                            } catch (InterruptedException e) {
+                                System.out.println("Error waiting for SRILM to finish its execution.");
+                                e.printStackTrace();
+                            }
+                        } else {
+                            System.out.println("Missing source Language Model and resources path is not defined!");
                         }
                     } else {
-                        System.out.println("Missing source Language Model and resources path is not defined!");
+                        System.out.println("Missing source Language Model and corpus is not available!");
                     }
                 } else {
-                    System.out.println("Missing source Language Model and corpus is not available!");
+                    System.out.println("Missing source Language Model and SRILM is not available!");
                 }
-            } else {
-                System.out.println("Missing source Language Model and SRILM is not available!");
             }
         }
 
         //Check if source NGRAM file is missing:
-        if (resourceManager.getProperty(sourceLang + ".ngram") == null) {
-            if (resourceManager.getProperty("tools.ngram.path") != null) {
-                if (resourceManager.getProperty(sourceLang + ".corpus") != null) {
-                    if (resourceManager.getProperty("resourcesPath") != null) {
-                        System.out.println("Building NGRAM file for the " + sourceLang + " language...");
-                        System.out.println("Corpus used: " + resourceManager.getProperty(sourceLang + ".corpus"));
-                        String[] args = new String[]{
-                            resourceManager.getProperty("tools.ngram.path") + File.separator + "ngram-count",
-                            "-order",
-                            resourceManager.getProperty("ngramsize"),
-                            "-text",
-                            resourceManager.getProperty(sourceLang + ".corpus"),
-                            "-write",
-                            resourceManager.getProperty("resourcesPath")
-                            + File.separator + sourceLang + "_ngram.ngram"};
-                        try {
-                            Process process = Runtime.getRuntime().exec(args);
-                            process.waitFor();
+        if (required.contains("ngramcount")) {
+            if (resourceManager.getProperty(sourceLang + ".ngram") == null) {
+                if (resourceManager.getProperty("tools.ngram.path") != null) {
+                    if (resourceManager.getProperty(sourceLang + ".corpus") != null) {
+                        if (resourceManager.getProperty("resourcesPath") != null) {
+                            System.out.println("Building NGRAM file for the " + sourceLang + " language...");
+                            System.out.println("Corpus used: " + resourceManager.getProperty(sourceLang + ".corpus"));
+                            String[] args = new String[]{
+                                resourceManager.getProperty("tools.ngram.path") + File.separator + "ngram-count",
+                                "-order",
+                                resourceManager.getProperty("ngramsize"),
+                                "-text",
+                                resourceManager.getProperty(sourceLang + ".corpus"),
+                                "-write",
+                                resourceManager.getProperty("resourcesPath")
+                                + File.separator + sourceLang + "_ngram.ngram"};
+                            try {
+                                Process process = Runtime.getRuntime().exec(args);
+                                process.waitFor();
 
-                            String spath = resourceManager.getProperty("resourcesPath") + "/" + sourceLang + "_ngram.ngram";
-                            NGramSorter.run(spath, 4, Integer.parseInt(resourceManager.getProperty("ngramsize")), 2, spath);
+                                String spath = resourceManager.getProperty("resourcesPath") + "/" + sourceLang + "_ngram.ngram";
+                                NGramSorter.run(spath, 4, Integer.parseInt(resourceManager.getProperty("ngramsize")), 2, spath);
 
-                            resourceManager.setProperty(sourceLang + ".ngram", spath + ".clean");
-                            System.out.println("NGRAM successfully built! Saved at: " + spath + ".clean");
-                        } catch (IOException e) {
-                            System.out.println("Error running SRILM");
-                            e.printStackTrace();
-                        } catch (InterruptedException e) {
-                            System.out.println("Error waiting for SRILM to finish its execution.");
-                            e.printStackTrace();
+                                resourceManager.setProperty(sourceLang + ".ngram", spath + ".clean");
+                                System.out.println("NGRAM successfully built! Saved at: " + spath + ".clean");
+                            } catch (IOException e) {
+                                System.out.println("Error running SRILM");
+                                e.printStackTrace();
+                            } catch (InterruptedException e) {
+                                System.out.println("Error waiting for SRILM to finish its execution.");
+                                e.printStackTrace();
+                            }
+                        } else {
+                            System.out.println("Missing source NGRAM file and resources path is not defined!");
                         }
                     } else {
-                        System.out.println("Missing source NGRAM file and resources path is not defined!");
+                        System.out.println("Missing source NGRAM file and corpus is not available!");
                     }
                 } else {
-                    System.out.println("Missing source NGRAM file and corpus is not available!");
+                    System.out.println("Missing source NGRAM file and SRILM is not available!");
                 }
-            } else {
-                System.out.println("Missing source NGRAM file and SRILM is not available!");
             }
-        }
 
-        //Check if target NGRAM file is missing:
-        if (resourceManager.getProperty(targetLang + ".ngram") == null) {
-            if (resourceManager.getProperty("tools.ngram.path") != null) {
-                if (resourceManager.getProperty(targetLang + ".corpus") != null) {
-                    if (resourceManager.getProperty("resourcesPath") != null) {
-                        System.out.println("Building NGRAM file for the " + targetLang + " language...");
-                        System.out.println("Corpus used: " + resourceManager.getProperty(targetLang + ".corpus"));
-                        String[] args = new String[]{
-                            resourceManager.getProperty("tools.ngram.path") + File.separator + "ngram-count",
-                            "-order",
-                            resourceManager.getProperty("ngramsize"),
-                            "-text",
-                            resourceManager.getProperty(targetLang + ".corpus"),
-                            "-write",
-                            resourceManager.getProperty("resourcesPath")
-                            + File.separator + targetLang + "_ngram.ngram"};
-                        try {
-                            Process process = Runtime.getRuntime().exec(args);
-                            process.waitFor();
+            //Check if target NGRAM file is missing:
+            if (resourceManager.getProperty(targetLang + ".ngram") == null) {
+                if (resourceManager.getProperty("tools.ngram.path") != null) {
+                    if (resourceManager.getProperty(targetLang + ".corpus") != null) {
+                        if (resourceManager.getProperty("resourcesPath") != null) {
+                            System.out.println("Building NGRAM file for the " + targetLang + " language...");
+                            System.out.println("Corpus used: " + resourceManager.getProperty(targetLang + ".corpus"));
+                            String[] args = new String[]{
+                                resourceManager.getProperty("tools.ngram.path") + File.separator + "ngram-count",
+                                "-order",
+                                resourceManager.getProperty("ngramsize"),
+                                "-text",
+                                resourceManager.getProperty(targetLang + ".corpus"),
+                                "-write",
+                                resourceManager.getProperty("resourcesPath")
+                                + File.separator + targetLang + "_ngram.ngram"};
+                            try {
+                                Process process = Runtime.getRuntime().exec(args);
+                                process.waitFor();
 
-                            String spath = resourceManager.getProperty("resourcesPath") + File.separator + targetLang + "_ngram.ngram";
-                            NGramSorter.run(spath, 4, Integer.parseInt(resourceManager.getProperty("ngramsize")), 2, spath);
+                                String spath = resourceManager.getProperty("resourcesPath") + File.separator + targetLang + "_ngram.ngram";
+                                NGramSorter.run(spath, 4, Integer.parseInt(resourceManager.getProperty("ngramsize")), 2, spath);
 
-                            resourceManager.setProperty(targetLang + ".ngram", spath + ".clean");
-                            System.out.println("NGRAM successfully built! Saved at: " + spath + ".clean");
-                        } catch (IOException e) {
-                            System.out.println("Error running SRILM");
-                            e.printStackTrace();
-                        } catch (InterruptedException e) {
-                            System.out.println("Error waiting for SRILM to finish its execution.");
-                            e.printStackTrace();
+                                resourceManager.setProperty(targetLang + ".ngram", spath + ".clean");
+                                System.out.println("NGRAM successfully built! Saved at: " + spath + ".clean");
+                            } catch (IOException e) {
+                                System.out.println("Error running SRILM");
+                                e.printStackTrace();
+                            } catch (InterruptedException e) {
+                                System.out.println("Error waiting for SRILM to finish its execution.");
+                                e.printStackTrace();
+                            }
+                        } else {
+                            System.out.println("Missing source NGRAM file and resources path is not defined!");
                         }
                     } else {
-                        System.out.println("Missing source NGRAM file and resources path is not defined!");
+                        System.out.println("Missing source NGRAM file and corpus is not available!");
                     }
                 } else {
-                    System.out.println("Missing source NGRAM file and corpus is not available!");
+                    System.out.println("Missing source NGRAM file and SRILM is not available!");
                 }
-            } else {
-                System.out.println("Missing source NGRAM file and SRILM is not available!");
             }
         }
     }
@@ -827,13 +836,13 @@ public class WordLevelFeatureExtractor {
             //Add them to processor vectors:
             targetProcessors.add(senseProcessor);
         }
-        
+
         //Transform array lists in vectors:
         ResourceProcessor[] sourceProcessorVector = new ResourceProcessor[sourceProcessors.size()];
         ResourceProcessor[] targetProcessorVector = new ResourceProcessor[targetProcessors.size()];
         sourceProcessorVector = (ResourceProcessor[]) sourceProcessors.toArray(sourceProcessorVector);
         targetProcessorVector = (ResourceProcessor[]) targetProcessors.toArray(targetProcessorVector);
-        
+
         //Return vectors:
         return new ResourceProcessor[][]{sourceProcessorVector, targetProcessorVector};
     }
