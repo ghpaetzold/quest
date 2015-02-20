@@ -30,6 +30,7 @@ import org.apache.commons.cli.*;
 import java.io.*;
 import java.lang.Runtime;
 import shef.mt.tools.NGramExecIRSTLM;
+import shef.mt.tools.NgramCountProcessor;
 import shef.mt.util.NGramSorter;
 
 /**
@@ -1012,6 +1013,10 @@ public class FeatureExtractorSimple {
                         = new TriggersProcessor(itl_source_target);
 
             }
+            
+            NgramCountProcessor[] ngramProcessors = this.getNgramProcessors();
+            NgramCountProcessor ngramProcessorSource = ngramProcessors[0];
+            NgramCountProcessor ngramProcessorTarget = ngramProcessors[1];
             /*
              * End modification for Triggers
              */
@@ -1025,6 +1030,9 @@ public class FeatureExtractorSimple {
                 //lineSource = lineSource.trim().substring(lineSource.indexOf(" ")).replace("+", "");
                 sourceSent = new Sentence(lineSource, sentCount);
                 targetSent = new Sentence(lineTarget, sentCount);
+                
+                ngramProcessorSource.processNextSentence(sourceSent);
+                ngramProcessorTarget.processNextSentence(targetSent);
 
                 //       System.out.println("Processing sentence "+sentCount);
                 //     System.out.println("SORCE: " + sourceSent.getText());
@@ -1392,6 +1400,24 @@ public class FeatureExtractorSimple {
         LanguageModel[] result = new LanguageModel[]{sourceNgp.run(), targetNgp.run()};
 
         //Return handlers:
+        return result;
+    }
+    
+    private NgramCountProcessor[] getNgramProcessors() {
+        //Register resource:
+        ResourceManager.registerResource("ngramcount");
+
+        //Get source and target Language Models:
+        LanguageModel[] ngramModels = this.getNGramModels();
+        LanguageModel ngramModelSource = ngramModels[0];
+        LanguageModel ngramModelTarget = ngramModels[1];
+
+        //Create source and target processors:
+        NgramCountProcessor sourceProcessor = new NgramCountProcessor(ngramModelSource);
+        NgramCountProcessor targetProcessor = new NgramCountProcessor(ngramModelTarget);
+        NgramCountProcessor[] result = new NgramCountProcessor[]{sourceProcessor, targetProcessor};
+
+        //Return processors:
         return result;
     }
 

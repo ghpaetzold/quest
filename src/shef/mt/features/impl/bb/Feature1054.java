@@ -46,7 +46,7 @@ public class Feature1054 extends Feature {
         int count = 0;
         int freq;
         int totalFreq = 0;
-        LanguageModel lm = (LanguageModel) source.getValue("ngramcounts");
+        LanguageModel lm = (LanguageModel) source.getValue("ngramcount");
         int cutOff = lm.getCutOff(size, quart);
         while (it.hasNext()) {
             ngram = it.next();

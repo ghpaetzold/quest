@@ -25,7 +25,7 @@ public class Feature1046 extends Feature {
         setIndex(1046);
         setDescription("average unigram frequency in quartile_1 of frequency (lower frequency words) in the corpus of the source sentence");
         HashSet res = new HashSet<String>();
-        res.add("ngramcounts");
+        res.add("ngramcount");
 //		res.add(FeatureExtractor.getPosTagger());
 //		res.add(FeatureExtractor.getGiza());
 
@@ -44,7 +44,7 @@ public class Feature1046 extends Feature {
         int count = 0;
         int freq;
         int cutOff;
-        LanguageModel lm = (LanguageModel) source.getValue("ngramcounts");
+        LanguageModel lm = (LanguageModel) source.getValue("ngramcount");
         cutOff = lm.getCutOff(size, quart);
         while (it.hasNext()) {
             ngram = it.next();
