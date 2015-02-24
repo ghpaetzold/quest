@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.apache.commons.cli.CommandLine;
@@ -431,15 +432,19 @@ public class WordLevelFeatureExtractor {
         try {
             //Run fast_align:
             Process process = Runtime.getRuntime().exec(args);
-            process.waitFor();
-
+            
+            
+            
+            process.waitFor(30, TimeUnit.SECONDS);
+            
             //Create BufferedReader of fast align's output:
             BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));
 
             //Create BufferedWriter to save output:
             BufferedWriter bw = new BufferedWriter(new FileWriter(outputPath));
-
+            
             //Save output file:
+            System.out.println("Saving...");
             while (br.ready()) {
                 bw.write(br.readLine().trim() + "\n");
             }
@@ -511,6 +516,7 @@ public class WordLevelFeatureExtractor {
                         if (resourceManager.getProperty("resourcesPath") != null) {
                             System.out.println("Building LM for the " + sourceLang + " language...");
                             System.out.println("Corpus used: " + resourceManager.getProperty(sourceLang + ".corpus"));
+                            String outputPath = resourceManager.getProperty("resourcesPath") + File.separator + this.sourceLang + File.separator + sourceLang + "_lm.lm";
                             String[] args = new String[]{
                                 resourceManager.getProperty("tools.ngram.path") + File.separator + "ngram-count",
                                 "-order",
@@ -518,16 +524,13 @@ public class WordLevelFeatureExtractor {
                                 "-text",
                                 resourceManager.getProperty(sourceLang + ".corpus"),
                                 "-lm",
-                                resourceManager.getProperty("resourcesPath")
-                                + "/" + sourceLang + "_lm.lm"};
+                                outputPath};
                             try {
                                 Process process = Runtime.getRuntime().exec(args);
                                 process.waitFor();
                                 resourceManager.setProperty(sourceLang + ".lm",
-                                        resourceManager.getProperty("resourcesPath")
-                                        + File.separator + sourceLang + "_lm.lm");
-                                System.out.println("LM successfully built! Saved at: " + resourceManager.getProperty("resourcesPath")
-                                        + File.separator + sourceLang + "_lm.lm");
+                                        outputPath);
+                                System.out.println("LM successfully built! Saved at: " + outputPath);
                             } catch (IOException e) {
                                 System.out.println("Error running SRILM");
                                 e.printStackTrace();
@@ -553,6 +556,7 @@ public class WordLevelFeatureExtractor {
                         if (resourceManager.getProperty("resourcesPath") != null) {
                             System.out.println("Building LM for the " + targetLang + " language...");
                             System.out.println("Corpus used: " + resourceManager.getProperty(targetLang + ".corpus"));
+                            String outputPath = resourceManager.getProperty("resourcesPath") + File.separator + this.targetLang + File.separator + sourceLang + "_lm.lm";
                             String[] args = new String[]{
                                 resourceManager.getProperty("tools.ngram.path") + File.separator + "ngram-count",
                                 "-order",
@@ -560,16 +564,13 @@ public class WordLevelFeatureExtractor {
                                 "-text",
                                 resourceManager.getProperty(targetLang + ".corpus"),
                                 "-lm",
-                                resourceManager.getProperty("resourcesPath")
-                                + File.separator + targetLang + "_lm.lm"};
+                                outputPath};
                             try {
                                 Process process = Runtime.getRuntime().exec(args);
                                 process.waitFor();
                                 resourceManager.setProperty(targetLang + ".lm",
-                                        resourceManager.getProperty("resourcesPath")
-                                        + File.separator + targetLang + "_lm.lm");
-                                System.out.println("LM successfully built! Saved at: " + resourceManager.getProperty("resourcesPath")
-                                        + File.separator + targetLang + "_lm.lm");
+                                        outputPath);
+                                System.out.println("LM successfully built! Saved at: " + outputPath);
                             } catch (IOException e) {
                                 System.out.println("Error running SRILM");
                                 e.printStackTrace();
@@ -597,6 +598,7 @@ public class WordLevelFeatureExtractor {
                         if (resourceManager.getProperty("resourcesPath") != null) {
                             System.out.println("Building NGRAM file for the " + sourceLang + " language...");
                             System.out.println("Corpus used: " + resourceManager.getProperty(sourceLang + ".corpus"));
+                            String rawNgramFile = resourceManager.getProperty("resourcesPath") + File.separator + sourceLang + File.separator + sourceLang + "_ngram.ngram";
                             String[] args = new String[]{
                                 resourceManager.getProperty("tools.ngram.path") + File.separator + "ngram-count",
                                 "-order",
@@ -604,17 +606,15 @@ public class WordLevelFeatureExtractor {
                                 "-text",
                                 resourceManager.getProperty(sourceLang + ".corpus"),
                                 "-write",
-                                resourceManager.getProperty("resourcesPath")
-                                + File.separator + sourceLang + "_ngram.ngram"};
+                                rawNgramFile};
                             try {
                                 Process process = Runtime.getRuntime().exec(args);
                                 process.waitFor();
 
-                                String spath = resourceManager.getProperty("resourcesPath") + "/" + sourceLang + "_ngram.ngram";
-                                NGramSorter.run(spath, 4, Integer.parseInt(resourceManager.getProperty("ngramsize")), 2, spath);
+                                NGramSorter.run(rawNgramFile, 4, Integer.parseInt(resourceManager.getProperty("ngramsize")), 2, rawNgramFile);
 
-                                resourceManager.setProperty(sourceLang + ".ngram", spath + ".clean");
-                                System.out.println("NGRAM successfully built! Saved at: " + spath + ".clean");
+                                resourceManager.setProperty(sourceLang + ".ngram", rawNgramFile + ".clean");
+                                System.out.println("NGRAM successfully built! Saved at: " + rawNgramFile + ".clean");
                             } catch (IOException e) {
                                 System.out.println("Error running SRILM");
                                 e.printStackTrace();
@@ -640,6 +640,7 @@ public class WordLevelFeatureExtractor {
                         if (resourceManager.getProperty("resourcesPath") != null) {
                             System.out.println("Building NGRAM file for the " + targetLang + " language...");
                             System.out.println("Corpus used: " + resourceManager.getProperty(targetLang + ".corpus"));
+                            String rawNgramFile = resourceManager.getProperty("resourcesPath") + File.separator + targetLang + File.separator + targetLang + "_ngram.ngram";
                             String[] args = new String[]{
                                 resourceManager.getProperty("tools.ngram.path") + File.separator + "ngram-count",
                                 "-order",
@@ -647,17 +648,15 @@ public class WordLevelFeatureExtractor {
                                 "-text",
                                 resourceManager.getProperty(targetLang + ".corpus"),
                                 "-write",
-                                resourceManager.getProperty("resourcesPath")
-                                + File.separator + targetLang + "_ngram.ngram"};
+                                rawNgramFile};
                             try {
                                 Process process = Runtime.getRuntime().exec(args);
                                 process.waitFor();
 
-                                String spath = resourceManager.getProperty("resourcesPath") + File.separator + targetLang + "_ngram.ngram";
-                                NGramSorter.run(spath, 4, Integer.parseInt(resourceManager.getProperty("ngramsize")), 2, spath);
+                                NGramSorter.run(rawNgramFile, 4, Integer.parseInt(resourceManager.getProperty("ngramsize")), 2, rawNgramFile);
 
-                                resourceManager.setProperty(targetLang + ".ngram", spath + ".clean");
-                                System.out.println("NGRAM successfully built! Saved at: " + spath + ".clean");
+                                resourceManager.setProperty(targetLang + ".ngram", rawNgramFile + ".clean");
+                                System.out.println("NGRAM successfully built! Saved at: " + rawNgramFile + ".clean");
                             } catch (IOException e) {
                                 System.out.println("Error running SRILM");
                                 e.printStackTrace();
