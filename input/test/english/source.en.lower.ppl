@@ -1,0 +1,42 @@
+mass slaughter 13 , personal level
+1 sentences, 6 words, 0 OOVs
+0 zeroprobs, logprob= -28.1011 ppl= 10338.3 ppl1= 48252.8
+
+peter englund’s intense and bighearted new book, “the beauty and the sorrow: an intimate history of the first world war,” begins with a long dramatis personae of the sort that can make your heart sink.
+1 sentences, 35 words, 8 OOVs
+0 zeroprobs, logprob= -73.8634 ppl= 434.49 ppl1= 544.106
+
+mr. englund is a swedish historian and journalist.
+1 sentences, 8 words, 3 OOVs
+0 zeroprobs, logprob= -16.586 ppl= 581.211 ppl1= 2075.87
+
+he is also the new permanent secretary of the swedish academy, which awards the nobel prize in literature.
+1 sentences, 18 words, 3 OOVs
+0 zeroprobs, logprob= -44.2285 ppl= 581.137 ppl1= 888.308
+
+what he has written here is an unusual book, one he describes, not inaccurately, as “a work of anti-history.”
+1 sentences, 19 words, 4 OOVs
+0 zeroprobs, logprob= -43.565 ppl= 528.219 ppl1= 802.296
+
+it’s not so much a book about what happened, he explains, as “a book about what it was like.” it’s about “feelings, impressions, experiences and moods.”
+1 sentences, 26 words, 8 OOVs
+0 zeroprobs, logprob= -40.223 ppl= 130.918 ppl1= 171.637
+
+“the beauty and the sorrow” threads together the wartime experiences of 20 more or less unremarkable men and women, on both sides of the war, from schoolgirls and botanists to mountain climbers, doctors, ambulance drivers and clerks.
+1 sentences, 37 words, 5 OOVs
+0 zeroprobs, logprob= -102.982 ppl= 1320.25 ppl1= 1652.64
+
+a few of these people will become heroes.
+1 sentences, 8 words, 0 OOVs
+0 zeroprobs, logprob= -23.0881 ppl= 367.578 ppl1= 769.163
+
+mr. englund’s book is a deviation from standard history books.
+1 sentences, 10 words, 2 OOVs
+0 zeroprobs, logprob= -28.6386 ppl= 1520.8 ppl1= 3800.41
+
+it is a corrective too to the notion that world war i was only about the dire trench warfare on the western front.
+1 sentences, 23 words, 1 OOVs
+0 zeroprobs, logprob= -66.9971 ppl= 818.305 ppl1= 1109.99
+
+file C:\GHPaetzold\quest\quest\input\test\english\source.en.lower: 10 sentences, 190 words, 34 OOVs
+0 zeroprobs, logprob= -468.273 ppl= 662.093 ppl1= 1004.03
