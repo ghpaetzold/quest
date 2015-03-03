@@ -1,20 +1,5 @@
 *.class
-
-# Netbeans config files
-built-jar.properties
-project.properties
-
-# Package Files #
 *.jar
-*.war
-*.ear
-
-# MacOS temp files
-.DS_Store
-.DS_Store?
-
-# Python bytecode
-*.pyc
-/nbproject/private/
 /build/
 /dist/
+/lib/
