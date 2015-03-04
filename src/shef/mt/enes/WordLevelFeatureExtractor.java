@@ -10,9 +10,6 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.HashSet;
-import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.apache.commons.cli.CommandLine;
@@ -27,7 +24,6 @@ import shef.mt.features.util.WordLevelFeatureManager;
 import shef.mt.tools.MissingResourceGenerator;
 import shef.mt.tools.ResourceProcessor;
 import shef.mt.tools.WordLevelProcessorFactory;
-import shef.mt.util.NGramSorter;
 import shef.mt.util.PropertiesManager;
 
 /**

@@ -46,7 +46,7 @@ public class WordLevelFeatureManager extends FeatureManager {
                 try {
                     f.run(source, target);
                     String[] values = f.getValues();
-                    for (int i = 1; i < values.length; i++) {
+                    for (int i = 0; i < values.length; i++) {
                         output[i] += values[i] + '\t';
                     }
                 } catch (Exception e) {
