@@ -14,17 +14,14 @@ import edu.stanford.nlp.pipeline.POSTaggerAnnotator;
 import edu.stanford.nlp.pipeline.ParserAnnotator;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.pipeline.TokenizerAnnotator;
-import edu.stanford.nlp.pipeline.WordsToSentencesAnnotator;
-import edu.stanford.nlp.process.PTBTokenizer;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations.CollapsedCCProcessedDependenciesAnnotation;
 import edu.stanford.nlp.semgraph.SemanticGraphEdge;
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.trees.TreeCoreAnnotations;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.StringUtils;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Properties;
 import shef.mt.features.util.Sentence;
@@ -37,7 +34,15 @@ public class ParsingProcessor extends ResourceProcessor {
     private POSTaggerAnnotator tagger;
     private ParserAnnotator parser;
 
-    public ParsingProcessor(String lang, String pm, String dm) {
+    private boolean requiresPOSTags;
+    private boolean requiresDepCounts;
+
+    public ParsingProcessor(String lang, String pm, String dm, HashSet<String> requirements) {
+        //Store required resources:
+        this.requiresPOSTags = requirements.contains("postags");
+        this.requiresDepCounts = requirements.contains("depcounts");
+
+        //Create model path objects:
         String posModel = null;
         String depModel = null;
 
@@ -71,20 +76,47 @@ public class ParsingProcessor extends ResourceProcessor {
 
         //Create base properties:
         Properties props = new Properties();
-        props.setProperty("annotators", "tokenize, ssplit, pos, parse");
+        if (this.requiresDepCounts) {
+            props.setProperty("annotators", "tokenize, ssplit, pos, parse");
+        } else {
+            props.setProperty("annotators", "tokenize, ssplit, pos");
+        }
 
         //Create base pipeline:
         pipeline = new StanfordCoreNLP(props);
 
-        //Create pipeline objects:
-        tokenizer = new TokenizerAnnotator(true, TokenizerAnnotator.TokenizerType.Whitespace);
-        tagger = new POSTaggerAnnotator(posModel, false);
-        parser = new ParserAnnotator(depModel, false, 300, StringUtils.EMPTY_STRING_ARRAY);
+        try {
+            //Create pipeline object:
+            tokenizer = new TokenizerAnnotator(true, TokenizerAnnotator.TokenizerType.Whitespace);
 
-        //Add objects to the pipeline:
-        pipeline.addAnnotator(tokenizer);
-        pipeline.addAnnotator(tagger);
-        pipeline.addAnnotator(parser);
+            //Add objects to the pipeline:
+            pipeline.addAnnotator(tokenizer);
+        } catch (Exception ex) {
+            System.out.println("ERROR: Problem while creating Stanford tokenizer.");
+        }
+
+        try {
+            //Create pipeline object:
+            tagger = new POSTaggerAnnotator(posModel, false);
+
+            //Add object to the pipeline:
+            pipeline.addAnnotator(tagger);
+        } catch (Exception ex) {
+            System.out.println("ERROR: Problem while creating Stanford POS tagger. Please review the model paths and check for library availability.");
+        }
+
+        //If dependency counts are required:
+        if (this.requiresDepCounts) {
+            try {
+                //Create pipeline object:
+                parser = new ParserAnnotator(depModel, false, 300, StringUtils.EMPTY_STRING_ARRAY);
+
+                //Add object to the pipeline:
+                pipeline.addAnnotator(parser);
+            } catch (Exception ex) {
+                System.out.println("ERROR: Problem while creating Stanford dependency parser. Please review the model paths and check for library availability.");
+            }
+        }
     }
 
     @Override
@@ -110,31 +142,40 @@ public class ParsingProcessor extends ResourceProcessor {
 
             //Add tokens to resulting POS tag list:
             for (CoreLabel token : tokens) {
+                String[] fragments = new String[]{token.originalText()};
+                if (token.originalText().contains(" ")) {
+                    fragments = token.originalText().split(" ");
+                }
                 String pos = token.get(PartOfSpeechAnnotation.class);
-                POSData.add(pos);
+                for (String fragment : fragments) {
+                    POSData.add(pos);
+                }
             }
 
-            //Get dependency relations:
-            SemanticGraph dependencies = sentence.get(CollapsedCCProcessedDependenciesAnnotation.class);
-            List<SemanticGraphEdge> deps = dependencies.edgeListSorted();
+            //Check for dependency parsing requirement:
+            if (this.requiresDepCounts) {
+                //Get dependency relations:
+                SemanticGraph dependencies = sentence.get(CollapsedCCProcessedDependenciesAnnotation.class);
+                List<SemanticGraphEdge> deps = dependencies.edgeListSorted();
 
-            //For each edge, add 1 to occurrences of source and target indexes:
-            for (SemanticGraphEdge sge : deps) {
-                int sourceIndex = shift + sge.getSource().index() - 1;
-                int targetIndex = shift + sge.getTarget().index() - 1;
-                if (depData.get(sourceIndex) == null) {
-                    depData.put(sourceIndex, 1);
-                } else {
-                    depData.put(sourceIndex, depData.get(sourceIndex) + 1);
-                }
-                if (depData.get(targetIndex) == null) {
-                    depData.put(targetIndex, 1);
-                } else {
-                    depData.put(targetIndex, depData.get(targetIndex) + 1);
-                }
+                //For each edge, add 1 to occurrences of source and target indexes:
+                for (SemanticGraphEdge sge : deps) {
+                    int sourceIndex = shift + sge.getSource().index() - 1;
+                    int targetIndex = shift + sge.getTarget().index() - 1;
+                    if (depData.get(sourceIndex) == null) {
+                        depData.put(sourceIndex, 1);
+                    } else {
+                        depData.put(sourceIndex, depData.get(sourceIndex) + 1);
+                    }
+                    if (depData.get(targetIndex) == null) {
+                        depData.put(targetIndex, 1);
+                    } else {
+                        depData.put(targetIndex, depData.get(targetIndex) + 1);
+                    }
 
-                //Increase shift:
-                shift += tokens.size();
+                    //Increase shift:
+                    shift += tokens.size();
+                }
             }
         }
 

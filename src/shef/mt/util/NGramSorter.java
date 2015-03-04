@@ -38,7 +38,7 @@ public class NGramSorter {
             freqs[i] = new ArrayList();
         }
         cutOffs = new int[nSize][sliceNo];
-        System.out.println("Sorting ngrams ...");
+//        System.out.println("Sorting ngrams ...");
         long start = System.currentTimeMillis();
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(corpus), "utf-8"));
@@ -77,7 +77,7 @@ public class NGramSorter {
             int size = freqs[i].size() - 1;
 
             for (int j = 0; j < sliceNo; j++) {
-                System.out.println("i=" + i + "j=" + j + " size=" + size + " " + (j + 1) * size / sliceNo + " " + freqs[i].get((j + 1) * size / sliceNo));
+//                System.out.println("i=" + i + "j=" + j + " size=" + size + " " + (j + 1) * size / sliceNo + " " + freqs[i].get((j + 1) * size / sliceNo));
                 cutOffs[i][j] = ((Integer) freqs[i].get((int) Math.floor((j + 1) * size / sliceNo))).intValue();
             }
         }
@@ -89,7 +89,7 @@ public class NGramSorter {
             for (int i = 0; i < nSize; i++) {
                 bwOut.write(i + "-gram\t");
                 for (int val = 0; val < sliceNo; val++) {
-                    System.out.println("i=" + (i + 1) + " val=" + val + " " + cutOffs[i][val] + "\t");
+//                    System.out.println("i=" + (i + 1) + " val=" + val + " " + cutOffs[i][val] + "\t");
                     bwOut.write(cutOffs[i][val] + "\t");
                 }
                 bwOut.write("\r\n");

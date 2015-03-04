@@ -28,8 +28,6 @@ import shef.mt.features.util.FeatureManager;
 import org.apache.commons.cli.*;
 
 import java.io.*;
-import java.lang.Runtime;
-import shef.mt.tools.NGramExecIRSTLM;
 import shef.mt.tools.NgramCountProcessor;
 import shef.mt.util.NGramSorter;
 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features>
+	<feature index="WCE1001" description="" class="shef.mt.features.impl.wce.WordLevelFeature1001"></feature>
+	<feature index="WCE1002" description="" class="shef.mt.features.impl.wce.WordLevelFeature1002"></feature>
+	<feature index="WCE1003" description="" class="shef.mt.features.impl.wce.WordLevelFeature1003"></feature>
+	<feature index="WCE1004" description="" class="shef.mt.features.impl.wce.WordLevelFeature1004"></feature>
+	<feature index="WCE1005" description="" class="shef.mt.features.impl.wce.WordLevelFeature1005"></feature>
+	<feature index="WCE1006" description="" class="shef.mt.features.impl.wce.WordLevelFeature1006"></feature>
+	<feature index="WCE1007" description="" class="shef.mt.features.impl.wce.WordLevelFeature1007"></feature>
+	<feature index="WCE1008" description="" class="shef.mt.features.impl.wce.WordLevelFeature1008"></feature>
+	<feature index="WCE1009" description="" class="shef.mt.features.impl.wce.WordLevelFeature1009"></feature>
+	<feature index="WCE1010" description="" class="shef.mt.features.impl.wce.WordLevelFeature1010"></feature>
+	<feature index="WCE1011" description="" class="shef.mt.features.impl.wce.WordLevelFeature1011"></feature>
+	<feature index="WCE1012" description="" class="shef.mt.features.impl.wce.WordLevelFeature1012"></feature>
+	<feature index="WCE1013" description="" class="shef.mt.features.impl.wce.WordLevelFeature1013"></feature>
+	<feature index="WCE1014" description="" class="shef.mt.features.impl.wce.WordLevelFeature1014"></feature>
+	<feature index="WCE1015" description="" class="shef.mt.features.impl.wce.WordLevelFeature1015"></feature>
+	<feature index="WCE1016" description="" class="shef.mt.features.impl.wce.WordLevelFeature1016"></feature>
+	<feature index="WCE1017" description="" class="shef.mt.features.impl.wce.WordLevelFeature1017"></feature>
+	<feature index="WCE1018" description="" class="shef.mt.features.impl.wce.WordLevelFeature1018"></feature>
+	<feature index="WCE1019" description="" class="shef.mt.features.impl.wce.WordLevelFeature1019"></feature>
+	<feature index="WCE1020" description="" class="shef.mt.features.impl.wce.WordLevelFeature1020"></feature>
+	<feature index="WCE1021" description="" class="shef.mt.features.impl.wce.WordLevelFeature1021"></feature>
+	<feature index="WCE1022" description="" class="shef.mt.features.impl.wce.WordLevelFeature1022"></feature>
+	<feature index="WCE1023" description="" class="shef.mt.features.impl.wce.WordLevelFeature1023"></feature>
+	<feature index="WCE1024" description="" class="shef.mt.features.impl.wce.WordLevelFeature1024"></feature>
+	<feature index="WCE1025" description="" class="shef.mt.features.impl.wce.WordLevelFeature1025"></feature>
+	<feature index="WCE1026" description="" class="shef.mt.features.impl.wce.WordLevelFeature1026"></feature>
+	<feature index="WCE1028" description="" class="shef.mt.features.impl.wce.WordLevelFeature1028"></feature>
+</features>

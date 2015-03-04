@@ -25,6 +25,13 @@ public class WordLevelFeature1016 extends WordLevelFeature{
         //Get pos tags or target sentence:
         ArrayList<String> targetPOSTags = (ArrayList<String>) target.getValue("postags");
         
+        String aux = "";
+        for(String token:tokens){
+            aux += token + "-";
+        }
+        System.out.println("Tokens: " + aux);
+        System.out.println("Tag tokens: " + targetPOSTags);
+        
         //Get POS tags of each target word:
         for(int i=0; i<tokens.length; i++){
             String value = this.getIdentifier()+'='+targetPOSTags.get(i);
