@@ -35,6 +35,9 @@ public class MissingResourceGenerator {
 
         //Produce missing ngram count files, if necessary:
         this.produceMissingNgramCounts(required);
+
+        //Produce missing pos ngram count files, if necessary:
+        this.produceMissingPOSNgramCounts(required);
     }
 
     private void runFastAlign(String inputPath, String outputPath) {
@@ -287,6 +290,52 @@ public class MissingResourceGenerator {
                     }
                 } else {
                     System.out.println("Missing resource " + this.wlfe.getTargetLang() + ".ngram and SRILM is not available!");
+                }
+            }
+        }
+    }
+
+    private void produceMissingPOSNgramCounts(HashSet<String> required) {
+        //Check if source NGRAM file is missing:
+        if (required.contains("posngramcount")) {
+            //Check if target NGRAM file is missing:
+            if (this.wlfe.getResourceManager().getProperty(this.wlfe.getTargetLang() + ".posngram") == null) {
+                if (this.wlfe.getResourceManager().getProperty("tools.ngram.path") != null) {
+                    if (this.wlfe.getResourceManager().getProperty(this.wlfe.getTargetLang() + ".poscorpus") != null) {
+                        if (this.wlfe.getResourceManager().getProperty("resourcesPath") != null) {
+                            System.out.println("Producing resource: " + this.wlfe.getTargetLang() + ".posngram");
+                            String rawNgramFile = this.wlfe.getResourceManager().getProperty("resourcesPath") + File.separator + this.wlfe.getTargetLang() + File.separator + this.wlfe.getTargetLang() + "_posngram.posngram";
+                            String[] args = new String[]{
+                                this.wlfe.getResourceManager().getProperty("tools.ngram.path") + File.separator + "ngram-count",
+                                "-order",
+                                this.wlfe.getResourceManager().getProperty("ngramsize"),
+                                "-text",
+                                this.wlfe.getResourceManager().getProperty(this.wlfe.getTargetLang() + ".poscorpus"),
+                                "-write",
+                                rawNgramFile};
+                            try {
+                                Process process = Runtime.getRuntime().exec(args);
+                                process.waitFor();
+
+                                NGramSorter.run(rawNgramFile, 4, Integer.parseInt(this.wlfe.getResourceManager().getProperty("ngramsize")), 2, rawNgramFile);
+
+                                this.wlfe.getResourceManager().setProperty(this.wlfe.getTargetLang() + ".posngram", rawNgramFile + ".clean");
+                                System.out.println("Resource " + this.wlfe.getTargetLang() + ".posngram saved at: " + rawNgramFile + ".clean");
+                            } catch (IOException e) {
+                                System.out.println("ERROR: Problem while running SRILM.");
+                                e.printStackTrace();
+                            } catch (InterruptedException e) {
+                                System.out.println("ERROR: SRILM could not finish file creation.");
+                                e.printStackTrace();
+                            }
+                        } else {
+                            System.out.println("Missing resource " + this.wlfe.getTargetLang() + ".posngram and resources path is not defined!");
+                        }
+                    } else {
+                        System.out.println("Missing resource " + this.wlfe.getTargetLang() + ".posngram and corpus is not available!");
+                    }
+                } else {
+                    System.out.println("Missing resource " + this.wlfe.getTargetLang() + ".posngram and SRILM is not available!");
                 }
             }
         }

@@ -1,7 +1,6 @@
 package shef.mt.features.impl.wce;
 
 import edu.stanford.nlp.util.ArrayUtils;
-import java.util.HashMap;
 import shef.mt.features.impl.WordLevelFeature;
 import shef.mt.features.util.Sentence;
 import shef.mt.tools.LanguageModel;

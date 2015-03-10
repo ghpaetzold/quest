@@ -62,6 +62,14 @@ public class WordLevelProcessorFactory {
             sourceProcessors.add(ngramProcessorSource);
             targetProcessors.add(ngramProcessorTarget);
         }
+        
+        if (requirements.contains("posngramcount")) {
+            //Run SRILM on ngram count files:
+            POSNgramCountProcessor ngramProcessorTarget = this.getPOSNgramProcessor();
+
+            //Add them to processor vectors:
+            targetProcessors.add(ngramProcessorTarget);
+        }
 
         if (requirements.contains("logprob") || requirements.contains("ppl") || requirements.contains("ppl1")) {
             //Run SRILM on language models:
@@ -239,6 +247,17 @@ public class WordLevelProcessorFactory {
         //Return handlers:
         return result;
     }
+    
+    private LanguageModel getPOSNGramModel() {
+        //Create ngram file processors:
+        NGramProcessor targetNgp = new NGramProcessor(this.wlfe.getResourceManager().getString(this.wlfe.getTargetLang() + ".posngram"));
+
+        //Generate resulting handlers:
+        LanguageModel result = targetNgp.run();
+
+        //Return handlers:
+        return result;
+    }
 
     private AlignmentProcessor getAlignmentProcessor() {
         //Register resource:
@@ -268,5 +287,19 @@ public class WordLevelProcessorFactory {
      */
     public ResourceProcessor[][] getResourceProcessors() {
         return resourceProcessors;
+    }
+
+    private POSNgramCountProcessor getPOSNgramProcessor() {
+        //Register resource:
+        ResourceManager.registerResource("posngramcount");
+
+        //Get target POS Language Models:
+        LanguageModel ngramModelTarget = this.getPOSNGramModel();
+
+        //Create source and target processors:
+        POSNgramCountProcessor targetProcessor = new POSNgramCountProcessor(ngramModelTarget);
+
+        //Return processors:
+        return targetProcessor;
     }
 }

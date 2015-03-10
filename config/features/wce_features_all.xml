@@ -29,4 +29,5 @@
 	<feature index="WCE1027" description="" class="shef.mt.features.impl.wce.WordLevelFeature1027"></feature>
 	<feature index="WCE1028" description="" class="shef.mt.features.impl.wce.WordLevelFeature1028"></feature>
 	<feature index="WCE1029" description="" class="shef.mt.features.impl.wce.WordLevelFeature1029"></feature>
+	<feature index="WCE1029" description="" class="shef.mt.features.impl.wce.WordLevelFeature1030"></feature>
 </features>

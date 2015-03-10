@@ -124,6 +124,9 @@ public class ParsingProcessor extends ResourceProcessor {
         //Create resource objects:
         ArrayList<String> POSData = new ArrayList<>();
         HashMap<Integer, Integer> depData = new HashMap<>();
+        
+        //Get sentences' tokens:
+        String[] sentenceTokens = s.getTokens();
 
         //Create content object:
         Annotation document = new Annotation(s.getText());
@@ -136,6 +139,10 @@ public class ParsingProcessor extends ResourceProcessor {
 
         //Get sentence fragments:
         List<CoreMap> sentences = document.get(SentencesAnnotation.class);
+        
+        //Initialize token buffer and index:
+        String buffer = "";
+        int index = 0;
         for (CoreMap sentence : sentences) {
             //Get tokens from sentence fragment:
             List<CoreLabel> tokens = sentence.get(TokensAnnotation.class);
@@ -148,7 +155,12 @@ public class ParsingProcessor extends ResourceProcessor {
                 }
                 String pos = token.get(PartOfSpeechAnnotation.class);
                 for (String fragment : fragments) {
-                    POSData.add(pos);
+                    buffer += fragment;
+                    if(buffer.trim().equals(sentenceTokens[index])){
+                        POSData.add(pos);
+                        index += 1;
+                        buffer = "";
+                    }
                 }
             }
 

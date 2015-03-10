@@ -1,5 +1,5 @@
 El sacrificio 13.3423 , nivel personal
-Peter Englund » la intensa y bighearted nuevo libro, “ la belleza y la tristeza: Una historia íntima de la primera guerra mundial, "comienza con una larga dramatis personae del tipo que puede hacer que su corazón se hunden.
+Peter Englund » la intensa y bighearted nuevo libro, “ la belleza y la tristeza: Una historia íntima de la primera guerra mundial , "comienza con una larga dramatis personae del tipo que puede hacer que su corazón se hunden .
 Señor Englund es un historiador y periodista sueco.
 También está el nuevo secretario permanente de la Academia Sueca, que otorga el premio Nobel de literatura.
 Lo que él ha escrito aquí es una inusual, un libro que describe, no de forma poco precisa, como “ un trabajo de anti-historia ".
