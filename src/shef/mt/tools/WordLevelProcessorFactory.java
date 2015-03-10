@@ -92,6 +92,14 @@ public class WordLevelProcessorFactory {
             //Add them to processor vectors:
             targetProcessors.add(senseProcessor);
         }
+        
+        if (requirements.contains("reftranslation")) {
+            //Get reference translations processor:
+            RefTranslationProcessor refTranslationProcessor = this.getRefTranslationProcessor();
+
+            //Add them to processor vectors:
+            targetProcessors.add(refTranslationProcessor);
+        }
 
         //Transform array lists in vectors:
         ResourceProcessor[] sourceProcessorVector = new ResourceProcessor[sourceProcessors.size()];
@@ -233,7 +241,7 @@ public class WordLevelProcessorFactory {
     }
 
     private AlignmentProcessor getAlignmentProcessor() {
-        //Register feature:
+        //Register resource:
         ResourceManager.registerResource("alignments");
 
         //Get path to alignments file:
@@ -242,6 +250,18 @@ public class WordLevelProcessorFactory {
         //Return AlignmentProcessor:
         return new AlignmentProcessor(alignmentsPath);
     }
+    
+    
+    private RefTranslationProcessor getRefTranslationProcessor() {
+        //Register resource:
+        ResourceManager.registerResource("reftranslation");
+        
+        //Get reference translations path:
+        String refTranslationsPath = this.wlfe.getResourceManager().getProperty(wlfe.getTargetLang()+".refTranslations");
+        
+        //Return new reference translation processor:
+        return new RefTranslationProcessor(refTranslationsPath);
+    }
 
     /**
      * @return the resourceProcessors
@@ -249,5 +269,4 @@ public class WordLevelProcessorFactory {
     public ResourceProcessor[][] getResourceProcessors() {
         return resourceProcessors;
     }
-
 }
