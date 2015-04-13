@@ -62,7 +62,11 @@ Creating a Configuration File:
 			- If left blank, QuEst will try to call your SRILM installation to automatically generate the file and place it into "<resourcesPath>/<source_language>/<source_language>_ngram.ngram.clean".
 		<source_language>.stopwords:
 			- Path to a file of stop words for <source_language>.
-			
+		<source_language>.translationProbs:
+			- Translation probabilities between words in source and target languages.
+			- The file must be produced by fast_align through the following command:
+				fast_align -i <parallel_data> -v -d -o <translation_probabilities>
+				
 		<target_language>.corpus:
 			- Path to a corpus for <source_language>
 		<target_language>.POSModel:
@@ -79,6 +83,9 @@ Creating a Configuration File:
 			- If left blank, QuEst will try to call your SRILM installation to automatically generate the file and place it into "<resourcesPath>/<source_language>/<source_language>_ngram.ngram.clean".
 		<target_language>.stopwords:
 			- Path to a file of stop words for <source_language>.
+		<target_language>.refTranslations:
+			- Path to a file containing reference translations in the target language.
+			- The file must have the same number of lines as the target input file, and must contain one reference translation per line.
 			
 		alignments.file:
 			- Path to a file of alignments between the input source and target files.
