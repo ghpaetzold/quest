@@ -64,10 +64,13 @@ public class WordLevelProcessorFactory {
 
         if (requirements.contains("posngramcount")) {
             //Run SRILM on ngram count files:
-            POSNgramCountProcessor ngramProcessorTarget = this.getPOSNgramProcessor();
+            POSNgramCountProcessor[] ngramProcessors = this.getPOSNgramProcessors();
+            POSNgramCountProcessor sourceNgramProcessor = ngramProcessors[0];
+            POSNgramCountProcessor targetNgramProcessor = ngramProcessors[1];
 
             //Add them to processor vectors:
-            targetProcessors.add(ngramProcessorTarget);
+            sourceProcessors.add(sourceNgramProcessor);
+            targetProcessors.add(targetNgramProcessor);
         }
 
         if (requirements.contains("logprob") || requirements.contains("ppl") || requirements.contains("ppl1")) {
@@ -271,12 +274,13 @@ public class WordLevelProcessorFactory {
         return result;
     }
 
-    private LanguageModel getPOSNGramModel() {
+    private LanguageModel[] getPOSNGramModels() {
         //Create ngram file processors:
+        NGramProcessor sourceNgp = new NGramProcessor(this.wlfe.getResourceManager().getString(this.wlfe.getSourceLang() + ".posngram"));
         NGramProcessor targetNgp = new NGramProcessor(this.wlfe.getResourceManager().getString(this.wlfe.getTargetLang() + ".posngram"));
-
+        
         //Generate resulting handlers:
-        LanguageModel result = targetNgp.run();
+        LanguageModel[] result = new LanguageModel[]{sourceNgp.run(), targetNgp.run()};
 
         //Return handlers:
         return result;
@@ -311,18 +315,23 @@ public class WordLevelProcessorFactory {
         return resourceProcessors;
     }
 
-    private POSNgramCountProcessor getPOSNgramProcessor() {
+    private POSNgramCountProcessor[] getPOSNgramProcessors() {
         //Register resource:
         ResourceManager.registerResource("posngramcount");
 
         //Get target POS Language Models:
-        LanguageModel ngramModelTarget = this.getPOSNGramModel();
+        LanguageModel[] POSNgramModels = this.getPOSNGramModels();
+        LanguageModel ngramModelSource = POSNgramModels[0];
+        LanguageModel ngramModelTarget = POSNgramModels[1];
 
         //Create source and target processors:
+        
+        POSNgramCountProcessor sourceProcessor = new POSNgramCountProcessor(ngramModelSource);
         POSNgramCountProcessor targetProcessor = new POSNgramCountProcessor(ngramModelTarget);
+        POSNgramCountProcessor[] POSNgramProcessors = new POSNgramCountProcessor[]{sourceProcessor, targetProcessor};
 
         //Return processors:
-        return targetProcessor;
+        return POSNgramProcessors;
     }
 
     private WordCountProcessor[] getWordCountProcessors() {

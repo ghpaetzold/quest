@@ -60,6 +60,7 @@ public class NGramProcessor {
                     lineSplit = line.split("\t");
                     //System.out.println(line);
                     lm.addNGram(lineSplit[0], Integer.parseInt(lineSplit[1]));
+//                    System.out.println("T: " + lineSplit[0] + ", F: " + lineSplit[1]);
                     line = br.readLine();
                 }
             }

@@ -21,7 +21,7 @@ public class WordLevelFeature1030 extends WordLevelFeature {
         //Create vector of resulting values:
         String[] result = new String[target.getNoTokens()];
 
-        //Get alignments object:
+        //Get language model object:
         LanguageModel lm = (LanguageModel) target.getValue("posngramcount");
 
         //Ge tokens from target sentence:

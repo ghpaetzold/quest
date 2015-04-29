@@ -1,5 +1,5 @@
-0-gram	4	7	16	93631	
-1-gram	3	5	9	13285	
+0-gram	4	7	16	93767	
+1-gram	3	5	9	13317	
 2-gram	3	4	7	1187	
 3-gram	3	4	6	299	
 mismo tiempo, se	7
@@ -31,12 +31,12 @@ como el s�mbolo	3
 +	3
 proyectos que	6
 pa�s carece	3
-,	90
+,	106
 entre quienes se	3
 El ahorro	5
 -	137
 la financiaci�n	37
-.	78
+.	86
 respaldando a	3
 /	6
 esperar que China	3
@@ -92,7 +92,7 @@ EU son	3
 vez menor	4
 lleva la	3
 vez menos	11
-a	27593
+a	27609
 defensa con	3
 mercados del	5
 e	1297
@@ -101,16 +101,16 @@ p�rdidas para	5
 Israel se	12
 lisa y	4
 los medios a	3
-o	3031
+o	3039
 trav�s del gasto	3
 China meridional	6
 El Brasil ha	3
 <s> Gran	48
 u	74
-personas se	24
+personas se	32
 deficientemente	3
 un pa�s tras otro	3
-y	30386
+y	30450
 urgente necesidad de	3
 no existen	13
 anunciaron que	4
@@ -427,6 +427,7 @@ m�s tiempo	33
 aumentar las capacidades	3
 los recursos de la	3
 de insumos	5
+de la norma libros	8
 necesitar�	31
 gente vive	3
 a saber, la	4
@@ -474,6 +475,7 @@ abusos y	4
 que llevar�a	3
 forma muy	7
 hay lugar	4
+botanists de monta�a climbers,	8
 de Stalin	5
 <s> MUNICH	5
 el ritmo de las	4
@@ -626,7 +628,7 @@ m�s ambiciosa de	3
 empeorar. </s>	5
 pura y	10
 hasta en un	4
-<s> Tambi�n est�	7
+<s> Tambi�n est�	15
 cuando llegue	6
 Secretaria	18
 pesar de que no	5
@@ -745,6 +747,7 @@ autorizar	5
 elijan	6
 regi�n en	14
 se convertir�n	11
+".	18
 en Nigeria	4
 una manera de	31
 misma manera que	22
@@ -830,7 +833,7 @@ Presidente Harry	3
 ser capaz de	10
 es obvio que	3
 p�rdidas	129
-</s>	50832
+</s>	50912
 El mes	19
 a�os y medio. </s>	4
 el clima	43
@@ -842,6 +845,7 @@ expectativas de inflaci�n,	3
 problemas para	8
 palestinos a	5
 pueden responder	3
+se hunden .	8
 m�s tienen	3
 compar�	5
 puesta en	10
@@ -893,6 +897,7 @@ tecnocr�tico	3
 legislativos	7
 En una serie	3
 vagamente	4
+personas se convertir� en	8
 Lago	4
 Tercer Mundo	5
 destituido	6
@@ -941,7 +946,7 @@ internacional, la	10
 procedentes de los	6
 poner un precio a	3
 el manto	4
-otorga	7
+otorga	15
 <s> �A qui�n	4
 de un empresario	3
 est� realmente	4
@@ -953,6 +958,7 @@ la acci�n afirmativa	3
 resolver conflictos	3
 medida las	6
 compensadas	3
+historia �ntima de la	8
 el p�blico y	4
 Desarrollo Econ�mico	5
 insuperables	3
@@ -1088,7 +1094,7 @@ reservas de divisas	27
 pa�ses puedan	3
 2.	7
 menos como	3
-20	128
+20	136
 21	17
 Abraham	12
 22	14
@@ -1359,7 +1365,7 @@ chino por	4
 puede aprovechar	4
 esa teor�a. </s>	3
 Los precios de los	6
-hombres	159
+hombres	167
 formaba parte	3
 han surgido	7
 es la base de	4
@@ -1428,6 +1434,7 @@ el ej�rcito y	6
 que todo	40
 <s> El r�pido crecimiento	4
 regularmente	10
+ocurrido, explica, como �	8
 t�xicos. </s>	3
 deuda externa. </s>	3
 de investigaci�n. </s>	7
@@ -1623,13 +1630,13 @@ En el largo plazo,	6
 de problemas. </s>	3
 ese caso, el	5
 personas y el	4
-El	3946
+El	3954
 Hubo un tiempo	4
 En	4151
 bienestar de	29
 el hijo	5
 "Grupo de	3
-Es	806
+Es	814
 Al Fatah y	3
 G8	9
 sectores en los que	5
@@ -1730,7 +1737,7 @@ se encuentra la	4
 a vender sus	4
 Qaeda. </s>	5
 Il	6
-premio	46
+premio	54
 Pero aun	5
 In	5
 ochenta	22
@@ -1777,7 +1784,7 @@ oposici�n.	10
 del ministro de	5
 Ki	3
 con la aparici�n	5
-de que la	345
+de que la	353
 <s> Nueva	5
 acababan de	3
 puede esperar	20
@@ -1808,7 +1815,7 @@ una nueva direcci�n	3
 batalla por	5
 nada que se	4
 le ayudaron	3
-Lo	419
+Lo	427
 problema es	68
 tribu	3
 La respuesta puede	3
@@ -1854,7 +1861,7 @@ surgi� de la	4
 d�ficits en cuenta corriente	4
 Ni	36
 se lleven	8
-No	1109
+No	1117
 fue a	11
 <s> Los Estados Unidos,	9
 Ministro Tony Blair	6
@@ -1886,6 +1893,7 @@ en todo el mundo	78
 Francia y Espa�a	3
 <s> Inclusive	3
 La pol�tica monetaria se	3
+la terrible guerra	8
 del comienzo	3
 <s> Aunque	258
 autorizaci�n	6
@@ -2095,6 +2103,7 @@ de la Corte	16
 restantes,	3
 no tendr�n	10
 restantes.	6
+guerra, de las estudiantes	8
 Yo	50
 condiciones para los	4
 ha ocurrido en	8
@@ -2316,7 +2325,7 @@ producto del	5
 libre de derechos	6
 lugares de	14
 violenta.	3
-de	93631
+de	93767
 a esta	55
 duplicado	9
 di	10
@@ -2346,15 +2355,15 @@ enfermedades, la	3
 <s> Nadie sabe	3
 <s> Hace cuatro	7
 en ellos. </s>	8
-el	32738
+el	32770
 conoc�	6
 teniendo en cuenta que	5
-en	34421
+en	34437
 casos.	17
 una trampa	12
 <s> De ese modo,	6
 semejanza	5
-es	9314
+es	9346
 casos,	91
 elecciones libres y	16
 tambi�n sus	3
@@ -2398,7 +2407,7 @@ un crecimiento m�s lento,	3
 porque el	91
 foro	17
 porque en	12
-ha	4430
+ha	4438
 he	61
 decreciente	10
 de propiedad intelectual	5
@@ -2474,7 +2483,7 @@ dif�cil que el	3
 dif�cil que en	3
 Gaza se	3
 de la cuenta de	6
-la	51687
+la	51783
 los atentados terroristas	6
 mundial y los	5
 reafirmaci�n	5
@@ -2485,7 +2494,7 @@ el conflicto palestino-israel�	3
 lo estaba	5
 trabajar con	16
 en la segunda	29
-lo	5314
+lo	5330
 de euros a	4
 explicar su	3
 hace otra cosa que	3
@@ -2529,7 +2538,7 @@ ni	649
 <s> Para los israel�es,	4
 para desempe�ar un	5
 <s> Finalmente, si bien	3
-no	10563
+no	10571
 dignas	3
 del Secretario General	10
 <s> Los grandes	8
@@ -2654,7 +2663,7 @@ en el per�odo	41
 Los riesgos	9
 extorsi�n	3
 un buen ejemplo.	4
-se	13705
+se	13721
 apoyo,	14
 de los posibles	4
 activistas y	4
@@ -2667,7 +2676,7 @@ magnate	6
 de que se	172
 apoyo.	23
 lectura	8
-su	7049
+su	7057
 pueden permitirse el	4
 global sin	4
 Eso, a su vez,	5
@@ -2705,7 +2714,7 @@ de otro,	4
 de otro.	3
 del cintur�n	3
 utop�a	6
-un	14848
+un	14896
 los editores	3
 siete mil millones de	5
 que los balances	3
@@ -2805,7 +2814,7 @@ si se debe	3
 apoyen	10
 cortando	3
 la inmigraci�n de	3
-y los estados	5
+y los estados	13
 choca	5
 ha entrado	7
 recesi�n. </s>	41
@@ -2813,6 +2822,7 @@ a un pa�s	19
 ya hab�an pagado	3
 ha sido con	3
 La habilidad	3
+ambulancias	8
 lejanas.	3
 no constituye una	3
 intervenci�n militar en	5
@@ -3061,6 +3071,7 @@ no deber�a	58
 �Podr�	7
 las instituciones de Bretton	3
 para cultivar	6
+de trincheras en el	8
 oxitocina	4
 ego�smo	4
 reglas m�s	4
@@ -3153,7 +3164,7 @@ ha gastado	4
 gran masa de	3
 a principios de este	6
 de la Agencia Internacional	4
-a la idea de	16
+a la idea de	24
 mayor�a abrumadora	6
 apoyo mayoritario	3
 defender su	6
@@ -3234,6 +3245,7 @@ corrompi�	3
 toda la zona del	7
 en Colombia	5
 mecanismos	113
+de las estudiantes y	8
 fall�	12
 capital, lo	3
 aliviar a	3
@@ -3907,6 +3919,7 @@ pueda ser,	4
 <s> Con la	49
 de estructuras	3
 hasta ahora los	6
+Academia Sueca, que	8
 Grecia, Portugal,	6
 vac�os	8
 se integra	3
@@ -3963,7 +3976,7 @@ contundente	7
 tenido �xito	10
 la campa�a de	14
 la perspectiva de que	9
-es un	675
+es un	683
 elimin�	12
 buena voluntad	16
 otros organismos	8
@@ -4383,6 +4396,7 @@ ellos el	8
 en Georgia	7
 embargo, cualquiera	3
 simplemente un	8
+escrito aqu�	8
 "brecha	3
 <s> Pero esto	36
 hacer algo m�s	4
@@ -4552,6 +4566,7 @@ pol�tica exterior de Obama	3
 se trata de una	29
 y que es	15
 popular	124
+libro que describe,	8
 de entre el	5
 ellos tambi�n	6
 puestos de trabajo en	7
@@ -4883,7 +4898,7 @@ poder a las	4
 no es posible una	5
 a la necesidad	10
 sobre Corea del Norte	4
-se convertir� en	12
+se convertir� en	20
 impulsor	8
 Rumania,	10
 Harvard. </s>	4
@@ -4945,7 +4960,7 @@ de los miembros de	24
 la incapacidad de la	5
 formen parte	4
 <s> Las compa��as	16
-historia	314
+historia	322
 equivalentes a	8
 el caso de que	6
 ha sido bastante	3
@@ -5493,6 +5508,7 @@ nos brinda	5
 reconocer,	3
 de oferta	7
 como dijo	9
+Una historia �ntima de	8
 de que las tasas	5
 necesarias en	8
 pronto la	3
@@ -5509,7 +5525,7 @@ puede determinar la	3
 l�deres y	8
 <s> Estados Unidos tambi�n	3
 <s> Somos	8
-m�s o menos	34
+m�s o menos	42
 la intervenci�n del	14
 libre a	4
 dar marcha	5
@@ -5587,6 +5603,7 @@ esta sea	3
 y en aumento,	3
 arreglar	10
 financieros m�s	5
+<s> El sacrificio 13.3423	8
 mundo en los	5
 Francia, Nicolas Sarkozy, y	3
 impago y	3
@@ -5763,7 +5780,7 @@ impuestos a las	5
 financiar�	3
 m�s profundas en	3
 dise�ar una estrategia	3
-monta�a	5
+monta�a	13
 autobuses	3
 disparidad	7
 detr�s de la crisis	3
@@ -5863,6 +5880,7 @@ a una falta	4
 hacen uso de	5
 de esta crisis	4
 equiparaci�n	3
+libro sobre lo	16
 sesiones de	6
 de seguridad de la	5
 Estados Unidos siguen	5
@@ -6164,6 +6182,7 @@ los desarrollos	3
 base de los	4
 cada uno de ellos	10
 la suficiente rapidez	4
+<s> Se�or Englund	16
 muestran reacios	3
 manufactureras	9
 aumentar a�n m�s	5
@@ -6474,6 +6493,7 @@ ser el	142
 ser en	8
 Los gobiernos en	3
 el salario	13
+Tambi�n est� el	9
 <s> El 11 de	3
 una precondici�n para	3
 pocos incentivos para	4
@@ -6609,6 +6629,7 @@ y otros productos	6
 sus m�sculos	3
 recursos p�blicos	5
 un veh�culo de	3
+Englund es	8
 Winata	5
 cuartel	4
 Ya es tiempo	8
@@ -6813,11 +6834,13 @@ las reformas necesarias para	4
 a ser uno	3
 si Musharraf	3
 los derechos humanos han	6
+� la belleza	16
 izquierdas.	3
 leyes sobre	10
 de Putin,	6
 fortalecido,	4
 ocultar. </s>	4
+mundial ,	9
 como la proliferaci�n	3
 acceso libre	6
 ver�n afectados	4
@@ -6956,6 +6979,7 @@ Arabia Saudita y	12
 las reglas para	3
 guardia de	4
 del futuro. </s>	9
+un historiador y periodista	8
 la confianza. </s>	10
 a dos a�os	4
 eficiencia del	6
@@ -7034,6 +7058,7 @@ su idea de	3
 culminaron	4
 hace una d�cada.	6
 y la construcci�n de	3
+Se�or Englund del	8
 del sue�o	3
 problemas locales	3
 de detener	10
@@ -7133,6 +7158,7 @@ estalla una	3
 general, las	4
 Fatah.	6
 pobres de las	4
+que puede hacer que	8
 literal	5
 de los setenta	5
 aplican las	3
@@ -8557,7 +8583,7 @@ juego del	7
 de inauguraci�n de	3
 moneda d�bil	3
 los fundamentalistas isl�micos	3
-de la guerra,	16
+de la guerra,	24
 preparados para	24
 Turqu�a no	8
 gloria de	3
@@ -8696,7 +8722,7 @@ y la p�rdida de	6
 los indios	9
 y mantener	24
 Internacional en	3
-lados de la	3
+lados de la	11
 seguridad al	3
 un aumento de	72
 global, de	5
@@ -9735,6 +9761,7 @@ forzada	5
 <s> Cuando visit�	4
 monedas se	6
 oto�o de	5
+El sacrificio 13.3423 ,	8
 es testimonio de	4
 Viktor Yushchenko,	3
 previsto. </s>	5
@@ -9805,6 +9832,7 @@ a las crecientes	4
 cumplir	113
 original de	10
 influencia de	51
+trabajo de anti-historia	8
 terapia	13
 sobre las medidas	3
 equitativos	3
@@ -10040,6 +10068,7 @@ el comercio con	4
 los Estados Unidos de	18
 existentes en los	4
 que amenazan la	4
+�ntima	9
 Ahora sabemos	3
 recursos h�dricos	7
 comercia	3
@@ -10139,6 +10168,7 @@ un clima de	7
 Ciertamente la	3
 muertos en	3
 de los intereses en	3
+monta�a climbers, los	8
 la independencia	87
 de sectores	8
 ni�os.	8
@@ -10155,6 +10185,7 @@ los estados nacionales	3
 <s> La presencia de	3
 de deudas	5
 salir del	14
+estaba s�lo sobre la	8
 inversiones necesarias	3
 y la Uni�n Europea,	3
 al menos no	18
@@ -10287,6 +10318,7 @@ un empresario	8
 de la mano con	5
 <s> Tratar	3
 urnas.	7
+la belleza	17
 repercusiones para	3
 de las decisiones que	3
 la Presidenta de	3
@@ -10836,7 +10868,7 @@ certeza de	4
 Mientras que los	11
 Del mismo modo,	18
 en periodos	3
-belleza	5
+belleza	21
 decir algo peor.	6
 <s> Despu�s de todo,	156
 tipos de cambio y,	3
@@ -10890,7 +10922,7 @@ sus problemas. </s>	6
 que invertir	4
 de conversaciones,	4
 para conservar	14
-�l ha	5
+�l ha	13
 un retorno a una	3
 se eligen	3
 realizado	46
@@ -11130,6 +11162,7 @@ de gobierno de los	3
 no porque la	3
 suficientemente grande como para	5
 reconocido que	8
+climbers, los	8
 se apoyan	3
 que al final	7
 y responsable	3
@@ -11533,7 +11566,7 @@ pos de una	3
 productor de	6
 estacionados	3
 reciente y	4
-Lo que	241
+Lo que	249
 y estable	9
 el d�ficit. </s>	5
 elegir a sus	3
@@ -11765,6 +11798,7 @@ los iran�es,	5
 daba por	3
 en 2025	3
 perjudica a los	3
+Sueca, que otorga	8
 crisis en los pa�ses	4
 paz entre	20
 Pero esto no significa	3
@@ -11843,6 +11877,7 @@ un p�blico	6
 de la red	12
 a contribuir a	6
 narcotr�fico,	3
+cabos,	8
 de derechos de emisiones	3
 150.000	6
 obstaculizan	3
@@ -12019,7 +12054,7 @@ euro son	3
 la confianza entre	4
 de atenci�n a	3
 Segunda Guerra Mundial). </s>	3
-occidental. </s>	35
+occidental. </s>	43
 para as� poder	3
 dej� de ser	6
 liquidez,	20
@@ -12291,6 +12326,7 @@ ello dejar de	8
 e indios	3
 sovi�ticos. </s>	6
 que dos tercios	3
+brille hombres y	8
 ped�an	3
 en la econom�a mundial	12
 destruir	44
@@ -12561,6 +12597,7 @@ en Europa. </s>	76
 todo un	7
 los rescates del	3
 decenio, el	4
+impresiones, experiencias y	8
 vigilancia de los	5
 en el siglo XX,	5
 Siempre	29
@@ -12646,6 +12683,7 @@ gana	27
 racional,	4
 racional.	7
 juego con	7
+dolor �	8
 menor. </s>	14
 sido capaces de	9
 gas,	21
@@ -12730,6 +12768,7 @@ Unidos, China,	4
 no s�lo para	28
 de prohibici�n	6
 un sentido	30
+<s> Se�or Englund es	8
 m�s duradera.	3
 aspirantes a	7
 concebidas	3
@@ -12884,6 +12923,7 @@ toda la deuda	3
 mundo en que	3
 a alg�n	3
 desigual	12
+<s> � la	8
 de la OMC.	3
 ha acumulado	4
 la relatividad general	3
@@ -12999,6 +13039,7 @@ los a�os 1990. </s>	8
 de dos a�os.	3
 que culmin� con	3
 conquista	6
+y botanists	8
 pol�ticas en el	6
 una deuda p�blica	4
 la preferencia por	4
@@ -13116,6 +13157,7 @@ a muchos	54
 de vender	7
 habidos	9
 a las importaciones,	3
+un correctivo demasiado	8
 mi punto de	3
 cada vez mayor del	3
 Naciones Unidas sobre	19
@@ -13510,6 +13552,7 @@ del Iraq.	7
 comprometerse a	16
 <s> El tratado de	5
 algunos de los mayores	5
+tipo que puede	8
 que los costos	20
 otra en	3
 debe la	3
@@ -13663,6 +13706,7 @@ En una de	4
 no resueltos de	3
 la noche a la	36
 cuartel general	3
+<s> Se�or Englund del	8
 de energ�a e�lica	4
 dado forma a la	3
 de importante. </s>	3
@@ -14023,6 +14067,7 @@ contar�n	4
 de Bruselas	12
 a trav�s de elecciones	3
 de darle	4
+guerra experiencias de	8
 <s> Con	408
 Gobierno franc�s	3
 y promover el	4
@@ -15075,6 +15120,7 @@ cient�ficos.	7
 aceptar,	3
 <s> Los objetivos	6
 similar de	15
+mujeres, a ambos	8
 aceptar.	5
 pol�tica, y	10
 la costumbre de	3
@@ -15101,6 +15147,7 @@ reglamentaciones. </s>	4
 la limitada	6
 Dijo que	5
 bur�cratas,	3
+bur�cratas.	9
 el peligro de	27
 realizado por el	6
 reformas de mercado y	4
@@ -15293,6 +15340,7 @@ m�viles y	4
 <s> �Es	3
 ciego	5
 gracias a una	9
+tristeza: Una historia �ntima	8
 <s> �De	9
 aumento y	11
 su propio	152
@@ -15912,6 +15960,7 @@ en pa�ses pobres	3
 la escala de	19
 -especialmente	12
 quiebras bancarias.	3
+correctivo demasiado a	8
 como forma de	4
 los acuerdos bilaterales	3
 nacional se	13
@@ -16068,6 +16117,7 @@ en la Uni�n. </s>	3
 los l�mites del poder	3
 habr�a costado	3
 que se trataba	3
+los conductores de ambulancias	8
 enfermedad que	5
 mismo se puede	8
 Junta de Gobernadores	5
@@ -16326,6 +16376,7 @@ profundizaron	3
 coaliciones,	3
 desequilibrios mundiales.	3
 la izquierda y	8
+del tipo que puede	8
 raza,	3
 raras,	3
 la recaudaci�n.	3
@@ -16838,6 +16889,7 @@ la crisis financiera internacional,	3
 requiere de	39
 a nivel mundial. </s>	10
 los EE.UU.�	5
+guerra, de	8
 contra el gobierno	4
 componente	41
 predecir cu�ndo	3
@@ -17145,7 +17197,7 @@ La forma como	3
 llam� la	7
 un proceso que	14
 <s> Le	12
-<s> Lo	408
+<s> Lo	416
 toda �frica.	4
 frustraciones	4
 �rea de las	3
@@ -17176,6 +17228,7 @@ actual, se	4
 s�lo si se	5
 esos instrumentos	5
 <s> Hu	6
+Sueca, que	8
 mil millones de euros.	4
 cada vez mayor.	13
 una desaceleraci�n de	3
@@ -17286,9 +17339,9 @@ asistencia de	10
 un "espacio econ�mico	4
 las acciones de	30
 <s> Es m�s,	120
-<s> Es	784
+<s> Es	792
 Unidas para el Medio	4
-<s> El	3748
+<s> El	3756
 cambio del	29
 ofender	3
 el Kremlin	27
@@ -17482,7 +17535,7 @@ la responsabilidad de la	4
 <s> Ni	32
 balanza comercial	15
 Israel y el Ir�n,	3
-<s> No	1066
+<s> No	1074
 <s> En aquel entonces,	4
 previo a la	9
 esto, pero	4
@@ -17561,6 +17614,7 @@ Uni�n Sovi�tica y	12
 medidas de austeridad	7
 del servicio de	13
 adicional se	4
+Englund del libro es	8
 que definen	7
 inter�s de las	5
 un misterio	3
@@ -17576,6 +17630,7 @@ acept� que	3
 para cada uno de	3
 director de	16
 representaba el	4
+Se�or Englund del libro	8
 m�s que las	13
 protestas callejeras	4
 cami�n	6
@@ -17611,6 +17666,7 @@ Winston Churchill,	3
 los datos de	9
 autom�ticos	4
 funcionaba	9
+es una desviaci�n	9
 �ltimo	210
 13 a�os en	3
 compensar a	6
@@ -17641,6 +17697,7 @@ Aun as�, la	9
 asumi� el	12
 Estados Unidos). </s>	7
 tener un impacto en	3
+sobre lo ocurrido, explica,	8
 de cobertura y los	3
 deber�n	27
 La migraci�n	4
@@ -17716,6 +17773,7 @@ comprometer	15
 casos son	3
 designar	4
 <s> M�s recientemente,	17
+los m�dicos, los	10
 <s> Adem�s, tenemos	4
 La intervenci�n	4
 Corporaci�n	6
@@ -17737,9 +17795,11 @@ no gracias	3
 quien muri�	3
 muchos de sus	10
 un renminbi	5
+personae del tipo que	8
 por otro lado,	5
 el hundimiento de la	3
 que reconocer	11
+est� el nuevo secretario	8
 tambi�n a una	4
 Como sucede con	4
 civiles,	20
@@ -17777,7 +17837,7 @@ del diez	3
 utiliza la	6
 desmilitarizaci�n de	4
 de pensar.	3
-el premio Nobel	12
+el premio Nobel	20
 pa�ses:	4
 pa�ses;	5
 merced	6
@@ -17804,6 +17864,7 @@ esc�ndalo de	10
 que la elecci�n del	3
 ministro de Defensa	9
 parecer�a	11
+sentimientos,	10
 parecer�n	3
 en una p�rdida de	3
 mirar a	5
@@ -18280,7 +18341,7 @@ entendible. </s>	4
 Consejo de la UE,	3
 normales. </s>	9
 comprometidos	32
-tanto	690
+tanto	698
 llam� el	3
 los �ltimos diez a�os	8
 de eso, la	5
@@ -18448,6 +18509,7 @@ masivo de	12
 siendo muy	14
 caos en el	3
 convertirme en	3
+Lo que �l ha	8
 pero no hay	9
 a largo plazo, los	4
 consumidores en	5
@@ -18570,6 +18632,7 @@ y algunos de	8
 autoritaria	4
 aumentar.	6
 en libertad	8
+, "comienza con una	8
 riesgo de los	8
 reducci�n del d�ficit,	3
 <s> Dichos	16
@@ -18583,7 +18646,7 @@ de inversi�n extranjera directa,	3
 a lo cual	6
 de haberse	7
 reacciones que	3
-estas personas	10
+estas personas	18
 anuales en	3
 basada en	120
 Europeo de Reconstrucci�n y	3
@@ -18897,7 +18960,7 @@ tan s�lo un	9
 Chile. </s>	5
 lo que ha sucedido	5
 participaci�n	263
-lados de	5
+lados de	13
 en 1994,	11
 global hasta	4
 se deja	11
@@ -19012,6 +19075,7 @@ revitalizar	13
 el nivel m�s	9
 onerosos	4
 pasado del	5
+que otorga	8
 refer�ndum.	7
 de cr�ditos. </s>	5
 presidente Barack Obama y	5
@@ -19299,6 +19363,7 @@ miramos	5
 a Gran Breta�a y	3
 Kemal	6
 Supremo de	5
+una larga dramatis personae	8
 a la vida,	3
 y seguridad.	4
 a la vida.	3
@@ -19669,6 +19734,7 @@ cumplir con los	3
 la ONU a	3
 ninguna raz�n para	5
 Jimmy Carter,	4
+de monta�a climbers,	8
 marco de la	14
 comparaci�n,	5
 superado el	6
@@ -19825,6 +19891,7 @@ escudo	3
 Mac,	3
 <s> Claramente,	12
 sobre los Objetivos	3
+guerra experiencias	8
 El incidente	3
 Los errores de	3
 se puede implementar	5
@@ -20395,6 +20462,7 @@ costo muy	3
 concedidos	4
 en Inglaterra	11
 violaciones	53
+la guerra, de	8
 <s> M�s a�n,	102
 esenciales:	3
 realizadas	18
@@ -20683,6 +20751,7 @@ soberana en	15
 la Tierra de	3
 autoinfligida	3
 �l y su	3
+de guerra experiencias	8
 muerto de	3
 obligara	4
 ese nuevo	4
@@ -21443,6 +21512,7 @@ a la salud y	5
 <s> Donde	4
 de asegurar un	5
 Estabilidad y Crecimiento de	5
+Se�or	17
 de direcci�n de	6
 de estos pa�ses,	3
 en la misma medida	6
@@ -21758,6 +21828,7 @@ en 1956.	3
 encontr�	4
 por el tsunami	3
 La capacidad	15
+la terrible guerra de	8
 al mal	3
 Fondo Europeo	14
 f�cil para	10
@@ -21797,7 +21868,7 @@ En todo el mundo	6
 que padece	3
 no puede solucionar	3
 hacer sus	6
-sobre	2682
+sobre	2714
 su ejemplo.	5
 violencia de los	3
 el empleo	58
@@ -22232,7 +22303,7 @@ constantemente	32
 intereses a	8
 Por ahora,	8
 puso al	3
-el dolor	10
+el dolor	18
 brote de	4
 ejecutivo	32
 probabilidad de	35
@@ -22363,6 +22434,7 @@ periferia.	9
 su cargo y	3
 mil millones adicionales	3
 extranjera directa en	6
+como �	16
 de presi�n de los	4
 membres�a en la UE.	4
 estar,	3
@@ -22635,6 +22707,7 @@ Windows	4
 acerca de la necesidad	3
 a s� misma.	5
 no s�lo est�	5
+era como.	8
 en peligro la	21
 para la obtenci�n	3
 bonos de los	7
@@ -22911,6 +22984,7 @@ Ninoy	3
 Tiene que ver con	3
 �Qu� deber�a	3
 sido uno de	6
+, nivel	8
 soluci�n a	10
 utilizan su	5
 como Grecia	7
@@ -23026,9 +23100,9 @@ para China. </s>	8
 �l llama	3
 en 1976.	3
 valor a los	3
-estaba	355
+estaba	363
 su vida en	5
-hacer que	144
+hacer que	152
 en 1979.	6
 de una manera u	3
 m�s rico	14
@@ -23172,6 +23246,7 @@ las partes se	3
 27 Estados miembros de	3
 tanques	7
 Mahmoud Abbas	7
+la tristeza: Una	8
 y la divisi�n de	3
 en las ciencias	4
 de trabajar	13
@@ -23239,7 +23314,7 @@ demasiado tarde. </s>	13
 $15	3
 compa�eros de	8
 Pensemos	8
-de �nimo	12
+de �nimo	20
 Los precios del petr�leo	6
 plan quinquenal de China	3
 permite al	7
@@ -24602,6 +24677,7 @@ reprocesamiento. </s>	3
 controla la	4
 la toma	27
 es un tema	4
+la belleza y la	8
 es el cambio	3
 de la Reserva Federal	45
 crimen organizado	5
@@ -24734,7 +24810,7 @@ Strauss-Kahn,	3
 mismo tiempo,	133
 mismo tiempo.	10
 del planeta es	3
-poco	615
+poco	623
 dos bandos	8
 a la inversi�n	12
 Irlanda, Italia, Grecia y	4
@@ -24790,13 +24866,14 @@ medias. </s>	5
 corrientes,	6
 y cultural.	3
 corrientes.	6
-de que	2655
+de que	2663
 todas maneras. </s>	3
 Saddam Hussein a	4
 ganar una	12
 sintieron	16
 entre los intereses	6
 potencia.	7
+la belleza y el	8
 deuda-PIB	5
 individualmente	5
 al margen del	3
@@ -24850,6 +24927,7 @@ hay poca	3
 a Rusia su	3
 inicie	6
 inicia	7
+norma libros	8
 para una mayor	8
 en septiembre de	13
 y el resto del	15
@@ -25086,6 +25164,7 @@ ingresos medios. </s>	3
 m�s complicado	3
 la crisis de deuda.	3
 abrazado	4
+su coraz�n se	8
 cuatro billones de	6
 post	12
 <s> Son	47
@@ -25124,6 +25203,7 @@ clave es	19
 una vasta	3
 miedo de	13
 Europa, sino tambi�n	4
+experiencias y los	8
 Asociaci�n	51
 y constante. </s>	3
 mucho de la	5
@@ -25224,7 +25304,7 @@ europea". </s>	3
 ha existido	6
 a Hu	4
 A finales del	5
-m�s	8606
+m�s	8614
 impulsada por la	7
 vapor	9
 interconectados,	4
@@ -25289,6 +25369,7 @@ militante,	3
 en la costa	5
 de esto. </s>	6
 <s> No tiene	5
+mujeres, a ambos lados	8
 pronunci� su	3
 lecciones del	3
 estudio reciente de	3
@@ -25618,6 +25699,7 @@ Asamblea Nacional	3
 reflejar las	3
 El gobierno	132
 regula	6
+estados de �nimo	10
 ricos como	7
 con los dem�s y	3
 conjunta para	8
@@ -25919,7 +26001,7 @@ primeros meses de	3
 se origin�	5
 de China deben	3
 que habr� que	5
-a la	4215
+a la	4223
 adelante. </s>	21
 que la producci�n	10
 se uniera a	4
@@ -26052,7 +26134,7 @@ para programas	5
 origen,	7
 M�xico	84
 los tsunamis. </s>	3
-permanente de	20
+permanente de	28
 muy bien	28
 que el otro	6
 que se logre	4
@@ -26383,6 +26465,7 @@ una gama de	5
 lograr	352
 competidores. </s>	7
 En quinto	3
+sacrificio 13.3423 ,	8
 argumentaban que	3
 EU a	7
 se�ales de que los	3
@@ -26467,7 +26550,7 @@ bajas y	7
 tiran�a. </s>	7
 casi cuatro	8
 as� como su	7
-de las	4363
+de las	4371
 2020. </s>	14
 sistemas pol�ticos y	4
 una pregunta	22
@@ -26478,7 +26561,7 @@ Jong-il	5
 que incluyan	5
 a los presupuestos	4
 detalles sobre	3
-Academia	8
+Academia	16
 popular en la	3
 el d�cimo	3
 en la actividad	4
@@ -26841,6 +26924,7 @@ tasa de aumento	5
 percib�a	4
 puede decidir	5
 China en Blackstone	3
+correctivo demasiado	8
 las cr�ticas.	3
 y gobernar	4
 muy peque�a	4
@@ -26906,7 +26990,7 @@ estudia	3
 40 d�lares por	3
 de una mejor	8
 su econom�a,	9
-Tambi�n est�	7
+Tambi�n est�	15
 han vuelto	34
 viajado	6
 (o,	11
@@ -26916,6 +27000,7 @@ deuda y los	5
 dejado de ser	11
 dirigi�	9
 pueblo palestino. </s>	3
+otorga el	9
 y el grupo	4
 en unos	19
 cambio flexible	3
@@ -27345,11 +27430,12 @@ m�s que ning�n otro	4
 menor nivel	4
 sociales y	66
 los fracasos de	6
-la norma	14
+la norma	22
 Le Pen en	4
 un 30%	11
 cuerpos que	4
 que implicar�a	3
+historiador y periodista	8
 han sacado a	4
 y Jap�n	33
 de una democracia	18
@@ -27387,6 +27473,7 @@ del ascenso de	5
 por �rdenes	4
 las herramientas para	3
 <s> Pero, aunque	4
+cabos, los tiempos de	8
 es importante	48
 en el pr�ximo	15
 crecimiento, los	3
@@ -27398,7 +27485,7 @@ Dos a�os	4
 cl�sica	20
 alguna vez la	3
 a un nivel de	6
-la primera	180
+la primera	188
 asegurar�	5
 Tampoco se puede	3
 Si estos	3
@@ -27739,6 +27826,7 @@ otro rescate	3
 fascistas	3
 prima por	3
 internacional de	74
+aqu� es una inusual,	8
 el traslado	3
 sin duda	56
 y para Europa	3
@@ -27890,6 +27978,7 @@ secesionistas	4
 instituciones y el	3
 forma m�s eficaz	6
 Ghana y	7
+<s> Lo que �l	8
 preludio	7
 procesos de producci�n. </s>	3
 la suspensi�n de pagos	12
@@ -27934,6 +28023,7 @@ que gan� las	4
 macroecon�mica de	5
 e impulsar	8
 multilateral.	8
+20 m�s o	8
 de medidas	52
 buenos resultados,	3
 nueva Comisi�n	3
@@ -28234,6 +28324,7 @@ a Rusia como	5
 caracter�stica de	5
 a formular	7
 centrales no	9
+est� el nuevo	8
 a largo plazo del	17
 iniciativa y	7
 los bancos espa�oles	3
@@ -28909,6 +29000,7 @@ o, en	6
 asesores de	3
 que un ministro	3
 ruso en	4
+�l ha escrito aqu�	8
 pueden reducir	10
 del ideal	3
 tres casos	4
@@ -29177,7 +29269,7 @@ la �nica econom�a	3
 Los logros	4
 la crisis asi�tica de	3
 el a�o 2009	3
-demasiado a	8
+demasiado a	16
 se da cuando	3
 Sovi�tica no	3
 del Partido por la	3
@@ -29349,6 +29441,7 @@ s�lo podr�a	7
 peque�a y	13
 ser�an enormes.	3
 las encuestas de	14
+monta�a climbers,	8
 un coeficiente	3
 campa�a contra	8
 vivir de	3
@@ -29371,6 +29464,7 @@ acab� con	9
 finalmente en	3
 De hecho, uno de	4
 econom�a interna	3
+<s> Algunas de estas	10
 prevenir las	4
 planeta se	4
 atrevido a	4
@@ -29622,6 +29716,7 @@ registran en	3
 simplemente a	4
 alg�n momento.	5
 en su conjunto,	4
+con una larga	9
 en los Pa�ses Bajos	3
 en su conjunto.	9
 o est�n en	4
@@ -29728,6 +29823,7 @@ planeta es	4
 de administrar	4
 dificultades financieras.	5
 n�cleo industrial de	3
+m�dicos, los conductores de	8
 un hurac�n	5
 frustraci�n que	3
 experiencia	164
@@ -30117,6 +30213,7 @@ cierto que las	11
 lo poco que	4
 la sequ�a	4
 un 70%	3
+que su coraz�n se	8
 colegas. </s>	4
 valores respaldados	4
 aprueba	3
@@ -30354,6 +30451,7 @@ igual que la	21
 45 por ciento	3
 regiones en las	4
 cifra m�s	3
+y mujeres, a	8
 OCDE,	8
 libertad de expresi�n,	6
 imaginar un	8
@@ -30469,7 +30567,7 @@ historia:	5
 precisos	3
 a Turqu�a,	4
 sistemas pol�ticos	24
-historia.	38
+historia.	46
 valores?	4
 En pol�tica	4
 valores:	3
@@ -30577,6 +30675,7 @@ mecanismo	112
 los numerosos	11
 que los miembros	22
 rostro de	5
+un trabajo de anti-historia	8
 que las condiciones	9
 valores.	26
 embargo, est�	3
@@ -30677,6 +30776,7 @@ tasa promedio	4
 una profundizaci�n de la	3
 para formar una	4
 a apoyar el	3
+hacer que su coraz�n	8
 infecci�n	6
 mismo tiempo a	3
 limpieza y	3
@@ -30741,9 +30841,11 @@ la campa�a presidencial	6
 entre precios y	3
 poblaci�n m�s	9
 norteamericanos de	7
+� sentimientos, impresiones,	8
 multiplicidad	5
 el EFSF	8
 es �nica	3
+terrible guerra de trincheras	8
 ambiciosos, pero	3
 Los parlamentos	4
 bien. </s>	46
@@ -30773,6 +30875,7 @@ el resto. </s>	5
 del sector financiero. </s>	5
 un acuerdo entre los	3
 han de ser	5
+precisa,	9
 formas en las	3
 fuertemente en	7
 del Senado de	5
@@ -31017,6 +31120,7 @@ falta.	5
 sumas de	11
 se han vuelto mucho	3
 m�s porosas	3
+terrible guerra	8
 trabajadores,	19
 organizaciones	140
 trabajadores.	17
@@ -31132,6 +31236,7 @@ proyecta	7
 una actitud	54
 Musharraf. </s>	5
 devoluciones	3
+Algunas de estas	10
 para la prosperidad	7
 la misma manera,	49
 de victoria	3
@@ -31434,6 +31539,7 @@ al l�mite de lo	3
 se han involucrado	3
 esa diferencia	3
 que dirigieron	3
+impresiones, experiencias	8
 para adherirse	4
 estatales de	10
 importantes desde	5
@@ -31614,6 +31720,7 @@ EE.UU. De	5
 Hay pocos	4
 el Comit� de	7
 regalo	4
+sentimientos, impresiones, experiencias y	8
 no se puede dar	6
 Plaza Tahrir	3
 mundo democr�tico	3
@@ -31720,7 +31827,7 @@ Sud�n y	11
 deber�a haber sido	3
 En Estados	24
 estamos a	3
-ha escrito	4
+ha escrito	12
 sus vidas. </s>	6
 reafirmar	11
 ciudad y	5
@@ -31942,6 +32049,7 @@ supuesto, este	3
 de los trabajadores.	4
 27%	5
 la modernizaci�n de	13
+Es un correctivo demasiado	8
 <s> Ucrania es	3
 muchas clases de	3
 similar en su	3
@@ -32434,6 +32542,7 @@ en varios pa�ses,	3
 de comercio del	3
 en varios pa�ses.	3
 32%	3
+personae del tipo	8
 nuevos empleos. </s>	3
 defensas de	4
 otros y	8
@@ -32873,7 +32982,7 @@ securitizaci�n	4
 est�n encontrando	3
 <s> Este proceso	8
 se ocupa de las	3
-<s> No es	148
+<s> No es	156
 Hong Kong, el	5
 quedaron en	3
 la resoluci�n del Consejo	3
@@ -32933,6 +33042,7 @@ Para cualquiera que	3
 los reci�n nacidos	5
 de desempleo y	8
 muy conscientes	3
+<s> � la belleza	8
 las ideas que	3
 desempleo, el	3
 entre la pol�tica	7
@@ -33003,6 +33113,7 @@ hacer esto.	3
 derivar�n	4
 a satisfacer	6
 Si se mantiene	3
+13.3423	8
 sido capaz	7
 de andar	3
 financiera que comenz� en	3
@@ -33092,6 +33203,7 @@ hace mucho. </s>	8
 de pleno derecho de	3
 occidentales y la	3
 obliguen	4
+poco precisa,	8
 dirigentes	322
 una respuesta a las	3
 todo esto	28
@@ -33172,7 +33284,7 @@ que no s�lo	14
 adolescente	4
 de Gran Breta�a,	13
 en cierto modo,	4
-los m�dicos,	6
+los m�dicos,	14
 marcar	17
 pueblo jud�o.	3
 marcas	11
@@ -33267,6 +33379,7 @@ b�sica y	6
 expandir el	4
 cuando est�n	5
 su poder.	9
+"comienza con	8
 pueden eludir	3
 <s> Pero luego	4
 hecho, a	15
@@ -33421,6 +33534,7 @@ pudieron	61
 bajas tasas de	10
 especie	40
 �ndice de Precios	3
+la � sentimientos,	8
 l�quidos en	3
 se ha considerado	5
 la Comisi�n.	5
@@ -33802,6 +33916,7 @@ impulsan el	3
 para la econom�a mundial.	7
 se benefician	19
 gobierno son	4
+secretario permanente de la	8
 <s> Obama se	4
 <s> Parad�jicamente,	12
 � Uno de los	4
@@ -33867,6 +33982,7 @@ de graves	4
 <s> En un pa�s	9
 peligrosa,	4
 peligrosa.	16
+sobre lo ocurrido,	8
 fijarse	7
 ampli�ndose	3
 en China pueden	5
@@ -35035,7 +35151,7 @@ desean que	6
 Pero este	20
 sospechosos	13
 ha mantenido	26
-nuevo	692
+nuevo	708
 Pero esta	34
 la excesiva	14
 empezar a	54
@@ -35149,6 +35265,7 @@ arriesgan	7
 una dictadura	10
 la condici�n de que	3
 republicanos y	7
+�nimo ".	8
 Carter,	5
 protesta contra	4
 preservaci�n	11
@@ -35269,6 +35386,7 @@ tregua	8
 est�n generando	4
 escuela	52
 trabajo en	29
+que �l ha escrito	8
 h�bil	6
 sistemas legales,	3
 Una encuesta reciente	3
@@ -35314,7 +35432,7 @@ la t�nica	5
 su sigla en ingl�s),	17
 Europa y los	32
 su sigla en ingl�s).	5
-trabajo de	34
+trabajo de	42
 y mundial. </s>	4
 castigan a	3
 de Europa y de	4
@@ -35470,6 +35588,7 @@ de capital, y	3
 es ahora una	7
 hipocres�a. </s>	5
 progreso. </s>	8
+se hunden	8
 extranjera. </s>	15
 Fondo Global para	4
 consenso sobre la	3
@@ -35923,6 +36042,7 @@ registraron	6
 la devoluci�n de	4
 alternativa para la	3
 la teor�a del	3
+Se�or Englund es un	8
 implementado	9
 motivaci�n	23
 escenario mundial. </s>	4
@@ -36183,6 +36303,7 @@ activa,	3
 en los �ltimos a�os:	3
 activa.	6
 ser mucho	12
+menos brille hombres	8
 observar la	4
 experimentos con	6
 mundo sin armas	5
@@ -37542,6 +37663,7 @@ importante;	3
 e insuficiente	4
 generosas	5
 partir de ese	3
+trincheras en el	8
 tomar en cuenta la	3
 hora de mejorar	3
 Europea debe	4
@@ -38315,6 +38437,7 @@ Tratado de Libre	5
 El prop�sito	5
 <s> El problema de	14
 de los mercados emergentes,	7
+que su coraz�n	8
 de los mercados emergentes.	3
 que pretende	6
 los tres �ltimos	10
@@ -38556,6 +38679,7 @@ de pensiones. </s>	3
 multinacional de	3
 democr�ticas.	15
 hoy parecen	5
+explica,	9
 Penal Internacional para la	3
 si Estados	8
 al contrario de	3
@@ -38583,6 +38707,7 @@ de lograr un	9
 a Asia	12
 los asuntos p�blicos y	5
 eurozona, donde los	3
+la intensa y bighearted	8
 seguir�a	14
 es menos de la	3
 generaciones m�s	5
@@ -38597,6 +38722,7 @@ la financiaci�n de las	3
 Calder�n,	6
 se rebelaron contra	3
 El sistema	39
+conductores de ambulancias y	8
 En esa	12
 en las calles.	5
 hincapi� en que	5
@@ -39135,6 +39261,7 @@ poder a un	5
 gran prueba para	3
 de sus parientes	3
 resultados parecen	3
+y el dolor	8
 inevitable de	7
 alg�n grado	4
 log�stica,	3
@@ -39160,6 +39287,7 @@ el uso de la	28
 esa tendencia.	4
 ascendencia	8
 los palestinos en	3
+su coraz�n	8
 (particularmente la	3
 <s> Adem�s, si bien	4
 se enfrenta la	6
@@ -39420,7 +39548,7 @@ los EU no	7
 casa,	27
 no es s�lo un	7
 casa.	26
-frente	368
+frente	376
 Los palestinos y	3
 venezolanos	5
 de capital en los	4
@@ -39473,7 +39601,7 @@ inevitable un	6
 casar	3
 oficial del	7
 que dar�a	6
-<s>	50832
+<s>	50912
 casas	33
 ejercer el	5
 trabajo m�s	3
@@ -40182,6 +40310,7 @@ Tratado sobre la	10
 no basta para	4
 la pregunta no es	3
 gente no	19
+Se�or Englund	16
 la firma del	5
 fortaleci�	11
 uygures,	4
@@ -40841,6 +40970,7 @@ oponerse	30
 a�n porque	3
 <s> El ex	10
 de control a	3
+botanists de	8
 A a	3
 noche en	4
 un callej�n sin	5
@@ -41088,7 +41218,7 @@ Bo, el	3
 la sociedad civil, el	3
 a una conferencia	5
 global cada	3
-puede	2413
+puede	2421
 le permitieron	4
 a la prohibici�n	3
 del derecho de	3
@@ -41321,7 +41451,7 @@ econom�as desarrolladas	4
 varias semanas,	3
 tiempo es	7
 y la Uni�n Sovi�tica	4
-primera guerra mundial	3
+primera guerra mundial	11
 y el acceso	9
 una regi�n	40
 de Inversiones,	3
@@ -41385,6 +41515,7 @@ emular. </s>	3
 <s> Hace algunos	3
 pondr�a	26
 intervenci�n de la	5
+� sentimientos,	8
 y la respuesta	4
 de tipo invernadero.	4
 y los grupos	8
@@ -41392,7 +41523,7 @@ Estados Unidos a�n	3
 tiempo ha	9
 <s> BRUSELAS � El	6
 pondr�n	8
-hunden	3
+hunden	11
 de gesti�n de riesgos	6
 qu� no habr�an	3
 pensiones y	23
@@ -41698,6 +41829,7 @@ parte del FMI	3
 una trampa de la	3
 miner�a	8
 pueden terminar	8
+�l ha escrito	8
 no reciben	3
 y transparencia	3
 para la seguridad de	8
@@ -41746,7 +41878,7 @@ inter�s de corto	8
 un brote	3
 decadencia	39
 en cuenta	144
-trabajo	315
+trabajo	323
 y por momentos	3
 financiera no	4
 cabo las	7
@@ -41764,6 +41896,7 @@ de brazos	9
 hacerlo por	3
 vive en la	9
 para acabar con la	11
+Lo que �l	8
 crecimiento econ�mico	229
 un empe�o	5
 una d�cada o	4
@@ -42044,6 +42177,7 @@ oscuro. </s>	4
 democracias	132
 La seguridad	13
 productividad en	12
+El sacrificio 13.3423	8
 se ajuste a	3
 podr�an incluir	4
 de la oferta	16
@@ -42713,6 +42847,7 @@ aceptar los	7
 costumbre de	4
 <s> En su	65
 Copenhague el	3
+botanists	8
 la propuesta	55
 petr�leo han	4
 salieron a	9
@@ -43344,6 +43479,7 @@ perfila	8
 del hogar. </s>	3
 En vista	34
 Estado y la	3
+Englund �	8
 �y tal	7
 habr� menos	4
 cuyos miembros	6
@@ -43536,6 +43672,7 @@ hecho, al	5
 razonable que	5
 del presidente franc�s, Nicolas	3
 vidas al	4
+lo que era como.	8
 La Uni�n Sovi�tica	5
 presupuestaria	13
 una corporaci�n	3
@@ -44336,6 +44473,7 @@ empezamos a	4
 guardianes	12
 que hab�a	94
 fiesta.	3
+belleza y	17
 -m�s	5
 de largo alcance. </s>	4
 <s> Claro,	17
@@ -44596,6 +44734,7 @@ de los dem�s	26
 mercado global.	3
 El Premio	4
 gobierno y	53
+que otorga el premio	8
 al Fondo Monetario	6
 alrededor de un	5
 la idea.	4
@@ -44842,6 +44981,7 @@ riesgo de Estados	3
 coalici�n de	29
 la ronda	13
 reun� con	3
+la tristeza: Una historia	8
 las elecciones parlamentarias y	3
 se puede atribuir	6
 la demanda exterior	3
@@ -44971,6 +45111,7 @@ superar�n	7
 falta es la	3
 diversos pa�ses	6
 como en cualquier otro	3
+de monta�a climbers, los	8
 pero, como	28
 quitar	8
 bien las	30
@@ -45433,6 +45574,7 @@ silencio de	6
 de hoy es	6
 las leyes y	7
 no en un	5
+cabos, los	8
 se acusa a	3
 carezca	4
 d�cada, m�s	3
@@ -45468,6 +45610,7 @@ qui�n tiene	3
 competencia m�s	3
 De hecho, una de	4
 principal de las	3
+sobre la terrible	8
 2003 y	8
 la Ilustraci�n,	3
 <s> La interpretaci�n	3
@@ -45483,6 +45626,7 @@ todas maneras.	3
 ingeniero	5
 la India es una	3
 de un partido	5
+guerra de trincheras	8
 necesidades de	56
 el precio pol�tico	3
 no debe confundirse	3
@@ -45497,7 +45641,7 @@ temas de	17
 apropiado. </s>	4
 �nica de	8
 pero la tasa	3
-no de	57
+no de	65
 utilizada	7
 aquellos que	56
 quienes ponen	3
@@ -46028,7 +46172,7 @@ quienes creen en	3
 en serio que	3
 de un segundo	4
 supervisi�n internacional	3
-experiencias	47
+experiencias	63
 una econom�a	210
 deben ser el	4
 Las ni�as	3
@@ -46499,6 +46643,7 @@ razonable	37
 de la legislaci�n	12
 laboral en	8
 por ciento por	6
+nuevo libro, � la	8
 comerciales no	4
 que carecen	17
 laboral es	7
@@ -46716,6 +46861,7 @@ repercusiones econ�micas	5
 de Ortega	6
 materias primas.	11
 han formulado	5
+guerra de trincheras en	8
 y Eslovaquia	3
 conciente	3
 materias primas,	5
@@ -46975,7 +47121,7 @@ sobre las sociedades	3
 marinos	6
 de preocupaci�n para	3
 el barco	3
-los estados	211
+los estados	219
 otros objetivos	4
 americanos	117
 del Presidente Barack Obama	10
@@ -47214,6 +47360,7 @@ los inversores. </s>	5
 contra�das	5
 sus vidas.	6
 siguiendo	27
+ambulancias y	8
 con un sistema de	3
 conferencia	90
 nueva Europa	6
@@ -47754,7 +47901,7 @@ Con demasiada	7
 tambi�n hay que	5
 el 1 de mayo	3
 no les gustan	3
-los tiempos	29
+los tiempos	37
 a pie,	3
 al cabo, la	7
 Zimbabue,	3
@@ -47870,6 +48017,7 @@ los servicios financieros	7
 han apoyado	5
 no parec�a	3
 euro deben	8
+sacrificio 13.3423 , nivel	8
 una docena	3
 las calles. </s>	8
 tel�n	8
@@ -48172,6 +48320,7 @@ apelar a	4
 preparado por el	3
 se alcanzar�	3
 cuatro d�as	3
+anti-historia ". </s>	8
 �frica para	4
 m�s necesita	4
 determinaci�n de los	4
@@ -48369,7 +48518,7 @@ cortas	3
 con los	648
 derrib�	3
 a salir de la	5
-Es un	36
+Es un	44
 China y otros pa�ses	3
 la tercera parte de	3
 religiosos y	4
@@ -48542,13 +48691,14 @@ debe prestar	3
 Democr�tico	18
 de consumir	4
 que adoptaron	7
+demasiado a la	8
 Derechos Humanos,	9
 considerarse	20
 precios relativos de	3
 sobre el desarrollo	10
 reales de los	6
 cualquier otro pa�s.	5
-estados de	36
+estados de	44
 Derechos Humanos.	5
 avances logrados	4
 el islam y	4
@@ -48637,7 +48787,7 @@ cometidos en	8
 que el Banco	21
 compuesta de	7
 a la elecci�n	3
-ambos lados	23
+ambos lados	31
 los EE.UU. est�n	9
 mayor capacidad	6
 el poder de la	5
@@ -49262,6 +49412,7 @@ La Corte	8
 Las encuestas de	8
 disminuyendo. </s>	9
 Prohibici�n	3
+a ambos lados de	8
 el comercio mundial	8
 amplia coalici�n	3
 que se utilizan	4
@@ -49329,6 +49480,7 @@ proyecto de integraci�n	3
 ganar tiempo.	3
 terapia.	3
 OTAN	156
+que describe,	8
 que ha estado	18
 una elite	6
 una estaci�n	3
@@ -49340,6 +49492,7 @@ de tres millones de	4
 misma forma que	6
 ansiedad entre	3
 eficiente, lo	3
+intensa y bighearted	8
 que aumentar	6
 congreso	15
 el doctor	5
@@ -49535,7 +49688,7 @@ podr�a haberse	10
 capacidad de las econom�as	3
 consecuencia de la crisis	4
 Mis	8
-la Academia	5
+la Academia	13
 decanos	3
 de moneda	15
 como China.	4
@@ -49628,6 +49781,7 @@ m�s complejo de	3
 de sus bonos	5
 veo que	4
 es tambi�n una	10
+mundial estaba s�lo	8
 m�s ricos del mundo.	3
 una joven	4
 aumentado. </s>	6
@@ -49770,6 +49924,7 @@ insolvencia del	3
 para intentar	21
 inesperada. </s>	3
 se est�n llevando	4
+de trincheras	8
 <s> Pero la UE	6
 en serio esa	3
 recelosos de	5
@@ -50344,7 +50499,7 @@ listos para	9
 con Ir�n	16
 un mayor aumento de	3
 pa�ses como Italia y	3
-del libro	7
+del libro	15
 sus exportaciones. </s>	9
 prometedora para	3
 algo a�n	3
@@ -50525,6 +50680,7 @@ la disminuci�n de	9
 eso y	3
 pa�ses	3339
 calidad y	13
+nivel personal </s>	8
 del norte,	5
 de una gran	14
 consisten	3
@@ -50715,6 +50871,7 @@ habr�a resultado	3
 inspirar a	5
 y la �nica	3
 m�s bajas	16
+� un libro	8
 con benepl�cito	6
 y la destrucci�n de	3
 sociales y econ�micos	5
@@ -51325,7 +51482,7 @@ Comunidad	41
 <s> Sin su	3
 a los movimientos de	3
 sangre,	3
-demasiado	476
+demasiado	484
 cooperaci�n regional	10
 sangre.	3
 una renta	5
@@ -51385,6 +51542,7 @@ tiempo que	166
 contexto en	3
 retos del	4
 de agresi�n	3
+belleza y la tristeza:	8
 est�mulo fiscal y	4
 lo que est�n haciendo	3
 <s> Muchos de	34
@@ -51659,7 +51817,7 @@ un incremento significativo	3
 de treinta	3
 real de que	9
 hace a�os	3
-de guerra	72
+de guerra	80
 hay varias	3
 otorgado	10
 comunicaci�n del	3
@@ -51807,6 +51965,7 @@ pa�s una	6
 adquisitivo de las	5
 rezagado	8
 1979,	15
+coraz�n se	8
 ojos del	7
 s�lo los	35
 pa�s y	62
@@ -51990,6 +52149,7 @@ al contrario,	3
 Es poco probable	5
 incapaces	25
 La respuesta es	10
+� sobre	8
 algod�n. </s>	6
 para rescatar a	10
 para obligar a	6
@@ -52074,6 +52234,7 @@ firmas,	3
 India ha sido	3
 oficial es	6
 otra parte, no	3
+hunden .	8
 vanguardia del	4
 pero ese pa�s	3
 a los ni�os	18
@@ -52130,7 +52291,7 @@ reducir el calentamiento	4
 adelantado	4
 ganancias de productividad	4
 Bosnia,	14
-idea	328
+idea	336
 la altura de su	3
 rendimiento de las	3
 piensen dos veces antes	3
@@ -52159,7 +52320,8 @@ Gates,	12
 Gates.	3
 ampl�a	6
 mayores econom�as	5
-a ambos	15
+el frente occidental.	8
+a ambos	23
 todo lo posible	11
 y las compa��as de	3
 y Osetia del Sur.	3
@@ -52355,6 +52517,7 @@ segundo lugar, a	3
 coincide	11
 que la Comisi�n Europea	3
 <s> Una posible	5
+es una desviaci�n de	9
 y comercial	5
 de Chicago	9
 la Liga de	7
@@ -52438,7 +52601,7 @@ para el desarrollo y	5
 tambi�n resulta	5
 individuos se	3
 que tambi�n se necesitan	3
-<s> Lo que	234
+<s> Lo que	242
 <s> Finalmente, el	7
 euforia	13
 ej�rcito. </s>	9
@@ -52752,6 +52915,7 @@ seguridad de los	14
 predominaba en	4
 miedo	114
 campus	3
+� la intensa y	8
 represivos	8
 agr�cola.	12
 hacia mediados de	3
@@ -52852,7 +53016,7 @@ de pagos	83
 que fomenta la	4
 1987,	5
 de las fuentes	6
-la guerra,	47
+la guerra,	55
 Europa. </s>	333
 <s> No obstante, para	9
 contrario, se	13
@@ -52875,7 +53039,7 @@ encontrar una nueva	3
 que una tercera parte	3
 producir una	9
 rendimientos de los	3
-dolor	22
+dolor	30
 Estado independiente	3
 a escala	47
 de industrializaci�n	4
@@ -53063,6 +53227,7 @@ Si,	12
 que este	98
 de Siria. </s>	3
 de fijaci�n	3
+describe, no de forma	8
 con un poder	4
 aumentado.	6
 nuevos miembros de la	6
@@ -53481,6 +53646,7 @@ m�s all� de su	5
 de toda la regi�n	3
 ha ampliado	6
 Organizaci�n de las Naciones	6
+tanto un libro sobre	8
 central, en	3
 nos encontramos	4
 por unirse	3
@@ -53985,7 +54151,7 @@ el mismo tipo	12
 comentarios de	4
 presta poca	4
 puestos permanentes en el	3
-estas	467
+estas	475
 para el mundo	22
 mujer que	6
 el Jap�n y los	4
@@ -53993,6 +54159,7 @@ por el Tratado	5
 inquietudes de	4
 internacionales de la	3
 Tampoco el	5
+Englund del	8
 limitar sus	7
 Por �ltimo, el	9
 reformar el sistema	6
@@ -54093,6 +54260,7 @@ aceite de	4
 concentrado en	8
 exterior </s>	3
 contribuya	7
+�ntima de	8
 econ�mica y los	3
 p�blicamente. </s>	5
 contribuye	45
@@ -54148,7 +54316,7 @@ los Balcanes a la	3
 de las dimensiones	3
 socios internacionales	3
 buen ejemplo de	13
-s�lo	1677
+s�lo	1685
 en los pa�ses del	6
 que los precios de	20
 el Presidente Bush	13
@@ -54441,7 +54609,7 @@ nueva ola	3
 base. </s>	6
 con otros pa�ses	7
 nuevas variedades	3
-Una	650
+Una	658
 la IED	15
 norte y el sur	7
 <s> Sean	6
@@ -54559,7 +54727,7 @@ genere	18
 s�lo por	35
 ser un objetivo	3
 episodios de	14
-y los	1496
+y los	1504
 estatal en la	3
 a un precio	10
 un punto que	3
@@ -54797,6 +54965,7 @@ funcionarios estadounidenses	7
 ensayos nucleares	6
 puede lograr	36
 polic�a. </s>	10
+un libro sobre lo	16
 <s> Si los pa�ses	9
 esos debates	3
 representaban a	4
@@ -55149,6 +55318,7 @@ d�lares para	39
 relaci�n. </s>	7
 no tan	12
 kurda del	3
+guerra mundial estaba s�lo	8
 su valor de	7
 el consenso	17
 costos	283
@@ -55166,6 +55336,7 @@ militar del	10
 cambio clim�tico, los	6
 responden con	4
 all� del	40
+<s> Peter Englund �	8
 Proliferaci�n Nuclear	5
 no cumpli�	5
 y Corea	42
@@ -55262,6 +55433,7 @@ advenimiento de la	3
 a volverse	8
 debe, en parte,	3
 A pesar de todo	4
+estaba s�lo	8
 La apreciaci�n	3
 En los pr�ximos a�os,	4
 relajaci�n	17
@@ -55307,7 +55479,7 @@ largo plazo para	20
 un fuerte apoyo	5
 la responsabilidad por los	3
 dos y	7
-tipo que	11
+tipo que	19
 financiero formal	3
 aplicado	25
 pr�xima d�cada. </s>	9
@@ -55898,6 +56070,7 @@ resistentes.	4
 cambio ha	5
 asciende	36
 acreedor neto	3
+dramatis personae	8
 M�xico, Vicente	3
 la Junta de	9
 reservas y	6
@@ -55924,7 +56097,7 @@ abusar	6
 con un conjunto	3
 la Corriente	3
 a retirarse	4
-es tanto un	3
+es tanto un	11
 su pueblo. </s>	12
 pol�ticos, la	3
 los ciudadanos comunes y	9
@@ -56291,6 +56464,7 @@ toda Am�rica	6
 de polic�a en	3
 crisis actual. </s>	12
 <s> Por toda	3
+lo ocurrido, explica, como	8
 los efectos de	46
 que forma parte del	4
 el periodo de	9
@@ -56507,6 +56681,7 @@ gradual,	10
 del Afganist�n.	5
 como Alemania y los	3
 por lo menos	36
+tiempos de guerra	9
 del Afganist�n,	8
 para alcanzar	50
 a las sociedades	6
@@ -56558,6 +56733,7 @@ del exceso	5
 de la vida. </s>	8
 de la soluci�n para	3
 Schwarzenegger,	3
+de ambulancias	8
 tasas nominales	3
 emergentes est�n	4
 <s> Las decisiones	11
@@ -56566,6 +56742,7 @@ el vicepresidente	6
 Estado	489
 hecho de la	5
 suministro de gas	5
+de 20 m�s o	8
 ellas. </s>	48
 por razones	44
 t�tulos a	4
@@ -57073,6 +57250,7 @@ Guatemala	10
 los ricos,	6
 los ricos.	12
 cre�an que	10
+Englund	24
 hace hincapi� en	4
 sobreviven	9
 siglo, cuando	3
@@ -57088,6 +57266,7 @@ seguridad de que	4
 y en cada	3
 <s> El Primer Ministro	14
 consecuencias de su	4
+coraz�n se hunden	8
 de la globalizaci�n	22
 despacio que	3
 de los banqueros.	3
@@ -57299,7 +57478,7 @@ vivi�	6
 preocupaciones acerca de	3
 especulativas.	3
 sido bastante	4
-un libro	21
+un libro	45
 financiera asi�tica	7
 Comit� Consultivo sobre	4
 generadoras de	5
@@ -57810,6 +57989,7 @@ Nacional de	42
 a una Uni�n	3
 de los EU en	9
 de indicadores de	4
+nuevo secretario	10
 Los pueblos de	3
 m�s lento,	6
 cambio social y	3
@@ -57849,6 +58029,7 @@ persuadir	32
 como un medio	8
 parte de ella,	3
 palestino y	3
+�ntima de la primera	8
 las cuestiones fundamentales	5
 ministerios de	4
 por la cual las	3
@@ -58016,6 +58197,7 @@ f�cilmente en	3
 para que mejoren	3
 recibe de	3
 degradaci�n de	6
+correctivo demasiado a la	8
 exijan	11
 elevado,	8
 elevado.	8
@@ -58053,6 +58235,7 @@ normal para	4
 accidente.	5
 votos en las	3
 ahora el Gobierno	3
+la belleza y	16
 inflexi�n,	3
 <s> Es comprensible	10
 visitantes	3
@@ -58293,7 +58476,7 @@ entra�a,	4
 deuda de los Estados	3
 demanda interna	28
 <s> Por �ltimo, los	6
-un libro que	3
+un libro que	11
 constantes	19
 David y	3
 para imponer una	3
@@ -58386,7 +58569,7 @@ moratoria	13
 nuestro continente.	3
 financieras.	28
 partido la	3
-terrible	22
+terrible	30
 control de sus	4
 medidas se	6
 los aspectos de la	6
@@ -58413,6 +58596,7 @@ y biol�gicas,	3
 recientemente con	5
 ilegalmente	6
 s�lo es	33
+un trabajo de	9
 de la visita de	3
 las manufacturas	5
 para comprar una	3
@@ -58490,6 +58674,7 @@ segunda raz�n por	4
 negociadora	4
 es el caso.	3
 esta estrategia.	3
+era como. �	8
 no carecen	3
 de Liberaci�n del	5
 una receta para	13
@@ -58865,6 +59050,7 @@ realista.	11
 que exigen	8
 a su favor.	4
 de intimidar	3
+libro, � la belleza	8
 ver con la	27
 de la verdad	8
 rico	35
@@ -59211,6 +59397,7 @@ protestas	101
 risa	3
 protestar	10
 La lucha	8
+otorga el premio	8
 para detener el	5
 de Oslo	6
 la cantidad y	3
@@ -60603,6 +60790,7 @@ un pico	7
 distinta de la	5
 si hacemos	3
 a los EU	13
+estados de �nimo ".	8
 nos dice que	8
 importe	4
 El nuevo	41
@@ -60877,7 +61065,7 @@ comprensible, en	3
 tenido �xito. </s>	3
 a los grandes	10
 convenci� a	4
-los conductores	3
+los conductores	11
 cuestan	5
 hierro y	8
 escolar	7
@@ -61586,7 +61774,7 @@ de ellos es	4
 mayor gasto	10
 and	52
 Cairo,	5
-con una	475
+con una	483
 ventaja competitiva	5
 algo. </s>	3
 los �ltimos 50 a�os,	3
@@ -61660,7 +61848,7 @@ un tratamiento m�s	3
 control de las	22
 reducir�a el super�vit	3
 para defenderse	5
-que �l	43
+que �l	51
 <s> Como demostr�	3
 los pa�ses avanzados,	16
 p�blica est�	5
@@ -62033,6 +62221,7 @@ mayor eficiencia. </s>	3
 dijeron que no	4
 �que es	6
 cuando no hay	3
+una inusual, un	8
 ca�do de	4
 existe ninguna raz�n para	3
 efecto, desde	3
@@ -62491,7 +62680,7 @@ Internacional para	11
 demandar�	6
 la irrigaci�n	4
 �tico. </s>	5
-historia. </s>	38
+historia. </s>	46
 penosa	4
 por miedo a que	5
 prioridad debe	4
@@ -62797,7 +62986,7 @@ gobierno autoritario.	4
 una crisis	192
 pa�ses, mientras que	3
 jubilaci�n y	3
-con	9284
+con	9292
 pero el gobierno	5
 planetario	17
 esta sustancia	3
@@ -62895,7 +63084,7 @@ tolerancia y la	4
 existentes entre	3
 cual fue	4
 nacionalismo en	3
-las estudiantes	3
+las estudiantes	11
 confiable,	4
 puede reforzar	4
 confiable.	5
@@ -63059,6 +63248,7 @@ vencimiento	10
 en crisis.	7
 PLD,	7
 y, aun as�,	7
+la guerra, de las	8
 150 millones de personas	3
 PLD.	5
 <s> La erradicaci�n	3
@@ -63174,7 +63364,7 @@ El desempleo es	3
 no ser tan	3
 parece improbable	3
 lentamente	17
-del	16236
+del	16252
 <s> Desde una	3
 den	25
 y que ahora	7
@@ -63209,6 +63399,7 @@ a acercarse a	3
 <s> La cooperaci�n	10
 de buen	4
 luego del	6
+20 m�s	8
 Unido, en	4
 una madre	5
 servidores	5
@@ -63614,6 +63805,7 @@ en favor de los	6
 n�cleo del	4
 percepci�n de	20
 Margaret Thatcher	9
+y botanists de	8
 tiran�a de la	3
 seducir	3
 la econom�a global y	4
@@ -63775,6 +63967,7 @@ del poder en el	4
 gente hace	3
 No necesitamos	3
 esto ser�a	6
+en h�roes.	8
 no hay duda	5
 <s> Nosotros los	3
 libertad de expresi�n y	10
@@ -63994,7 +64187,7 @@ implementar pol�ticas	3
 en el pasado:	3
 las inversiones,	5
 la exportaci�n. </s>	10
-era	816
+era	824
 las inversiones.	8
 hacer que el	22
 la iniciativa.	4
@@ -64082,7 +64275,7 @@ islas	21
 la transici�n a una	5
 hidr�ulica,	3
 indios,	5
-forma	850
+forma	858
 d�lar gastado	4
 �por qu� no se	4
 los criterios	15
@@ -64266,7 +64459,7 @@ hacer gran	3
 emprender acciones	9
 un propietario	3
 para la posici�n	4
-hacer que su	6
+hacer que su	14
 Con el tiempo, la	4
 salieron a las calles	4
 hierro,	5
@@ -64549,6 +64742,7 @@ forasteros	3
 de rotaci�n	4
 �ltimas dos d�cadas. </s>	5
 independientemente de qui�n	4
+trincheras en	8
 para adherirse a	4
 El primero de	5
 no deber�a impedir	4
@@ -65448,6 +65642,7 @@ lo que tal vez	4
 los jefes de las	3
 promovieron	4
 tard�a	5
+de la guerra, de	8
 prisioneros pol�ticos	4
 activamente	31
 que en algunos	5
@@ -65468,7 +65663,7 @@ a los grupos terroristas	4
 dispositivo	6
 En el norte	3
 a la realidad. </s>	3
-el premio Nobel de	8
+el premio Nobel de	16
 un ambiente	33
 tomado	40
 de la pol�tica econ�mica	14
@@ -66180,6 +66375,7 @@ tiene que ser	16
 De igual manera,	10
 miembros permanentes	12
 principales bancos centrales	3
+". </s>	18
 de fondos de cobertura	7
 Autoridad Palestina. </s>	6
 el fanatismo	5
@@ -66548,6 +66744,7 @@ la presi�n que	3
 mucho mayores	14
 que se niega a	3
 las restricciones a la	3
+tanto un libro	8
 advertencia	28
 menguante	8
 bases de	20
@@ -67160,6 +67357,7 @@ dar fin a	3
 Mientras no	5
 para realizar un	3
 <s> En la Europa	8
+climbers,	8
 de partida.	3
 la posici�n de	26
 abandonara su	3
@@ -67690,6 +67888,7 @@ circular	4
 corriente de	56
 excesivo de los	3
 educaci�n y los	4
+Una historia �ntima	8
 con el gobierno de	4
 actualidad	100
 narrativa	13
@@ -67916,7 +68115,7 @@ la posici�n com�n	3
 juicio sobre	3
 que la ca�da	10
 que no sea	8
-las	17596
+las	17604
 Manuel Barroso	3
 combustible de	4
 <s> La tendencia	5
@@ -68130,6 +68329,7 @@ libere	5
 verdes. </s>	3
 rendici�n de cuentas y	5
 ministro brit�nico,	13
+ambulancias y bur�cratas. </s>	8
 Seis D�as	3
 corriente se	4
 que ha dejado de	3
@@ -68189,7 +68389,7 @@ y as� sucesivamente.	8
 que afrontan	12
 logradas	3
 otorgados	7
-los	32165
+los	32197
 sus preferencias	4
 la transferencia	19
 cu�nto dinero	3
@@ -68590,7 +68790,9 @@ Estados Unidos, Barack	7
 los planificadores	3
 El Congreso de	4
 -y el	3
+permanente de la Academia	8
 -y en	7
+Nobel de literatura. </s>	8
 contrasta	10
 servicios de salud y	3
 nosotros nos	3
@@ -68812,7 +69014,7 @@ Hace diez	5
 pero debe	6
 deseadas.	4
 es una econom�a	7
-premio Nobel de	15
+premio Nobel de	23
 integrantes	5
 �ltimo, las	4
 ha sido desde	3
@@ -69073,6 +69275,7 @@ agencia,	3
 El m�todo	4
 la pobreza. </s>	58
 ricos en	14
+libro es	8
 importaciones de bienes	3
 est� fracasando	4
 producen el efecto de	3
@@ -69098,6 +69301,7 @@ de sus empleados	5
 religioso. </s>	5
 "gobierno	3
 de ayudar a los	7
+bighearted	8
 gradualmente m�s	3
 que el papel de	3
 <s> La cultura	7
@@ -69686,7 +69890,7 @@ de los cambios	17
 <s> Esto llev�	3
 de reclutar	5
 pragm�tica. </s>	3
-la intensa	4
+la intensa	12
 que �l y	4
 Trabajo,	3
 de todo	171
@@ -69804,6 +70008,7 @@ la emisi�n	17
 decenios	46
 y, al mismo tiempo,	7
 planes cre�bles	3
+como � un libro	8
 que comenz� en 2008	3
 a la reciente	6
 pueden ofrecer	7
@@ -69970,6 +70175,7 @@ cambio espectacular	3
 el �ltimo a�o	6
 ser necesario un	3
 y r�pidamente	6
+sobre la � sentimientos,	8
 est�n relacionadas	4
 soluciones. </s>	4
 cuenta de que era	3
@@ -70459,7 +70665,7 @@ conservaci�n de	4
 percepci�n	44
 en realidad los	3
 de los prestamistas	3
-. </s>	68
+. </s>	76
 se sigue	14
 sigue siendo el	21
 En la mayor	4
@@ -70470,6 +70676,7 @@ en constante	5
 central a	5
 el crecimiento de los	17
 todos los bancos centrales	3
+� la intensa	8
 f�rmulas	5
 pa�ses han	29
 en el extranjero. </s>	33
@@ -70482,7 +70689,7 @@ futuro gobierno	6
 guerra.	59
 reelecci�n	33
 laboratorios	11
-guerra,	80
+guerra,	88
 del de su	3
 el supuesto de que	8
 pol�ticas gubernamentales	8
@@ -70646,6 +70853,7 @@ emprender	60
 de China en Blackstone	3
 70% de la	6
 emprenden	5
+sueco.	9
 <s> La necesidad de	10
 probable que sea	3
 dos por	8
@@ -71257,6 +71465,7 @@ UE ya	8
 42% de	3
 color de los	3
 resto del pa�s.	4
+de forma poco precisa,	8
 Rep�blica Popular de	5
 afianzado	5
 Escuela del MIT	3
@@ -71324,7 +71533,7 @@ consiguiente aumento	4
 de un marco	13
 las diversas	10
 lo menos	46
-que	37185
+que	37241
 reformas del mercado	3
 ha beneficiado	18
 en la elecci�n presidencial	3
@@ -71338,6 +71547,7 @@ Internacional para la	4
 doblegar	3
 Centroam�rica	3
 abrigar la esperanza de	8
+el nuevo secretario	9
 del 80%	11
 remplazar	4
 la contenci�n. </s>	3
@@ -71399,6 +71609,7 @@ traici�n	5
 pertenecientes a la	3
 vigilantes	7
 m�s oportunidades	7
+No es tanto un	8
 al equilibrio	3
 las aspiraciones de	12
 W. Bush ha	7
@@ -71732,6 +71943,7 @@ en la importancia de	4
 d�bil,	17
 podr�an haber	21
 d�bil.	14
+experiencias y los estados	8
 secciones	3
 de la informaci�n	61
 destruido. </s>	3
@@ -71850,6 +72062,7 @@ la �ltima parte	4
 o de las	6
 eso, no es de	5
 cual,	11
+brille hombres y mujeres,	8
 �federaci�n por excepci�n�	4
 confundir	7
 en la regi�n kurda	3
@@ -71889,6 +72102,7 @@ conflicto:	4
 o m�s a�os	3
 una amenaza para	27
 acompa�an	4
+experiencias y	10
 rid�culamente	4
 en Colombia.	3
 Pero a pesar	6
@@ -71910,6 +72124,7 @@ ascendente	7
 iniciales del	3
 Los dirigentes de Europa	5
 de riqueza soberanos	3
+de historia. </s>	9
 es fundamental	9
 ha hecho. </s>	3
 la deriva	5
@@ -71981,6 +72196,7 @@ americanas del	3
 y los dos	5
 Parlamento Europeo y	6
 ingreso per c�pita.	3
+explica, como �	8
 de los EE.UU. no	4
 para defensa	3
 de petr�leo a	3
@@ -72277,6 +72493,7 @@ en lo referente a	8
 externos de	3
 hora.	7
 si,	23
+literatura.	8
 masiva	61
 emblem�tico de	5
 contener los	6
@@ -72393,6 +72610,7 @@ su car�cter	12
 manera, se	4
 m�s eficaces,	5
 alto en	15
+forma poco precisa,	8
 la religi�n y la	5
 perif�ricos,	4
 el Centro	17
@@ -72817,6 +73035,7 @@ persisten en	4
 atacantes	3
 Tambi�n tendr�n	3
 sospecho	5
+primera guerra mundial ,	8
 Somos	8
 nivel del	23
 raz�n, los	6
@@ -72959,6 +73178,7 @@ de una trampa de	4
 beneficiarios de las	3
 familiar.	7
 �xito la	5
+o menos brille	8
 el desarme nuclear.	3
 gobierno de Estados	21
 septiembre de 2001. </s>	9
@@ -73059,6 +73279,7 @@ sociedad de	9
 activaci�n	8
 animosidad	7
 sun�es	12
+s�lo sobre la	9
 de los hijos	6
 nuevamente	53
 sostenida	25
@@ -73376,6 +73597,7 @@ a la salida de	3
 <s> Tambi�n podr�a	5
 para generar un	5
 tradicionales sobre	3
+Tambi�n est� el nuevo	8
 referencia en	4
 fuera el	11
 <s> No obstante, la	43
@@ -73439,6 +73661,7 @@ ascienden	12
 innovar	3
 de c�mo se	12
 de destino. </s>	3
+s�lo sobre la terrible	8
 por mucho el	3
 reducci�n del	91
 <s> Incluso una	4
@@ -73552,6 +73775,7 @@ presidente Ronald	3
 se imaginan	3
 en la reciente	8
 Unidos, China y	4
+menos brille	8
 Parte de la	10
 no deber�a sorprender	4
 ya sea a	5
@@ -73635,7 +73859,7 @@ los a�os de la	3
 sede en	18
 oficina del Primer	3
 <s> Pa�ses como	3
-una	13945
+una	13969
 une	14
 los ciudadanos de China	3
 calma,	3
@@ -73770,6 +73994,7 @@ super�vit en	8
 en los doce	5
 relaci�n al	14
 a los precios	13
+y botanists de monta�a	8
 que, si bien no	3
 tener poco	3
 condiciones del mercado	4
@@ -73844,7 +74069,7 @@ la consecuci�n de dichos	4
 repartici�n	3
 del partido, y	3
 Guerra Fr�a y	6
-de estas personas	4
+de estas personas	12
 los RMBS	3
 de la deuda del	5
 que la cultura es	3
@@ -73924,6 +74149,7 @@ de la masacre	6
 una econom�a que est�	3
 cacofon�a de	3
 �ltima d�cada.	9
+m�dicos, los	10
 ya tiene	7
 y estrategias de	4
 instrumento de pol�tica	4
@@ -74166,6 +74392,7 @@ resulta ir�nico	3
 <s> El profesor	3
 en Londres como	3
 ha alcanzado un	4
+brille hombres	8
 resultado de las	23
 una gran diferencia	7
 las prescripciones	4
@@ -74696,6 +74923,7 @@ competitividad del	5
 vinculados con el	11
 y el desempleo	15
 se inclin�	3
+climbers, los m�dicos,	8
 <s> �Hay alguna	3
 tienen sobre	4
 Gobierno alem�n	3
@@ -74852,6 +75080,7 @@ algunos pa�ses de la	7
 de hierro de	3
 la libra.	3
 activos m�s	4
+la tristeza:	8
 seguridad y la	10
 esfuerzos se	3
 desempe�o.	5
@@ -75113,7 +75342,7 @@ deuda nacional	17
 desarrollo),	3
 cargo a	9
 las capacidades de	10
-un libro sobre	3
+un libro sobre	19
 correspondi�	3
 a los l�deres de	17
 p�blicamente que el	3
@@ -75144,6 +75373,7 @@ probabilidad de tener	3
 seas	3
 deber�an	331
 a miles de millones	3
+de monta�a	10
 ahorro privado y	3
 en ella.	5
 <s> Rara	3
@@ -75201,6 +75431,7 @@ en algunos	71
 de los bancos para	3
 de reservas.	5
 coincidir	6
+que describe, no de	8
 impongan	4
 un discurso	26
 le cuesta	4
@@ -75228,7 +75459,7 @@ preocupaci�n. </s>	18
 central con	3
 introduciendo	3
 calidad de vida. </s>	6
-en el	4836
+en el	4844
 tenido	189
 de la deuda p�blica,	3
 en al	3
@@ -75893,7 +76124,7 @@ el hambre y la	9
 <s> Las c�lulas	8
 de este tipo	46
 de estas dos	3
-m�dicos,	15
+m�dicos,	23
 <s> Los gobiernos se	3
 desear�	3
 m�dicos.	7
@@ -76036,7 +76267,7 @@ en la comprensi�n	4
 se pusiera	4
 de Georgia ha	3
 controlar a los	3
-permanente de la	3
+permanente de la	11
 fundamental es que	4
 un elevado	4
 las principales causas	3
@@ -76325,6 +76556,7 @@ a pagar m�s	4
 de la PARP. </s>	4
 de que la Reserva	3
 es la base	6
+ocurrido,	9
 lo relacionado con	4
 droga. </s>	5
 ocurrido.	5
@@ -76456,6 +76688,7 @@ resistencia de los	3
 que �no	4
 Castro	10
 de apoyo que	3
+� cabos, los	8
 de Aung San Suu	4
 Eduardo	3
 recursos naturales. </s>	13
@@ -76754,6 +76987,7 @@ en los �ltimos meses	8
 Los EE.UU. y	4
 llevaron a un	3
 de reconstrucci�n	6
+guerra, de las	8
 pertenecer al	3
 per�odo prolongado de	4
 los d�as	37
@@ -76885,7 +77119,7 @@ Occidente para	6
 los sitios	11
 una gran cantidad	19
 reducir el costo de	4
-desviaci�n de	4
+desviaci�n de	12
 m�dico y	3
 a la formaci�n de	5
 que Ban	3
@@ -77616,6 +77850,7 @@ de cumplimiento	3
 la esperanza de un	6
 comunes no	4
 600 millones	7
+guerra experiencias de 20	8
 los prisioneros	20
 zona del euro deben	6
 <s> Recordemos que	4
@@ -78116,6 +78351,7 @@ viven en el	3
 europea sobre	5
 puede significar	4
 mejor:	3
+desviaci�n de la norma	8
 los inversionistas. </s>	9
 los abundantes	3
 mejor?	6
@@ -78404,6 +78640,7 @@ alto que	17
 a los tenedores	9
 sugiere que los	11
 su atractivo	3
+y los estados de	9
 el de que los	11
 duplicaron	5
 pasivos de	5
@@ -78482,6 +78719,7 @@ redes	88
 <s> Entre esos	3
 de los hospitales	3
 Estado Hillary	5
+<s> No es tanto	8
 a la madre	3
 es la primera	13
 destino del	7
@@ -78755,7 +78993,7 @@ que, hasta	4
 leg�timo. </s>	3
 tipos de cambio,	3
 ayudado.	3
-libro que	4
+libro que	12
 tipos de cambio.	17
 sistemas regulatorios	3
 de prevenci�n	9
@@ -78774,6 +79012,7 @@ mano del	3
 Naciones Unidas	203
 bonos sobre productos	5
 tipo de acci�n	3
+los m�dicos, los conductores	8
 Si un	16
 Lula. </s>	3
 de frenos	3
@@ -79403,6 +79642,7 @@ que el crecimiento econ�mico	15
 a Hadjiev	3
 de trabajo de la	5
 <s> Ambos	38
+sobre la terrible guerra	8
 impuestos m�s altos	3
 el gasto p�blico	14
 Saddam y	4
@@ -79619,7 +79859,7 @@ de bienes de	11
 empresas chinas	13
 a la depresi�n.	4
 nuevas normas	6
-intensa	36
+intensa	44
 consideraba el	3
 emprendieron	7
 Ellwanger	6
@@ -80455,7 +80695,7 @@ europea por	4
 cuando las	84
 fueron capaces de	3
 pueden darse	7
-<s> Peter	3
+<s> Peter	11
 fiebre	10
 el enfriamiento de	3
 sea m�s importante que	3
@@ -80686,7 +80926,7 @@ centrado en lo	3
 que subyacen	5
 con armas de	4
 la conducta de	17
-que puede hacer	3
+que puede hacer	11
 son los que	18
 eliminaci�n de los	9
 eficiencia	75
@@ -80943,10 +81183,11 @@ dada por	4
 por todos los	13
 encabezado por un	3
 los brit�nicos	29
-primera	427
+primera	435
 m�s lento en	3
 desgaste de	3
 el logro de los	3
+es una inusual,	8
 decisiva:	3
 identidad nacional	5
 entidades de microfinanciamiento	5
@@ -81070,7 +81311,7 @@ alegando	3
 gobiernos centrales	6
 en promedio. </s>	3
 que se genere	3
-libro,	10
+libro,	18
 futbol	9
 visto como	9
 una amenaza,	7
@@ -81161,6 +81402,7 @@ la vanguardia del	4
 decisivos	14
 y recortes	6
 como proporci�n del	4
+m�s o menos brille	8
 de manifiesto las	3
 <s> No puede	12
 de la isla	5
@@ -81220,7 +81462,7 @@ constituyan	3
 permit�a	13
 importante que nunca	3
 poderes a	3
-libros	41
+libros	49
 juez	22
 para proteger el	4
 decisivo.	12
@@ -81639,6 +81881,7 @@ el Banco Asi�tico	3
 de caminos	5
 lo siguiente:	10
 doblemente	8
+libro, � la	8
 libre,	15
 alguna vez	74
 libre.	11
@@ -81868,7 +82111,7 @@ por el Estado. </s>	3
 a favor de que	3
 si sus	15
 club,	3
-ambos	173
+ambos	181
 dar�a	38
 primarias	4
 prioridad es la	3
@@ -81954,6 +82197,7 @@ la elecci�n de Barack	3
 tan radical	3
 Los problemas	27
 Sin embargo, al menos	3
+belleza y el	8
 el Mecanismo Europeo de	12
 <s> La manera	8
 rienda suelta	4
@@ -82081,6 +82325,7 @@ Ministerio de Seguridad P�blica	3
 de los precios de	91
 de Europa para	15
 se originan en	4
+belleza y la	8
 de asalto	3
 la nueva estrategia de	3
 derechos humanos y	68
@@ -82271,6 +82516,7 @@ convencer de	3
 de Hacienda de	9
 han hecho m�s	7
 la aceptaci�n de	12
+menos brille hombres y	8
 de independencia en	3
 de refugiados de	4
 quienes toman las decisiones	3
@@ -82313,6 +82559,7 @@ ellas	135
 de la moneda	38
 �ltimas elecciones	8
 Prof. Ibrahim	4
+de forma poco	10
 cautela.	3
 la consecuencia	15
 <s> La ense�anza que	3
@@ -82362,6 +82609,7 @@ a la India.	6
 modo, la	7
 crecimiento anual	31
 que constituyen la	3
+� un trabajo de	8
 de Saleh	5
 de respuesta	11
 la intervenci�n militar	10
@@ -82493,6 +82741,7 @@ suyas. </s>	3
 provocaci�n	7
 dijo que	65
 <s> Las campa�as	3
+� �	8
 y justa. </s>	3
 se recuperaron	5
 mayor�a de los pa�ses	58
@@ -83230,6 +83479,7 @@ y pol�ticas	34
 en el d�lar	3
 de energ�a solar	6
 grandes de	17
+Academia Sueca, que otorga	8
 programa del	8
 Una soluci�n	12
 t�xicos.	3
@@ -83304,6 +83554,7 @@ a los dem�s	15
 estudiando	5
 popular, la	3
 tanto tiempo.	10
+impresiones, experiencias y los	8
 de los revolucionarios	3
 su precio,	3
 tropas estadounidenses	12
@@ -83770,6 +84021,7 @@ puede estar en	6
 plasmada en	3
 basados	32
 �ltimas semanas	10
+la norma libros de	8
 y pol�tico.	6
 y quiz�s	8
 de 2008 y	8
@@ -83990,6 +84242,7 @@ con una sola	9
 ellos las	3
 preocuparse por	18
 dar sustento	3
+libro es una desviaci�n	8
 el deseo de	30
 el difunto	4
 valor de la deuda	5
@@ -84003,6 +84256,7 @@ que lo mismo	5
 Las regiones	3
 del Sur	110
 en este a�o de	4
+que era como. �	8
 espec�ficos. </s>	5
 ello?	3
 una crisis de la	7
@@ -84080,7 +84334,7 @@ con dos Estados	3
 r�pido desarrollo	3
 experimento social	3
 compensatorio	3
-puede hacer que	4
+puede hacer que	12
 mercados est�n	3
 fuerza	377
 Para mantener	5
@@ -84274,6 +84528,7 @@ Estados Unidos era	3
 calma. </s>	3
 nueva estrategia	12
 alcanzar este	5
+estudiantes y botanists de	8
 detalles del	3
 Dalai Lama y	6
 tragedia.	3
@@ -84533,6 +84788,7 @@ ingrese en	4
 los ejecutivos de	3
 el agua. </s>	3
 que falta	11
+botanists de monta�a	8
 <s> Gracias al	4
 Y algunos	5
 casa y de	3
@@ -84587,6 +84843,7 @@ p�blicos con	4
 impagos	12
 complemento	7
 bien esto	6
+y bighearted nuevo	8
 protecci�n a los	5
 el margen	11
 universitaria	4
@@ -84732,7 +84989,7 @@ isl�micas de	3
 combatir la	24
 Ninguna de estas	3
 muertes civiles	3
-coraz�n	43
+coraz�n	51
 confusi�n y	4
 combatientes.	3
 hacen m�s que	5
@@ -84894,7 +85151,7 @@ de las medidas que	6
 planeta a	3
 los pa�ses est�n	6
 en las monta�as de	3
-forma poco	3
+forma poco	11
 civil.	29
 desgarrado por	3
 llamamiento de	3
@@ -84949,6 +85206,7 @@ Myanmar no	4
 inter�s para los	3
 algunas instituciones	3
 orden del d�a,	4
+otorga el premio Nobel	8
 China, sino	8
 todos los movimientos	4
 su compromiso de	7
@@ -84976,6 +85234,7 @@ lucha.	9
 lucha,	6
 a los bancos,	6
 alg�n otro	4
+libro que describe, no	8
 Estatal de Protecci�n del	3
 los tutsi	3
 entre la libertad	3
@@ -85030,7 +85289,7 @@ por el p�blico	3
 una crisis fiscal	7
 muchas formas	7
 puede ser un	25
-que su	274
+que su	282
 econom�a no se	4
 y pr�cticamente	7
 Polonia tambi�n	3
@@ -85198,7 +85457,7 @@ los factores que	6
 huy�	5
 ayuda para	37
 Pero es probable que	5
-que la	2595
+que la	2603
 Kazajst�n,	5
 adecuadamente a	4
 a Internet. </s>	4
@@ -85379,6 +85638,7 @@ que da	21
 <s> Esa falta de	5
 Uno podr�a pensar	4
 de las primas	3
+y periodista sueco. </s>	8
 el mundo, pero	6
 para fabricar	5
 disuasi�n	27
@@ -85410,6 +85670,7 @@ aceptables.	6
 un credo	3
 parece estar	58
 comunidad internacional para	6
+escrito aqu� es	8
 posici�n en	18
 ingesta	3
 Recientemente, un	4
@@ -85605,6 +85866,7 @@ como resultado una	7
 una falla	4
 de computadora	4
 hecho, el aumento	3
+los conductores de	8
 m�s ayuda	4
 la de un	4
 de los participantes	11
@@ -85630,6 +85892,7 @@ que los funcionarios	20
 los Tratados	4
 nuevo l�der,	5
 combinaci�n letal de	3
+explica, como	8
 econ�mico y social. </s>	4
 salariales y	4
 para la inversi�n. </s>	3
@@ -86080,6 +86343,7 @@ a la categor�a de	3
 en los Juegos	4
 olvidamos	5
 el Ej�rcito de	3
+nivel personal	9
 ellos que	3
 cuenta propia. </s>	6
 d�a del	3
@@ -86187,6 +86451,7 @@ el corto plazo.	17
 utilizar�	4
 el corto plazo,	19
 el reconocimiento internacional de	3
+poco precisa, como �	8
 la globalizaci�n.	23
 <s> Una raz�n por	3
 que la regi�n	17
@@ -86235,6 +86500,7 @@ de la intervenci�n militar	3
 de la humanidad. </s>	5
 entrar a	7
 del derecho	27
+<s> Es un correctivo	8
 aumente la	7
 qu� ser	10
 corriente estadounidense,	3
@@ -86593,6 +86859,7 @@ entre grandes	4
 muchos.	5
 <s> A los l�deres	3
 defender los	4
+como. � � sobre	8
 preocuparse.	5
 preocuparse,	3
 econ�mico sin	4
@@ -87518,6 +87785,7 @@ empleo.	38
 para todos.	18
 un consenso sobre	7
 ni siquiera a	3
+de anti-historia ". </s>	8
 se preguntan si	8
 iniciativas nuevas	3
 rendimientos.	4
@@ -87641,6 +87909,7 @@ gasto p�blico	31
 los productos de los	3
 particular, los	12
 costumbre,	7
+personas se convertir�	8
 gesti�n econ�mica	5
 m�s claramente	6
 logr� una	3
@@ -87739,6 +88008,7 @@ fueren	9
 est� saliendo de	4
 hacer avanzar la	6
 del PGB	24
+historiador y periodista sueco.	8
 transitando	3
 impuestos o	4
 una encrucijada	3
@@ -87841,6 +88111,7 @@ resultado final	6
 Europea no	9
 hegemon�a	33
 cr�nico,	3
+la Academia Sueca,	8
 a los usuarios	8
 del mundo en los	4
 la inacci�n.	3
@@ -88619,6 +88890,7 @@ aviso	6
 est�n poniendo a prueba	3
 gubernamentales de	6
 entre bastidores. </s>	4
+desviaci�n de la	9
 Pero incluso en	3
 tomaron	26
 centro y	4
@@ -88642,6 +88914,7 @@ toda la UE	12
 estrategas	29
 y el Jap�n	12
 por completo en	3
+dramatis personae del tipo	8
 podr�a resultar ser un	3
 Daily Graphic	4
 ha buscado	6
@@ -89005,6 +89278,7 @@ prueba m�s	4
 estadounidense no	8
 atenci�n a las	14
 el desarrollo de	98
+tipo que puede hacer	8
 petr�leo y otros	3
 la Cumbre Mundial sobre	3
 vida en las	3
@@ -89095,6 +89369,7 @@ de Estados miembros	7
 coches	10
 geopol�tico de	3
 socio comercial	12
+un correctivo demasiado a	8
 la preeminencia	3
 Espa�a, por ejemplo,	3
 Bangwa	3
@@ -89383,6 +89658,7 @@ etapa de	11
 previsibilidad. </s>	3
 ser�n mucho	5
 cerca de un mill�n	3
+de anti-historia ".	8
 extremistas palestinos	3
 parte una	4
 Estados Unidos parecen	3
@@ -89412,6 +89688,7 @@ vida en los	5
 aumentar la tasa	3
 la ley y el	3
 salarios,	20
+de ambulancias y	8
 de la soluci�n	6
 retar	6
 estados con	6
@@ -89475,7 +89752,7 @@ presiones inflacionarias.	3
 encuentren la	3
 beneficio de	25
 eso se debe	7
-No es	155
+No es	163
 preparaba	3
 UE, junto con	3
 corporativas y	3
@@ -89633,7 +89910,7 @@ cargos criminales	3
 y con raz�n. </s>	3
 una pol�tica	261
 para que los ciudadanos	4
-un trabajo	14
+un trabajo	22
 toda su	20
 y el apoyo	14
 Einstein,	3
@@ -89929,6 +90206,7 @@ celebrar la	7
 ayudarse	4
 intensas	10
 El problema de la	6
+una desviaci�n de	9
 Estados miembros, el	4
 por el PLD,	3
 y la Malaria.	3
@@ -90488,6 +90766,7 @@ pase de	3
 los combustibles f�siles. </s>	5
 por las ganancias	3
 de Ginebra	6
+norma libros de historia.	8
 poco lo que	4
 extranjeros para	8
 como lo son	4
@@ -90838,6 +91117,7 @@ club de	4
 pueblo	217
 de la industria de	9
 los mercados emergentes se	3
+inusual, un libro	8
 deflacionario	3
 de estabilidad,	4
 de estabilidad.	7
@@ -90993,7 +91273,7 @@ tasas de inter�s y	13
 consumo interno,	3
 renta del	5
 inflaci�n y las	3
-periodista	15
+periodista	23
 es hora	25
 pero s�lo si	8
 reducir el	117
@@ -91106,6 +91386,7 @@ alimentadas a carb�n	3
 de la condena	4
 la deuda p�blica	43
 tiene raz�n al	5
+<s> El sacrificio	8
 exportaci�n a	3
 sobre los glaciares	3
 Irlanda y en	3
@@ -91185,6 +91466,7 @@ llevar la	10
 implement� un	3
 sector privado se	4
 las paces con	4
+libro es una	8
 consecuencias,	6
 en la c�rcel,	3
 la tolerancia y la	4
@@ -91529,7 +91811,7 @@ periodismo	13
 diversos y	3
 <s> Hoy d�a,	5
 burro. </s>	3
-es tanto	17
+es tanto	25
 Estados Unidos (y	5
 la discriminaci�n y	3
 fue la de que	4
@@ -91666,6 +91948,7 @@ fuera de Estados	4
 Una es	9
 que el d�lar	22
 de sus socios	4
+dramatis personae del	8
 -tal	3
 �ndices de	30
 desarrollo tecnol�gico y	3
@@ -92006,6 +92289,7 @@ agr�colas que	4
 Vivimos en una	3
 Cuando el presidente	5
 que ha ido	3
+el frente occidental. </s>	8
 fuerzas de defensa	4
 en Europa Central	5
 momento en que se	8
@@ -92505,7 +92789,7 @@ o los Estados	6
 de las computadoras y	3
 <s> Al tiempo que	4
 con Estados	34
-de la primera guerra	5
+de la primera guerra	13
 ha abandonado	9
 decenio de 1980. </s>	4
 fr�a.	9
@@ -92586,6 +92870,7 @@ los votantes. </s>	6
 han perdido	21
 tan dif�cil	9
 el encargado	5
+m�dicos, los conductores	8
 que China necesita	5
 manera de salir	4
 del peso de	3
@@ -92890,10 +93175,10 @@ determinantes	9
 emisiones para	4
 trabajaban	4
 globo	3
-personal	118
+personal	126
 las palabras. </s>	3
 �l, el	5
-personas	732
+personas	740
 de China, s�lo	3
 Hollywood	8
 desviar la	6
@@ -92919,6 +93204,7 @@ sur de Asia	3
 otras palabras, un	4
 duplicaron en	3
 Quince	4
+personae	8
 perspectivas de crecimiento	20
 ganar�n	3
 precedentes para	6
@@ -93117,6 +93403,7 @@ funcionar en	10
 El l�der	8
 a las principales	5
 burocr�ticos	8
+trincheras	8
 centrado en las	4
 se lo mire,	4
 proponemos	3
@@ -93154,6 +93441,7 @@ meses se	4
 comprometidos con el	5
 de la Conferencia	8
 a las tasas	8
+la guerra mundial estaba	8
 <s> En el caso	47
 orillas	5
 l�der de la Autoridad	3
@@ -93184,6 +93472,7 @@ a las oportunidades	3
 Los l�deres	62
 n�mero cada vez mayor	8
 UE por parte	3
+hombres y mujeres,	9
 que estamos en	5
 facilitar una	4
 intolerancia.	3
@@ -93375,6 +93664,7 @@ ese proceso	11
 �proceso de	5
 s�lo son los	3
 sue�a	3
+estas personas se	10
 emitir bonos	6
 bancario de la eurozona.	3
 armonizado	4
@@ -93439,7 +93729,7 @@ ejemplo, la UE	3
 tender�n	3
 firmar�	3
 meses de	39
-de la norma	5
+de la norma	13
 y los impuestos	6
 termin�.	8
 que nadie,	4
@@ -93460,6 +93750,7 @@ sigue existiendo	3
 con servicios	3
 son buenas noticias.	3
 Estados Unidos en las	3
+no de forma poco	8
 de los bienes y	6
 tiene relaci�n	10
 la noticia de que	3
@@ -93595,6 +93886,7 @@ generaci�n en	3
 de una combinaci�n de	6
 este pa�s ha	4
 el pasado, el	5
+cabos, los tiempos	8
 el CSE	3
 decidir sobre	4
 amenaza a los	5
@@ -93718,6 +94010,7 @@ emiten	6
 PIB, mientras	4
 <s> De repente,	5
 los periodistas en	3
+estudiantes y botanists	8
 estar muy	7
 <s> Los trabajadores	9
 <s> Su capacidad	3
@@ -93791,6 +94084,7 @@ la de reducir	3
 <s> Sin embargo, todo	3
 en los a�os posteriores	3
 crecimiento a largo plazo.	6
+es tanto un libro	8
 este pa�s se	3
 UE en el	11
 entre las personas	5
@@ -93942,6 +94236,7 @@ sirven a los intereses	3
 Italia,	62
 de la visita	6
 rendimiento.	8
+terrible guerra de	8
 rendimiento,	19
 del ELP	6
 control de la pol�tica	3
@@ -94090,7 +94385,7 @@ de la divisa de	3
 de colaborar	6
 cuenta sus	3
 repago de	3
-<s> Algunas	54
+<s> Algunas	62
 emisor	5
 se permitir�a	5
 l�deres europeos,	3
@@ -94364,7 +94659,7 @@ las enormes	16
 manufacturados. </s>	4
 Chern�bil	10
 <s> Durante la mayor	4
-�nimo	25
+�nimo	33
 una mejor comprensi�n	4
 Las soluciones	4
 sus acciones.	7
@@ -94880,6 +95175,7 @@ econ�mica y el	10
 la tierra. </s>	3
 mantener un	31
 Kioto	5
+historia �ntima de	8
 sabemos lo que	3
 que podr�amos	7
 de la mayor�a.	4
@@ -95141,7 +95437,7 @@ Con la ayuda	5
 se muestra	17
 c�ncer. </s>	11
 de la banca de	6
-estudiantes	98
+estudiantes	106
 restructuraci�n de	3
 Estados Unidos ha	40
 que la adaptaci�n	3
@@ -95342,10 +95638,11 @@ primeros ministros. </s>	4
 Unidos ha	40
 fe en los	3
 propici� el	6
+hunden . </s>	8
 A fines	5
 ruso, Vladimir Putin,	3
 y en el caso	3
-la idea de que	59
+la idea de que	67
 Unidos es	45
 aumentos de	37
 los ingresos fiscales	10
@@ -95796,7 +96093,7 @@ de demanda de	5
 de cero	7
 La mayor�a de las	17
 Djindjic	17
-norma	30
+norma	38
 saldo	4
 plenamente los	5
 dedo a	4
@@ -96293,7 +96590,7 @@ asamblea constitucional	3
 contribuye a la	7
 reasignaci�n	3
 mejorar la atenci�n	3
-sacrificio	11
+sacrificio	19
 nueve pa�ses	4
 paralela	5
 que los hijos	3
@@ -96425,6 +96722,7 @@ espacio para la	3
 relaci�n entre la	15
 el contexto de la	4
 por los cambios	4
+frente occidental. </s>	8
 mediante el desarrollo	3
 En China	7
 debe hacerse	8
@@ -96550,7 +96848,7 @@ sabe que los	4
 <s> De hecho, fue	4
 nacionales, sino	3
 Aquino	8
-tipo	698
+tipo	706
 tienen capacidad	4
 electoral	83
 no hicieron	8
@@ -96560,6 +96858,7 @@ los �xitos de	6
 maximizar el	5
 de equilibrio	12
 de vivir en	3
+historiador y	9
 en hasta	4
 y la productividad.	5
 en tiempos de paz	4
@@ -97094,6 +97393,7 @@ sanas	6
 la respuesta apropiada	3
 <s> Es comprensible que	8
 sanar	3
+en el frente occidental.	8
 en la primera vuelta	6
 UE deber�an	4
 al conflicto con	3
@@ -97571,6 +97871,7 @@ hacer que los	23
 globales de la	3
 Para contrarrestar	3
 se deriva de	5
+sentimientos, impresiones,	8
 por Bush	3
 una estrecha	10
 de China del	3
@@ -97685,7 +97986,7 @@ violencia relacionada con	4
 pa�ses de todo el	5
 tuberculosis y	10
 la Democracia	5
-el premio	18
+el premio	26
 posici�n para	5
 Manhattan	4
 de disciplina	7
@@ -97713,7 +98014,7 @@ del 3% del	10
 poner a prueba el	3
 habido un	13
 los m�s de	9
-estados	392
+estados	400
 reaccionar	33
 los bancos centrales.	7
 en sus puestos,	3
@@ -98011,7 +98312,7 @@ de las sanciones	8
 Se deben	10
 fusionar	3
 en Kosovo	10
-� la	10
+� la	8
 va camino de	4
 podr�a poner en peligro	5
 precio del petr�leo	8
@@ -98122,6 +98423,7 @@ pero es imposible	4
 matr�cula	3
 �realmente	3
 ante el hecho	3
+demasiado a la idea	8
 entre el gobierno y	6
 menos que se	15
 M�s bien,	26
@@ -98143,7 +98445,7 @@ Las evidencias	4
 mujer de	3
 tuberculosis y la malaria	4
 de abordar el	4
-<s> Tambi�n	368
+<s> Tambi�n	376
 ansiedad de	3
 financiero informal	3
 urbanos. </s>	4
@@ -98450,6 +98752,7 @@ el estancamiento	20
 sobre el tema,	3
 dicho que el	3
 esto "Econom�a	3
+y bighearted nuevo libro,	8
 libertad y justicia	3
 para los bancos,	3
 responsable de las	4
@@ -98489,11 +98792,13 @@ Reykjavik	5
 a la ocupaci�n	3
 con los intereses	8
 Unidos en la regi�n	5
+Englund � la	8
 dos de las	4
 amenazan a	4
 actividad econ�mica. </s>	8
 es decidir	3
 150 millones de	7
+no de forma	8
 quejaron	6
 con las instituciones	5
 de diciembre en	3
@@ -98623,6 +98928,7 @@ de China con	18
 revoluci�n verde	8
 no ceder	3
 otros pa�ses de	34
+<s> Peter Englund	8
 de que los chinos	3
 jovencitas	5
 tributaria	7
@@ -99000,6 +99306,7 @@ que gran	21
 Mecanismo Europeo de	20
 China con los	4
 a cabo por el	3
+de literatura.	8
 Europa no	78
 pa�ses ricos. </s>	15
 los j�venes en	3
@@ -99396,6 +99703,7 @@ el oc�ano	6
 el primer l�der	3
 y castigar	4
 vidrio	3
+el dolor �	8
 antimonopolio	7
 <s> Su �xito	3
 sigan siendo	13
@@ -99418,6 +99726,7 @@ han dejado	27
 de cultivar	3
 laboral de la	4
 <s> La administraci�n Bush	18
+�ntima de la	8
 los colegios electorales	3
 incertidumbre de	3
 instancia, en	3
@@ -99485,6 +99794,7 @@ de decisiones de la	10
 particular cuando	5
 imposible sin	5
 ejecutivos	41
+correctivo	8
 l�deres de las	4
 consumo de la	3
 a la Cumbre	4
@@ -99655,6 +99965,7 @@ cognitivos	3
 sus hogares. </s>	6
 Esto hace que	5
 chiste	3
+Nobel de literatura.	8
 publicaci�n	23
 lo que se debe	9
 una copia	4
@@ -99708,6 +100019,7 @@ factor determinante	5
 activismo	14
 Conferencia de Bretton	4
 desde luego, pero	3
+un historiador y	8
 PIB de	34
 sincera	3
 impopular	12
@@ -99796,6 +100108,7 @@ de seguridad social. </s>	7
 los medicamentos.	4
 en la investigaci�n de	3
 enter�	4
+puede hacer que su	8
 la detecci�n	8
 extremo de la	3
 - que	4
@@ -100010,6 +100323,7 @@ a liderar	3
 que reduce el	4
 banco m�s grande	4
 de Alemania a	4
+mundial , "comienza	8
 escenarios	22
 tama�o del	18
 del trabajo que	3
@@ -100315,7 +100629,7 @@ Tierra. </s>	9
 en d�lares de los	4
 la direcci�n de los	4
 los niveles de vida	10
-la primera guerra	10
+la primera guerra	18
 en esa regi�n.	8
 han reducido	16
 una f�brica	5
@@ -100340,6 +100654,7 @@ desarrollado.	12
 empleo a	15
 desarrollado,	11
 de todo, lo que	4
+monta�a climbers, los m�dicos,	8
 Hoy,	57
 la demanda y el	3
 de control.	3
@@ -100548,6 +100863,7 @@ bas�ndose	12
 marcha,	8
 que dif�cilmente	3
 marcha.	11
+como � un trabajo	8
 en ascenso como	4
 por mil	3
 basura y	3
@@ -100734,6 +101050,7 @@ como socio	3
 Tour de	3
 de contrarrestar	10
 ha visto	52
+de �nimo ".	8
 manos.	11
 caso omiso	17
 crear un Fondo	3
@@ -100768,7 +101085,7 @@ de imprimir	3
 un art�culo	16
 <s> Afirma	3
 le ofreci� a	3
-libros de	13
+libros de	21
 los pa�ses africanos. </s>	4
 merecen que	3
 que promete	6
@@ -101070,6 +101387,7 @@ provocar�n	5
 EE.UU. y en	4
 su camino. </s>	3
 fuerte y una	3
+tristeza: Una	8
 o temprano,	10
 reducir el nivel de	3
 sobre todo los	4
@@ -101159,6 +101477,7 @@ avance.	3
 vol�til,	3
 victorianos	3
 los pa�ses para	7
+El sacrificio	8
 avance,	4
 de las disputas	3
 ISI,	3
@@ -101166,6 +101485,7 @@ de Estabilizaci�n	4
 elimina el	3
 que sus pares	3
 decisiones de inversi�n	4
+brille	8
 el Congreso del	3
 m�s r�pido crecimiento	8
 del secretario	6
@@ -101182,6 +101502,7 @@ del interior de	3
 dicho	135
 semana pasada, el	6
 supone	66
+libro sobre lo que	8
 altos ingresos.	4
 ense�anza primaria	3
 ofrece la mejor oportunidad	3
@@ -101382,6 +101703,7 @@ su parte.	3
 orientados a la	3
 su parte,	33
 <s> Podr�an	6
+ocurrido, explica,	8
 industriales y	11
 problemas de	159
 para matar	3
@@ -101654,7 +101976,7 @@ de Asia, el	4
 un gran volumen de	3
 un subgrupo	3
 de un menor	3
-los tiempos de	7
+los tiempos de	15
 colapso. </s>	5
 una nueva era	10
 parec�a estar	11
@@ -101915,7 +102237,7 @@ de todo, un	4
 dejado atr�s	5
 enfrenta la econom�a	6
 EE.&#160;UU.,	4
-del tipo que	7
+del tipo que	15
 de una soluci�n	9
 trimestrales	4
 reglas internacionales	3
@@ -102410,7 +102732,7 @@ seguro de	40
 pol�tica industrial.	3
 o menor	7
 En gran medida,	6
-o menos	40
+o menos	48
 los estados asi�ticos	5
 que sus competidores	5
 esfuerza	5
@@ -102834,6 +103156,7 @@ de los mercados mundiales.	4
 <s> En el pasado	4
 sector financiero y de	3
 que le corresponde a	3
+de estas personas se	8
 cuyos sectores	3
 apropiada,	4
 varios grupos	3
@@ -102913,6 +103236,7 @@ armamentos,	3
 FMI en	9
 que deb�a	10
 aceptable,	5
+guerra mundial ,	8
 FMI es	8
 Derechos Especiales de	6
 reservas para	3
@@ -102964,6 +103288,7 @@ Irlanda, Australia,	3
 La forma	14
 a Obama,	4
 la revoluci�n no	3
+sobre lo que era	8
 al exigir	3
 <s> Constituye	3
 ha hecho con	3
@@ -103022,6 +103347,7 @@ los l�mites de las	3
 apreciaci�n,	3
 inversiones en bienes de	3
 deuda con	7
+describe,	8
 la Conferencia	36
 los encargados de	28
 farmac�uticas. </s>	4
@@ -103284,7 +103610,7 @@ vehemente	4
 (o las	3
 critican al	3
 Beijing	71
-idea de que	75
+idea de que	83
 Seg�n c�lculos de	3
 de las recientes	6
 del FBI	3
@@ -103413,10 +103739,12 @@ y abrir	3
 de pr�stata	4
 pasado en la	4
 una "econom�a	4
+era como. � �	8
 Democr�tico,	3
 gobierno y los	7
 parte de pa�ses	3
 dotado de	3
+climbers, los m�dicos, los	8
 los m�s ricos	5
 Hubo	22
 como por ejemplo	10
@@ -103997,6 +104325,7 @@ estas caracter�sticas,	4
 no se limita	10
 creciente cantidad de	9
 regiones de	11
+personae del	8
 Rogoff	6
 <s> Si los	89
 En nuestra	6
@@ -104169,6 +104498,7 @@ esperanzas en	5
 de facilitaci�n	4
 en c�mo los	3
 ser miembro de	12
+las estudiantes y botanists	8
 refer�a a	8
 socialista	23
 de Lehman Brothers.	3
@@ -104694,7 +105024,7 @@ los intereses estrat�gicos	6
 y crecimiento del	3
 diferente de	26
 Jintao	14
-tiempos	135
+tiempos	143
 letal de	4
 familias pobres,	3
 vac�o. </s>	7
@@ -104741,6 +105071,7 @@ Francia a	7
 Asia y el	15
 tiempo,	251
 diferente al	5
+de trincheras en	8
 Francia e	12
 a darse cuenta	5
 Europa, es	9
@@ -104772,6 +105103,7 @@ la victoria,	3
 colmar el desfase	4
 la victoria.	3
 comparten los	6
+"comienza con una larga	8
 las cuatro	8
 conjetura	3
 Asia y la	4
@@ -105609,7 +105941,7 @@ guiar el	4
 all� durante	3
 tanto, de la	4
 se traduce en	8
-idea de que la	8
+idea de que la	16
 <s> Si esto es	5
 Guerra Fr�a se	3
 salir de la pobreza.	5
@@ -105760,7 +106092,7 @@ Si, por	8
 <s> Mi padre	3
 vez y	4
 su sistema	42
-experiencias de	11
+experiencias de	19
 el prototipo	3
 <s> Nuestro an�lisis	3
 empleadas	3
@@ -105978,6 +106310,7 @@ de la econom�a china	4
 presiones.	7
 UE y de	10
 Omar al-Bashir,	3
+de historia.	9
 de reducciones de	6
 <s> La clave es	6
 bancarias	41
@@ -105987,8 +106320,10 @@ el pasado para	3
 la espera	6
 negativo de	4
 ofrecer. </s>	8
+una desviaci�n de la	8
 democracia no	16
 Agricultura y la Alimentaci�n	3
+una inusual,	8
 las inundaciones	5
 el servicio de	10
 el interrogante	6
@@ -105999,6 +106334,7 @@ negativo en	5
 bancaria,	17
 el l�mite m�ximo de	7
 el traspaso de	3
+libro, �	8
 Las pol�ticas de	7
 capital extranjero	12
 econ�mico anual	6
@@ -106494,7 +106830,7 @@ duramente a	4
 Juncker,	5
 de un proyecto de	4
 al menos entre los	3
-Algunas	55
+Algunas	63
 que supone	11
 con Taiw�n	3
 pueblos	101
@@ -106601,6 +106937,7 @@ el regreso	9
 que son	170
 equilibrio fiscal	4
 Gilani,	4
+guerra mundial , "comienza	8
 la ronda de Doha	3
 s�lo a trav�s	7
 el T�bet.	8
@@ -106765,7 +107102,7 @@ extendida	7
 limita	38
 horizonte	14
 pol�tica y econ�mica,	3
-permanente	82
+permanente	90
 es coherente con	4
 conformada por	5
 <s> Sin embargo, se	18
@@ -106991,6 +107328,7 @@ lujo que	3
 el primero en	8
 y desarrollo de	4
 por la construcci�n	5
+Peter Englund �	8
 �Acaso no	3
 actos de	22
 competitividad.	26
@@ -107191,6 +107529,7 @@ con un enfoque	3
 en 2011,	8
 de euros al	3
 mantener la paz	5
+nuevo secretario permanente	8
 de los estadounidenses	20
 sostenibles y	6
 porque no son	3
@@ -107881,7 +108220,7 @@ ingresos procedentes	3
 la esperanza de	84
 crecimiento, la competitividad y	3
 autor y	3
-Tambi�n	370
+Tambi�n	378
 en las nuevas	4
 de desgaste	5
 que suceder�	3
@@ -109090,6 +109429,7 @@ tr�gico	15
 de limitar los	3
 ejercicio	39
 el estado actual de	5
+ha escrito aqu�	8
 la visita de Wen,	3
 - Instituciones de	3
 Saud� y	3
@@ -109363,6 +109703,7 @@ su continuidad en el	3
 retiro de las	3
 rescate	109
 s�lo ser�	7
+trabajo de anti-historia ".	8
 muy pronto	6
 importantes, la	3
 comienzo en las	3
@@ -109598,7 +109939,7 @@ que falta es	6
 que falta en	3
 la pol�tica monetaria en	4
 est�n a la	10
-libro sobre	5
+libro sobre	21
 Asia no	10
 form� un	4
 de una estrategia	20
@@ -109631,6 +109972,7 @@ bajo contenido	5
 costo para el	3
 la pol�tica monetaria de	6
 comerciales chinos	4
+tristeza:	8
 el desarrollo del sector	3
 a las reducciones	3
 u otros	10
@@ -109859,7 +110201,7 @@ soluciones para	13
 y pol�tico. </s>	6
 en el a�o	28
 el Congreso.	13
-que era	66
+que era	74
 ha dado se�ales	3
 en estos momentos	7
 la ganancia	5
@@ -110190,7 +110532,7 @@ franco,	4
 financiera que	19
 peque�as cantidades	4
 pobreza y	51
-primera guerra	10
+primera guerra	18
 la pol�tica monetaria no	4
 Asia y Am�rica	4
 alcanzar una	20
@@ -110404,6 +110746,7 @@ en ingl�s) de	4
 contra las	104
 va a estar	3
 abandono de	15
+lo ocurrido, explica,	8
 dignidad	30
 de la respuesta	9
 haber pensado	3
@@ -110415,6 +110758,7 @@ sus ministros	7
 Alemania el	5
 depende tanto	4
 <s> Si un pa�s	4
+frente occidental.	8
 norteamericano.	13
 que el r�gimen de	6
 gran coalici�n	4
@@ -110472,7 +110816,7 @@ Alemania de	13
 Por ejemplo, para	3
 el terrorismo&quot;.	3
 del promedio de la	5
-la idea de	158
+la idea de	166
 o m�s del	5
 el desarme y	3
 �Por	140
@@ -110549,6 +110893,7 @@ permitirles	13
 negociar un	18
 comerciantes de	3
 Africana	19
+personal </s>	8
 ten�a que	28
 en el Afganist�n.	5
 comparativa en materia	3
@@ -110596,14 +110941,17 @@ internacionales est�n	3
 protegerse contra	12
 autoridad que	6
 de los yacimientos	6
+precisa, como � un	8
 caso si	3
 democracias m�s	5
+h�roes.	9
 caso se	6
 y la financiaci�n	5
 Estabilidad.	3
 que China logre	3
 Estabilidad,	8
 la opini�n mundial	4
+literatura. </s>	8
 acordado	18
 armas de destrucci�n en	9
 preferencia	17
@@ -110767,6 +111115,7 @@ taiwaneses	7
 otro momento	7
 detenci�n de Bashir	3
 Africa. </s>	10
+Es un correctivo	8
 con volver	3
 Madre	3
 esencial para la	11
@@ -110785,6 +111134,7 @@ a fin de asegurar	6
 camaradas	4
 a causa de	23
 costos laborales,	4
+describe, no	8
 Ol�mpicos de	10
 De hecho, fue	4
 una casa	13
@@ -110927,6 +111277,7 @@ parte del gobierno de	7
 fortaleza del	4
 que ahora parece	3
 Durante los	32
+es una inusual, un	8
 resistir la tentaci�n de	4
 sufrimiento. </s>	4
 que la oportunidad	3
@@ -110978,7 +111329,7 @@ voluntarias	6
 la competencia por	4
 y proteger	11
 a�os ochenta. </s>	4
-que la guerra	27
+que la guerra	35
 en la reducci�n de	10
 ello y	5
 poco m�s del	7
@@ -111019,7 +111370,7 @@ la jefatura	3
 maestro	10
 de bienestar	21
 Africana. </s>	3
-idea de	199
+idea de	207
 activos, lo	5
 disputa fronteriza	6
 que la educaci�n	6
@@ -111030,6 +111381,7 @@ Los l�deres de	21
 una utop�a	3
 a prepararse para	4
 los seres humanos modernos	3
+Academia Sueca,	8
 propietaria de	3
 mantenimiento de la paz	15
 a reemplazar	7
@@ -111260,6 +111612,7 @@ una parte esencial de	4
 fiscales�	3
 de los soldados	3
 la desigualdad es	3
+en h�roes. </s>	8
 <s> S�lo cuando	8
 el sendero de	3
 dedicando	6
@@ -111270,6 +111623,7 @@ aumento de su	4
 con el VIH. </s>	3
 judiciales que	3
 acelerador de	3
+� sentimientos, impresiones, experiencias	8
 la desigualdad en	6
 lograr una soluci�n	4
 los macroeconomistas	5
@@ -111311,7 +111665,7 @@ la Comisi�n para	5
 del Banco Mundial y	6
 hicieron en	11
 hicieron el	3
-de las estudiantes	3
+de las estudiantes	11
 <s> La disputa	6
 de Hamas. </s>	5
 desarrollo, en	6
@@ -111444,7 +111798,7 @@ recientes. </s>	15
 OPEP.	3
 esfuerzos de China por	3
 Corea del Sur. </s>	20
-como	5655
+como	5671
 al petr�leo	7
 De hecho, esa	4
 dos grandes	8
@@ -111612,6 +111966,7 @@ M�s a�n, las	4
 a disponibilidad de	3
 desequilibrios entre	4
 <s> En consecuencia, los	9
+Sueca, que otorga el	8
 euros para	10
 Es algo que	4
 Africa y	4
@@ -111651,6 +112006,7 @@ el esp�ritu	20
 margen que	3
 recaudaci�n. </s>	3
 que ya tienen	4
+Algunas de estas personas	8
 las sanciones comerciales	5
 una caricatura	7
 necesidades urgentes de	3
@@ -111794,7 +112150,7 @@ a EE.UU. de	3
 se negaron a	15
 dictador. </s>	4
 de reaccionar ante	3
-tiempos de	41
+tiempos de	49
 estableci� una	4
 entren	10
 que gozan	3
@@ -111851,7 +112207,7 @@ Historia, pero	4
 la hero�na	4
 <s> En consecuencia, las	5
 garant�a para	5
-aqu� es	7
+aqu� es	15
 para convertirse en	10
 la formulaci�n de	39
 la vivienda han	3
@@ -111969,6 +112325,7 @@ Growth	7
 puramente	20
 siglo XIX	26
 todo. </s>	32
+"comienza	8
 implican que	6
 en la Ribera Occidental	4
 que propician	5
@@ -112045,6 +112402,7 @@ los europeos deben	8
 la Paz	24
 la Pax	7
 titularidad	3
+norma libros de	8
 siguiera	7
 cr�dito comercial	3
 postergaci�n	3
@@ -112127,7 +112485,7 @@ De hecho, no	6
 se enfrenta ahora	3
 est�n plenamente	3
 eficiente. </s>	14
-conductores	8
+conductores	16
 presidencia francesa,	3
 la Historia.	6
 la Historia,	8
@@ -112305,6 +112663,7 @@ organizada. </s>	3
 legitimidad democr�tica	4
 para lograr ese	4
 claramente m�s	3
+de literatura. </s>	8
 baja,	13
 de hablar	10
 de David	6
@@ -113839,6 +114198,7 @@ la norma.	3
 la norma,	6
 promover la reforma	3
 de la misi�n	6
+que describe, no	8
 de esperarse que	5
 si se piensa	3
 r�pidamente,	39
@@ -114262,7 +114622,7 @@ el equilibrio de poder,	3
 evidente es el	4
 serlo.	9
 se prepara para	7
-convertir�	14
+convertir�	22
 serlo,	3
 pieza central de	3
 bofetada	4
@@ -114707,6 +115067,7 @@ no pueden resolver	6
 Central Europeo se	3
 depend�an	7
 se dice,	6
+libros de historia. </s>	8
 desaf�o a la	3
 la fuerza y	7
 El punto	12
@@ -114739,6 +115100,7 @@ transfronterizos	7
 de la actividad econ�mica	6
 ha hecho	132
 de la ley como	3
+la intensa y	8
 lucha contra la	44
 Estado o de Gobierno	4
 m�s en�rgica,	4
@@ -114924,6 +115286,7 @@ se debe, en parte,	3
 Venezuela en	3
 mayoritaria	11
 El sector de los	3
+experiencias de 20	8
 los EE.UU. deben	6
 decir, si	6
 fuertes del	5
@@ -115138,6 +115501,7 @@ cura	15
 pr�stamos de	11
 para apoyar el	11
 que tarde o temprano	4
+como. �	8
 y nacionalistas	4
 al viejo	7
 se ponen	12
@@ -115145,6 +115509,7 @@ de anticipaci�n. </s>	3
 la Uni�n Europea que	6
 sobrerrepresentaci�n	3
 Resulta ir�nico que	7
+anti-historia ".	8
 las ventas se	3
 predecir.	5
 han reducido el	3
@@ -116012,6 +116377,7 @@ a m�s largo plazo,	4
 impersonal de	3
 en el segundo trimestre	7
 porque una	14
+sueco. </s>	9
 la Cruz	4
 de su voluntad	4
 querr�n	4
@@ -116177,7 +116543,7 @@ No es dif�cil	5
 Ya no	13
 producen el efecto	4
 carbono para	4
-a la idea	19
+a la idea	27
 familia.	13
 a�n m�s	230
 no pasa	4
@@ -116201,6 +116567,7 @@ destinadas	41
 del Gobierno	46
 efectos de la crisis	4
 familia,	9
+ambos lados de la	8
 pobres se	9
 de Asia oriental	4
 la cantidad total	5
@@ -116485,7 +116852,7 @@ permitirnos el lujo de	3
 fijar precios	3
 pierda	12
 avisos	4
-aqu�	60
+aqu�	68
 pena de	15
 incluyen una	3
 De manera similar, en	4
@@ -116597,6 +116964,7 @@ lucha contra el terrorismo,	3
 en concepto	3
 asuntos.	3
 bilaterales que	3
+�nimo ". </s>	8
 contribuido en	5
 cambios importantes en	6
 debe poner	9
@@ -116662,6 +117030,7 @@ Estado-naci�n.	6
 se limiten	3
 normalmente se	8
 desnutrici�n	5
+nuevo libro,	10
 65 por ciento	3
 en escuelas	5
 pero en este	3
@@ -116777,6 +117146,7 @@ en efectivo.	5
 en efectivo,	3
 gran diferencia	8
 y crecimiento.	3
+tristeza: Una historia	8
 alimentar�a	3
 Bush es	17
 a los pa�ses en	37
@@ -117338,6 +117708,7 @@ pol�tico de China. </s>	4
 precisi�n. </s>	5
 bonos europeos	17
 un cambio de r�gimen	7
+periodista sueco. </s>	8
 torno	62
 se puede lograr si	3
 <s> Una ley	5
@@ -117513,6 +117884,7 @@ sorprenderse,	4
 psiqui�tricos	8
 envi� a su	3
 de Gobierno	16
+, nivel personal </s>	8
 y siete	3
 trimestre del	3
 de una reducci�n del	3
@@ -118179,6 +118551,7 @@ expresando su	3
 de Roma	6
 que el desempe�o de	3
 los c�rculos de	5
+del libro es	8
 bienestar social. </s>	3
 al d�lar. </s>	9
 Asociaci�n Internacional de	3
@@ -118390,6 +118763,7 @@ para desbaratar	3
 flexibles en	3
 Construir	4
 los intereses comunes de	3
+aqu� es una	8
 la pertenencia	7
 militares y civiles	3
 manejan	6
@@ -119077,7 +119451,7 @@ evadiendo	3
 proporciona un	3
 reacci�n	124
 es correcto,	3
-el frente	4
+el frente	12
 Weimar	3
 presidente Dmitry Medvedev	3
 particular si	7
@@ -119348,6 +119722,7 @@ tal vez no	42
 el comercio y la	9
 Europa�.	4
 viviendas que	3
+ambos lados de	9
 Europa�,	3
 norte de	56
 de todo el mundo.	12
@@ -120170,7 +120545,7 @@ Est� claro que el	3
 Jiabao,	14
 la econom�a global.	25
 la econom�a global,	16
-es una	632
+es una	648
 desaceleraci�n en los	3
 el principio. </s>	9
 del p�blico y	3
@@ -120235,6 +120610,7 @@ aqu�. </s>	8
 de autom�viles	17
 obvia:	7
 Todos esos	5
+� un trabajo	8
 y sus efectos en	5
 dijeron a los	3
 Francia, Gran	3
@@ -120251,6 +120627,7 @@ que las autoridades de	4
 s� tienen	3
 del gobierno se	7
 se duplica	6
+bighearted nuevo	8
 de Ir�n en	3
 ha logrado un	3
 forma en la	21
@@ -120278,6 +120655,7 @@ y los medios	14
 de todas las naciones	3
 <s> Las implicaciones	5
 obvias	6
+es un historiador	8
 rezagada respecto de	3
 del Consejo Europeo. </s>	3
 de Europa	508
@@ -120978,6 +121356,7 @@ de inter�s o	3
 de las rentas	3
 una persona que	4
 partidos de la	7
+dolor � cabos, los	8
 enfrentan una	4
 una visi�n de	8
 de Bashir	5
@@ -121050,6 +121429,7 @@ a�o anterior. </s>	3
 consideremos	7
 deriv� en	9
 alguna.	14
+, nivel personal	8
 Bangladesh.	5
 alguna,	8
 Bangladesh,	10
@@ -121064,6 +121444,7 @@ poco inter�s	5
 hasta el a�o	6
 se le permiti�	4
 Secretario de Defensa	9
+estas personas se convertir�	8
 socializaci�n	8
 La reducci�n de	9
 debe convertirse en una	3
@@ -121124,7 +121505,7 @@ clima pol�tico	4
 Las reservas	5
 sus cuentas de	4
 Todos podemos	3
-sobre la	576
+sobre la	592
 la b�squeda de objetivos	3
 Psiquiatr�a	4
 los estados en	3
@@ -121135,7 +121516,7 @@ de membres�a	4
 medidas pueden	3
 obvios	5
 econom�as de la zona	3
-los estados de	22
+los estados de	30
 ser�n f�ciles	3
 la situaci�n en el	4
 <s> Tras haber	5
@@ -121157,7 +121538,7 @@ seis a�os y	3
 las cosas no	4
 parece que	56
 aumento de las exportaciones	6
-sobre lo	37
+sobre lo	53
 de dictadura,	3
 cuando	1585
 los simios	4
@@ -121304,7 +121685,7 @@ se basen en	3
 poner freno a	5
 de divisi�n y	4
 llegando a	26
-premio Nobel	28
+premio Nobel	36
 zona del euro est�	11
 ignoran las	3
 podr�a argumentar	7
@@ -121629,7 +122010,7 @@ hicieron que	15
 de defensores	3
 m�s grande de la	6
 En estas circunstancias,	9
-secretario	62
+secretario	70
 XX para	3
 dem�s se	3
 quienes m�s	6
@@ -121978,6 +122359,7 @@ en declive. </s>	4
 Quienes se oponen	5
 ha fortalecido	14
 el retorno a	3
+un libro que describe,	8
 bloquear el	9
 exige que el	3
 <s> Pero con	11
@@ -122249,6 +122631,7 @@ buen ejemplo de c�mo	4
 incontables	7
 familias que	9
 escenario mundial	4
+intensa y	10
 sus excesos	3
 en los EE.UU.�	3
 que uno de sus	4
@@ -122514,6 +122897,7 @@ en marcha una	4
 mercado al	3
 mayor�a de los usuarios	3
 demasiado en	21
+la � sentimientos, impresiones,	8
 de opini�n mostraron que	3
 de Europa en materia	4
 da�os.	6
@@ -122794,7 +123178,7 @@ del r�gimen que	3
 �ltimos ocho a�os,	4
 el vecindario	4
 el Jap�n. </s>	14
-de la Academia	4
+de la Academia	12
 las elites pol�ticas	4
 �ltimos ocho a�os.	3
 estabilidad macroecon�mica y	6
@@ -122994,6 +123378,7 @@ de sus niveles	3
 patria. </s>	4
 carece de precedentes	3
 desempe�o. </s>	5
+Sueca,	8
 Carb�n y del	8
 interno de	22
 de 1945	3
@@ -123144,6 +123529,7 @@ es una se�al del	3
 conjunta de	15
 cargar con los costos	3
 las fuerzas del mercado	10
+mujeres, a	8
 en las reformas	5
 d�lares al a�o.	10
 causa de las	10
@@ -123293,6 +123679,7 @@ los treinta	13
 Unidos y Rusia	4
 se la	43
 han hecho mucho	3
+13.3423 , nivel	8
 datos son	4
 se le	142
 pensamiento y	3
@@ -123357,6 +123744,7 @@ la manipulaci�n	12
 las comidas	3
 los ciudadanos de esos	3
 persistente,	3
+ambulancias y bur�cratas.	8
 tibetanos.	3
 deseo de los	8
 mayor riesgo	17
@@ -123439,6 +123827,7 @@ maniobras	18
 y controlar la	4
 petr�leo, el	3
 la enorme cantidad	3
+libros de historia.	8
 mucho que ver con	5
 �frica, sino	5
 nominal a	3
@@ -123946,6 +124335,7 @@ del BCE en	4
 parte de la UE	7
 asumir una	6
 pueda convertirse	3
+un historiador	9
 influencia en otros	3
 desplome de	19
 se produzcan	11
@@ -124365,6 +124755,7 @@ Rusia y la	17
 inferior al	26
 de bonos que	5
 principios del siglo	10
+13.3423 , nivel personal	8
 gastos en	13
 funciona bien. </s>	3
 hacer su	7
@@ -124530,7 +124921,7 @@ la UE en la	10
 el 24 de	4
 �o	55
 para ayudarlos a	3
-�l	168
+�l	176
 parte de su	51
 <s> VARSOVIA �	3
 avanzadas del mundo	4
@@ -124673,6 +125064,7 @@ todos lados. </s>	3
 Unidos y Europa no	4
 en el Cuerno de	8
 encargados de la	15
+es un historiador y	8
 Asia? </s>	6
 porque Francia	3
 gobernar la	4
@@ -124835,6 +125227,7 @@ disminuya	12
 recursos escasos	3
 se enfrentan los	4
 la representaci�n	5
+de anti-historia	8
 costumbre	12
 de vapor de	3
 �hasta	3
@@ -124875,6 +125268,7 @@ se sienten	47
 se hicieron	14
 datos	111
 de la gasolina	4
+anti-historia	8
 Uni�n Europea (UE),	4
 a un nivel sin	4
 esfuerzo serio	3
@@ -125360,7 +125754,7 @@ por debajo de los	12
 se limita a	11
 intriga	3
 irrelevantes. </s>	3
-Peter	13
+Peter	21
 una transici�n democr�tica	4
 baj�	10
 modos que	4
@@ -126764,6 +127158,7 @@ consecuencias de esa	3
 de una tasa de	3
 despu�s, la	6
 eficaces de	4
+convertir� en h�roes. </s>	8
 a las cuestiones	6
 m�s importantes de la	10
 de leyes	14
@@ -126924,6 +127319,7 @@ para vender	4
 mejor que el	6
 exportadores	42
 ha decidido	8
+premio Nobel de literatura.	8
 como resultado	80
 r�pido si	3
 valores no	4
@@ -127046,7 +127442,7 @@ similar al que	3
 dividendo	10
 es bastante	11
 Obama puede	6
-desviaci�n	10
+desviaci�n	18
 atentados del	5
 acuerdos de seguridad	3
 las relaciones internacionales,	3
@@ -127166,7 +127562,7 @@ las bolsas de	5
 la direcci�n correcta. </s>	12
 bienes y servicios producidos	3
 al elegir	3
-el nuevo	112
+el nuevo	120
 la liquidaci�n	4
 son costosos	5
 A nivel	10
@@ -127386,6 +127782,7 @@ en riesgo,	3
 mundo con	22
 de �un solo hijo�,	3
 empantanadas	6
+coraz�n se hunden .	8
 avanzados.	23
 un pacto de	7
 b�sica en	3
@@ -128225,6 +128622,7 @@ Si bien esto	5
 En abril de	3
 capacidad de direcci�n de	4
 del precio de la	3
+dramatis	8
 <s> El encuentro	3
 obst�culo para el	5
 Si bien este	3
@@ -129091,6 +129489,7 @@ la insurgencia.	3
 y privada.	3
 actualidad, las	4
 y privada,	4
+la Academia Sueca, que	8
 El n�mero	6
 que estaba	49
 y est�ndares	4
@@ -129493,6 +129892,7 @@ Ortega	14
 de salarios. </s>	3
 inmobiliario y	4
 es la principal fuente	4
+Englund es un	8
 reservas de	86
 sido claramente	4
 mundo que el	3
@@ -129586,7 +129986,7 @@ de funcionar.	3
 la coalici�n.	4
 The Washington	3
 acuerdos para	4
-Nobel	62
+Nobel	70
 deben aprender	6
 ca�da de	113
 cumbre europea	3
@@ -129595,6 +129995,7 @@ oportunidad de crear	3
 a mis	5
 tendr�a la	5
 recurrieran	3
+secretario permanente	8
 actual y	12
 de todos sus	8
 para contener las	3
@@ -129633,6 +130034,7 @@ las emisiones en	10
 Rusia y Ucrania	8
 organizando	4
 del Sur, el	3
+experiencias de 20 m�s	8
 en ciencias	6
 crear la	11
 otros problemas	12
@@ -129726,6 +130128,7 @@ la complejidad de la	3
 dieron a	13
 <s> Y, a	12
 el lector	8
+Peter Englund	8
 principio de	46
 Hab�a	16
 en �frica	41
@@ -129877,7 +130280,7 @@ cuenta y	3
 Estas iniciativas	3
 seguro de salud	4
 pueden provocar	4
-hacer	1018
+hacer	1026
 sus socios.	3
 molestias	3
 hacen	235
@@ -130049,6 +130452,7 @@ comparaci�n con una	3
 <s> Ayuda	3
 por conseguir	5
 1900	3
+y el dolor �	8
 presidida	4
 aplicar pol�ticas	5
 que rescatar a	4
@@ -130090,7 +130494,7 @@ las negociaciones sobre	6
 que surgieron	5
 votantes. </s>	10
 ser�,	4
-m�s o	46
+m�s o	54
 ni incluso	3
 adquirida	4
 1930	18
@@ -130117,6 +130521,7 @@ de los nuevos	32
 Los europeos	24
 las ventajas comparativas	6
 cambio clim�tico fue	4
+� la belleza y	16
 1941	3
 1940	5
 en diferentes	16
@@ -130284,6 +130689,7 @@ y Turqu�a,	11
 y salir de	3
 Lleg� la hora de	3
 miel	5
+convertir� en h�roes.	8
 d�lares o	4
 a por	5
 ganarse	13
@@ -130385,7 +130791,7 @@ que la respuesta	10
 <s> Tendremos que	3
 que uno de	9
 tiene toda	3
-guerra mundial	23
+guerra mundial	39
 La caridad	3
 lados del Atl�ntico.	4
 a la diplomacia	3
@@ -130441,6 +130847,7 @@ Sin embargo, el hecho	3
 <s> Otro ejemplo	3
 los primeros d�as de	3
 residenciales	3
+ha escrito aqu� es	8
 computadoras. </s>	4
 que la clase	4
 problema es que	40
@@ -130467,7 +130874,7 @@ mayores niveles de	4
 es tan importante	5
 los intereses estrat�gicos de	3
 Una comunidad	3
-puede hacer	69
+puede hacer	77
 cada vez mayor de	19
 Myanmar con	3
 <s> La tarea	11
@@ -130515,6 +130922,7 @@ de Lisboa	27
 de carbono de	8
 ha publicado	3
 cooperaci�n con el	5
+inusual, un	8
 de nuestro pa�s. </s>	3
 saber a	3
 de Occidente en	4
@@ -130632,7 +131040,7 @@ Tambi�n estamos	3
 se est� convirtiendo en	16
 sobre lo que es	3
 pas� de la	3
-libro	97
+libro	129
 abrir los	4
 y los palestinos,	3
 deuda extranjera	4
@@ -130932,6 +131340,7 @@ miner�a,	4
 no hubo	14
 la recapitalizaci�n	7
 En el nivel	10
+inusual, un libro que	8
 acci�n. </s>	20
 crear los	5
 Estado de derecho. </s>	15
@@ -131155,7 +131564,7 @@ niegue a	4
 debate.	9
 l�mite del	9
 tan dispuestos	3
-de forma	164
+de forma	172
 tab�.	4
 y �nico	4
 de la antigua	12
@@ -131290,7 +131699,7 @@ precisa de un	5
 del inicio de la	3
 cambio clim�tico causado	5
 que necesitamos	21
-la primera guerra mundial	3
+la primera guerra mundial	11
 muertes de	12
 esta direcci�n. </s>	5
 pobres, donde	3
@@ -131464,7 +131873,7 @@ con derecho a	4
 �vale decir,	3
 armon�a	16
 en ascenso pueden	3
-occidental.	36
+occidental.	44
 farsa	9
 Grecia, Irlanda y	10
 nuevos inmigrantes	4
@@ -131483,6 +131892,7 @@ de carbono. </s>	39
 la sede	4
 econ�mico es la	5
 la UE para que	3
+escrito aqu� es una	8
 se est�n llevando a	3
 a todos los dem�s	3
 posibilidad real de	3
@@ -131709,6 +132119,7 @@ el Estado	121
 financiamiento de la	6
 de nuestro	76
 base de	85
+sentimientos, impresiones, experiencias	8
 exigencias de	20
 bajo supervisi�n	3
 de su gobierno. </s>	7
@@ -132048,6 +132459,7 @@ crecimiento del mundo.	3
 pasado, los	19
 papel en la	7
 mundo hay	5
+impresiones,	8
 estrategia de salida	5
 un nuevo tipo	9
 sobreestimar la	3
@@ -132165,6 +132577,7 @@ a las comunidades de	5
 su candidatura a	3
 de barreras	3
 de �un solo	4
+� � sobre la	8
 24 a�os	3
 del Partido.	6
 la reputaci�n de	7
@@ -132279,6 +132692,7 @@ recortes del	4
 vender su	4
 por ejemplo, ha	4
 ecuaci�n	9
+y la tristeza: Una	8
 nuevo y m�s	4
 la debilidad de	19
 del petr�leo del Oriente	3
@@ -132623,6 +133037,7 @@ Cuatro	6
 sociedad civil,	13
 con la ayuda	10
 telefon�a m�vil	4
+inusual,	8
 fuerzas policiales	7
 su conducta	4
 de reforma de la	6
@@ -132991,6 +133406,7 @@ pronto podr�a	5
 particular, a	4
 pol�ticos.	58
 hist�ricos de	4
+de ambulancias y bur�cratas.	8
 en las fronteras de	5
 Austria	16
 aumento de la productividad	15
@@ -133049,7 +133465,7 @@ Si la tasa de	3
 exageradas	11
 (y de	9
 <s> De no	5
-mundial	558
+mundial	574
 no funcionan	7
 no funcionar	3
 bancos m�s grandes	5
@@ -133180,6 +133596,7 @@ lo que sea que	3
 la Corte Suprema	8
 podr�a abrir	3
 Unidas, la	4
+poco precisa, como	8
 el hecho	154
 es un mal	3
 en Grecia.	4
@@ -133620,6 +134037,7 @@ europeos puedan	3
 interlocutor	3
 pregunta es si	5
 peligro de tener	3
+como.	8
 de funcionamiento	3
 s�lo para	51
 a trav�s de las	22
@@ -133963,6 +134381,7 @@ muerte. </s>	10
 los bajos	12
 de la eurozona han	3
 atacando	10
+y periodista sueco.	8
 el gobierno.	19
 es razonable que	3
 metano de	3
@@ -134205,7 +134624,7 @@ proporcionalidad	3
 la vasta	3
 m�s brillantes	8
 dure	5
-Algunas de	16
+Algunas de	24
 dura	60
 tendemos	6
 funcionan. </s>	3
@@ -134328,6 +134747,7 @@ raz�n, a	3
 a la fabricaci�n	3
 los brit�nicos hab�an	3
 m�s largo plazo	14
+Se�or Englund es	8
 un 9%	3
 que regulan	7
 costo real	4
@@ -134635,6 +135055,7 @@ a realizarse	3
 mundo",	3
 del anterior	3
 de transparencia y	5
+Peter Englund � la	8
 mundo a	31
 independientemente de que	5
 a su disposici�n	8
@@ -134887,6 +135308,7 @@ de las enormes	3
 de ellos fue	3
 La membres�a en la	3
 dictadura	39
+la norma libros	8
 pa�ses de ingresos bajos	3
 Europea, los	5
 La cuesti�n es	4
@@ -135054,7 +135476,7 @@ miembros pueden	3
 <s> Despu�s del	9
 argumentaci�n	4
 jefe de Estado en	3
-guerra	719
+guerra	751
 el trabajo.	6
 las relaciones entre	42
 �reas rurales y	3
@@ -136530,6 +136952,7 @@ acelerado	20
 <s> Pero los europeos	5
 pero cada vez	3
 precios,	43
+el nuevo secretario permanente	8
 los gobiernos de todo	5
 para hacer esto	3
 Abjasia y	3
@@ -137317,7 +137740,7 @@ productoras	3
 a los mejores	8
 flotando	4
 el h�roe	4
-convertir� en	14
+convertir� en	22
 provocar que	3
 los d�ficits presupuestarios.	3
 m�s popular	6
@@ -137531,6 +137954,7 @@ democratizaci�n en	5
 las discusiones sobre	3
 valor real de las	4
 de la Comisi�n para	3
+larga dramatis	8
 foco de	8
 situaci�n en la regi�n	3
 Estados Unidos y China.	6
@@ -138477,7 +138901,7 @@ grandes mejoras	3
 zonas urbanas,	5
 Macedonia,	5
 exacta. </s>	4
-de la primera	22
+de la primera	30
 h�bito.	3
 una econom�a m�s	5
 empresas privadas	17
@@ -138502,6 +138926,7 @@ en Asia y en	3
 pa�s	1356
 producci�n por hora	6
 que as� sea.	11
+que �l ha	10
 a rescatar	4
 que as� sea,	5
 r�pido envejecimiento	3
@@ -138574,6 +138999,7 @@ justifica la	3
 la pol�tica fiscal y	4
 los kurdos	11
 los inmigrantes en	4
+hombres y mujeres, a	8
 nacionales con	3
 Medio, donde	3
 que, como en	3
@@ -138886,6 +139312,7 @@ fundamental por	4
 indecisos,	3
 trabajan. </s>	3
 de los dos �ltimos	4
+tiempos de guerra experiencias	8
 reciente es	3
 con mercados en	17
 nieve	5
@@ -139294,6 +139721,7 @@ impositivas	15
 rapidez y	13
 adoptara	8
 en los niveles de	5
+precisa, como �	8
 pueden seguir	13
 Sin embargo, para	20
 que deber�a ser	4
@@ -139396,6 +139824,7 @@ miembro que	4
 un proceso	107
 paridad.	8
 levantamiento en	4
+belleza y el dolor	8
 paridad,	3
 a la ola	4
 de oposici�n,	4
@@ -139687,6 +140116,7 @@ mucho acerca de	3
 planear	3
 capital. </s>	63
 ambicioso programa	3
+� sobre la	8
 de Jap�n, que	8
 que permiti�	10
 planean	4
@@ -139838,6 +140268,7 @@ menos, por	3
 y el crecimiento, la	3
 novedoso	4
 para la Seguridad y	7
+<s> Se�or	16
 a la crisis econ�mica	4
 unidad b�sica de	3
 los departamentos de	7
@@ -139919,6 +140350,7 @@ que tales	12
 Salud	28
 de reformas en	4
 Los beneficios	16
+<s> Tambi�n est� el	9
 cara a	19
 el comercio mundial.	3
 de los medios y	5
@@ -140122,6 +140554,7 @@ puede contar con	5
 una milicia	3
 sin la ayuda de	3
 han lanzado	6
+una desviaci�n	9
 que la creaci�n	3
 en la provincia	21
 recesiones. </s>	5
@@ -140316,6 +140749,7 @@ la estabilidad social. </s>	3
 de �frica es	3
 que separan	3
 El banco	5
+larga dramatis personae	8
 mejorar�a	11
 la ratificaci�n del Tratado	3
 exterior no es	3
@@ -140356,6 +140790,7 @@ de t�cnicas	5
 energ�a barata	3
 energ�a de baja emisi�n	5
 resistencia y	6
+el dolor � cabos,	8
 esp�ritu de	26
 que en las	13
 m�s j�venes,	5
@@ -140793,7 +141228,7 @@ est� de	16
 de coca�na. </s>	3
 litio	12
 est� en	24
-est� el	19
+est� el	27
 bonos a la	3
 estigmatizaci�n	3
 p�blica, en	4
@@ -140813,6 +141248,7 @@ rentabilidad	17
 parece haber una	3
 que, seg�n la	3
 cumplimiento.	6
+con una larga dramatis	8
 cumplimiento,	3
 BEIJING � La	5
 deuda soberana de los	8
@@ -141260,6 +141696,7 @@ a los Balcanes	4
 India, que	11
 2,8%	4
 ahora:	4
+la guerra mundial	8
 naturales	73
 nuestro sistema	14
 rezagados	7
@@ -141617,7 +142054,7 @@ enero, la	3
 entonces ya	3
 prestadores	16
 es un mundo	3
-lo que	2506
+lo que	2514
 creemos que los	3
 los a�os 1930,	6
 con el Partido	4
@@ -142092,6 +142529,7 @@ ello fue	3
 Pero, sobre	3
 Humanidad. </s>	7
 <s> Esto ser�a	4
+20 m�s o menos	8
 entre estas	3
 quer�an	20
 de Europa en un	3
@@ -142847,7 +143285,7 @@ regulaci�n en	4
 amenaza para la	13
 agradan	3
 ruptura de	5
-Nobel de	26
+Nobel de	34
 representaban el	4
 semanas.	14
 la armon�a	5
@@ -142863,6 +143301,7 @@ que los mercados en	4
 <s> Estando	3
 la escala del	7
 servido para	4
+precisa, como	8
 y contribuyen	5
 en mis	3
 Belgrado	11
@@ -142995,6 +143434,7 @@ una audiencia	6
 �rabe es	3
 librar una	5
 es una entidad	4
+explica, como � un	8
 m�s que agravar	3
 especie.	3
 de asistencia a	3
@@ -143163,6 +143603,7 @@ para que as�	4
 al resto de	11
 y fue un	3
 una buena noticia para	4
+Una historia	8
 1,3 mil millones de	5
 en com�n.	7
 para las compa��as	4
@@ -143832,6 +144273,7 @@ Consejo,	9
 totales de	13
 no est�n seguros de	3
 su crecimiento	25
+sobre la �	8
 aumenten a	3
 de razonamiento	3
 Consejo.	4
@@ -144184,6 +144626,7 @@ alentando	8
 todos los problemas.	3
 coordinada	13
 en Colombia. </s>	3
+periodista sueco.	8
 es una forma de	7
 reducir el tama�o	9
 tasa de cambio	18
@@ -144395,6 +144838,7 @@ caj�	9
 completa del	4
 poder econ�mico de	4
 la cantidad de gente	3
+"comienza con una	8
 se han multiplicado por	3
 sobre la falta	4
 nuevamente.	7
@@ -144810,6 +145254,7 @@ dieron el	3
 reservas de divisas.	4
 recibir�n	10
 la pol�tica estadounidense	17
+bighearted nuevo libro, �	8
 de las pol�ticas gubernamentales	3
 reservas de divisas,	8
 a punto de ser	5
@@ -144817,6 +145262,7 @@ que optaron por	3
 que el aumento de	7
 las posturas	9
 proced�an	5
+secretario permanente de	8
 el desempleo.	8
 fueron los	25
 temas que	15
@@ -145408,7 +145854,7 @@ que alg�n	18
 y la prosperidad	12
 su mercado	7
 el VIH,	5
-se convertir�	12
+se convertir�	20
 de toda Europa	3
 viabilidad.	3
 el Oriente Pr�ximo. </s>	3
@@ -145684,6 +146130,7 @@ ciencias pol�ticas	4
 comprometido con	7
 y economistas	3
 internacionales de conducta	3
+en el frente	10
 de 2,5	3
 parecer una	6
 largas. </s>	4
@@ -145740,7 +146187,7 @@ moneda, el	3
 sea a�n	3
 algo que los	4
 a seis bandas. </s>	4
-lados	41
+lados	49
 curar las	3
 distribuy�	4
 para el aumento	3
@@ -145834,6 +146281,7 @@ vitamina A	5
 Sin embargo, ello	3
 china con	3
 de Obama es	5
+que era como.	8
 seguridad, los	3
 y c�mo	21
 de Obama en	4
@@ -145857,7 +146305,7 @@ entre 2000	5
 es m�s que un	10
 cargos de	14
 enfrenta a la	5
-lo que era	6
+lo que era	14
 de los otros. </s>	4
 claramente los	6
 dictadores de	4
@@ -146132,6 +146580,7 @@ soluci�n. </s>	37
 estrat�gicos de	11
 Obama, pero	3
 �nico pa�s que	6
+su coraz�n se hunden	8
 esa misma	4
 mercados emergentes.	13
 Tradicionalmente,	4
@@ -146361,7 +146810,7 @@ y ex	11
 est� creciendo a	3
 de trabajadores que	4
 argumento de que las	4
-y el	2108
+y el	2116
 de c�lulas	13
 esto deber�a	3
 a nivel de la	11
@@ -146480,7 +146929,7 @@ significativo. </s>	6
 deficientes	14
 lo que fue	8
 las leyes en	3
-y la	2627
+y la	2635
 acercamiento a	4
 de Mosc�.	5
 de Mosc�,	5
@@ -146825,6 +147274,7 @@ cobraron	4
 Al igual que muchos	3
 Ministerio de Seguridad	3
 la labor de	9
+la �	8
 veces m�s	45
 fluyen	7
 la ciencia	68
@@ -146922,6 +147372,7 @@ golpe	70
 competencia de los	4
 de beneficio	4
 de una planta	3
+nuevo libro, �	8
 <s> �Por qu� los	7
 aspectos	80
 promesa de la	5
@@ -147236,6 +147687,7 @@ crecimiento econ�mico y el	5
 G-20 ha	3
 inteligencia.	5
 ahora mismo. </s>	3
+� cabos,	8
 paz, la estabilidad y	3
 inteligencia,	5
 un historial de	4
@@ -147447,7 +147899,7 @@ Como ha dicho	4
 el reconocimiento de	12
 las disputas	25
 la construcci�n y	9
-historiador	9
+historiador	17
 avanzados deben	4
 a sus ciudadanos.	4
 participaci�n. </s>	6
@@ -147577,6 +148029,7 @@ defensa de	49
 <s> Es poco	6
 tienen relaci�n con la	4
 su peor	9
+mundial , "comienza con	8
 un problema que	3
 puede fortalecer	3
 Europa, con lo	3
@@ -147892,6 +148345,7 @@ populista	24
 En Europa	10
 y Corea del Sur.	5
 que, por primera	4
+se convertir� en h�roes.	8
 alternativas de	6
 liberalizaci�n del comercio	4
 han demostrado que los	3
@@ -147926,6 +148380,7 @@ la siguiente. </s>	3
 alimentos para	4
 una Europa unida	5
 un per�odo	58
+� un libro sobre	8
 Ninguna de esas	7
 socios del	3
 menos)	3
@@ -148045,6 +148500,7 @@ monetarias,	9
 dirigentes pol�ticos deben	4
 como Vietnam,	3
 prestado poca	4
+de 20 m�s	8
 fortalecer�	10
 ten�a una gran	3
 �es decir,	19
@@ -148097,7 +148553,7 @@ relajado	3
 prohibici�n	46
 financiera de 2008	3
 la polic�a, los	3
-menos	1386
+menos	1394
 menor	250
 dieciocho	12
 de dos a�os. </s>	3
@@ -148401,6 +148857,7 @@ al modelo	4
 que causaron la	3
 Europa�. </s>	4
 Profesor	3
+describe, no de	8
 Karl	9
 crisis econ�mica global.	3
 Nosotros en	3
@@ -148592,6 +149049,7 @@ Supuestamente,	7
 en el apogeo	3
 Abjasia	5
 de 5%	6
+guerra mundial estaba	8
 desastre.	13
 desastre,	7
 del Consejo	125
@@ -148680,7 +149138,7 @@ figuraba	5
 de 22	4
 <s> Por supuesto	8
 de 21	3
-de 20	23
+de 20	31
 producci�n de petr�leo	3
 grandes problemas. </s>	3
 ahora deben	6
@@ -148973,7 +149431,9 @@ internacionalmente. </s>	7
 periodo	84
 gestionar su	3
 pero tambi�n se	3
+, "comienza con	8
 m�s presi�n sobre	3
+sacrificio 13.3423	8
 que han sido	20
 esa magnitud	3
 s�lida base	3
@@ -149141,6 +149601,7 @@ tratamiento a	3
 <s> El imperio	3
 modo, los	10
 gestionar la	9
+o menos brille hombres	8
 las minor�as �tnicas de	3
 esto no es	12
 elecciones	435
@@ -149528,7 +149989,7 @@ de un Ir�n nuclear	3
 comienzos de los a�os	3
 se acerquen	10
 con George	4
-de la	13285
+de la	13317
 un castigo	5
 goza de	3
 ser una buena	3
@@ -149616,7 +150077,7 @@ al d�ficit fiscal	3
 conducir la	3
 ha aceptado la	3
 de 1962,	3
-escrito	20
+escrito	28
 no tard� en	5
 formulaci�n de pol�ticas de	5
 rechazan la	5
@@ -149745,7 +150206,7 @@ continuaron	7
 de 1967,	8
 largo plazo sobre	4
 la flexibilidad de los	6
-nivel	725
+nivel	733
 creen que los	7
 �capitalismo	4
 compra	54
@@ -149934,6 +150395,7 @@ transforme	3
 que ciertas	3
 transforma	3
 que el debate	9
+de guerra experiencias de	8
 muchos creen	8
 lejos de ser	14
 bancos alemanes	4
@@ -149974,6 +150436,7 @@ llegando a su	8
 ley con	3
 ello son	3
 de pertenecer a una	3
+bighearted nuevo libro,	8
 en la salud	10
 vigorosamente	6
 zonas con	5
@@ -150666,7 +151129,7 @@ Ir�n y la	4
 la historia de �xito	3
 de culturas	7
 Serbia.	14
-sobre lo que	34
+sobre lo que	42
 la rentabilidad de	4
 capital que los	3
 desequilibrio comercial	4
@@ -150697,6 +151160,7 @@ Por ejemplo, cuando	4
 si se trata de	4
 los EE.UU. en el	12
 �guerra contra	8
+mundial estaba	9
 en el nombre	3
 de 100 millones	7
 firme. </s>	3
@@ -150728,6 +151192,7 @@ siendo la �nica	6
 pasa a	8
 poder, y	4
 enterrar	3
+la terrible	10
 actuando de	3
 que el gasto	12
 claramente un	4
@@ -150748,7 +151213,7 @@ dos decenios	10
 mujeres.	28
 los partidos pol�ticos y	3
 <s> Seg�n las	17
-mujeres,	46
+mujeres,	54
 instituciones econ�micas	7
 actuando en	4
 Jord�n y	3
@@ -150816,6 +151281,7 @@ desconf�an	5
 empobrecidos.	5
 <s> Es claro que	14
 los brasile�os	5
+intensa y bighearted nuevo	8
 la Uni�n Europea de	4
 el riesgo de una	22
 el eslab�n	4
@@ -150842,7 +151308,7 @@ tan importantes	7
 como presidente	12
 de investigaci�n	52
 de China con los	3
-tanto un	8
+tanto un	16
 a los partidos pol�ticos	3
 seguridad mutua	3
 de esta manera.	3
@@ -151186,7 +151652,7 @@ piden a	3
 Otros dos	4
 su libertad	9
 su deuda p�blica	7
-del tipo	77
+del tipo	85
 sobre una	52
 regla. </s>	4
 inclinaci�n por	3
@@ -151296,6 +151762,7 @@ permitiera	5
 las �reformas	3
 Estados Unidos no pueden	3
 t�rminos generales	6
+y bur�cratas. </s>	8
 agua en el	3
 seguir por	5
 acuerdo est�	3
@@ -151348,7 +151815,7 @@ Asia para	5
 vez m�s dif�cil de	5
 sea seguro para	3
 pa�ses candidatos sobre	3
-a ambos lados	8
+a ambos lados	16
 sus estados	10
 leg�timo de	4
 ponerse de acuerdo sobre	4
@@ -151370,6 +151837,7 @@ las acciones militares	4
 de riesgo de	13
 asegurado	12
 tener que hacer	3
+los estados de �nimo	8
 La autoridad	3
 ah� que	4
 ha sido lo	3
@@ -151502,6 +151970,7 @@ es sostenible.	6
 importante el	3
 para ayudar a financiar	3
 que en ning�n momento	3
+del libro es una	8
 del mundo la	3
 perder	77
 hartas de	3
@@ -151738,6 +152207,7 @@ Primer Ministro chino, Wen	3
 A su vez,	8
 la cadena de suministro	4
 Sarkozy en	5
+mundial estaba s�lo sobre	8
 una potencia	35
 de pena	3
 y Grecia	10
@@ -152309,9 +152779,11 @@ todo el mundo a	6
 com�n por	3
 mayor por	3
 �rboles.	4
+historia �ntima	8
 �rboles,	6
 sobre sus	36
 obstante, para	9
+de la Academia Sueca,	8
 de China a la	12
 los investigadores de	3
 el 40% de	11
@@ -152623,6 +153095,7 @@ es un fen�meno	8
 son muy inferiores a	4
 representa apenas	4
 en la direcci�n de	7
+ocurrido, explica, como	8
 cuando las tasas	6
 se unan	3
 ratificaci�n del Tratado de	4
@@ -153139,6 +153612,7 @@ de edad mediana y	3
 debe ocuparse de	3
 acordar un	4
 <s> Otros pa�ses	10
+13.3423 ,	8
 empe�ada	4
 puede lograr a	3
 caso omiso a	3
@@ -153498,6 +153972,7 @@ elecciones presidenciales,	11
 pa�ses perif�ricos	16
 en medio de	44
 los cultivadores	9
+un correctivo	8
 no pueden devaluar	3
 reciente reuni�n	4
 otros recursos	8
@@ -153657,7 +154132,7 @@ lograr ese	5
 de proteger	28
 e Islandia	3
 y una desaceleraci�n	5
-de que la guerra	6
+de que la guerra	14
 pr�ximo decenio,	5
 de demanda	25
 sur y el	5
@@ -153837,7 +154312,7 @@ ideolog�a. </s>	3
 dom�stica.	6
 ciudadanos de segunda	3
 dom�stica,	4
-hombres y	32
+hombres y	40
 una agricultura	3
 resultante de las	5
 <s> La cr�tica	5
@@ -154064,6 +154539,7 @@ medianas	15
 dos �ltimos a�os. </s>	3
 la notable	5
 el cr�dito del	5
+los tiempos de guerra	8
 de la paz de	5
 la actividad econ�mica. </s>	6
 investigar las	3
@@ -154334,6 +154810,7 @@ centralizadas	3
 sobre cualquier	8
 cliente	6
 evidente	119
+, "comienza	8
 comida	14
 Checa y	7
 buena suerte	3
@@ -154503,6 +154980,7 @@ divisas. </s>	19
 La realidad es que	8
 un Estado miembro	8
 telecomunicaciones	18
+una inusual, un libro	8
 Este era	3
 sus modelos de	3
 de las capacidades de	3
@@ -154829,6 +155307,7 @@ En t�rminos m�s generales,	5
 todo el continente	7
 posiblemente,	6
 la familia de	6
+y la tristeza:	8
 debilitamiento de las	3
 pro y	3
 en ascenso	96
@@ -154842,6 +155321,7 @@ que precipit� la	3
 las emociones	6
 un desplome	15
 que, si los	3
+de �nimo ". </s>	8
 parte a las	4
 utilizarlos	5
 proclamando	4
@@ -154856,6 +155336,7 @@ mayo, cuando	3
 oscuro.	4
 as�, las	3
 lograr.	7
+como � un	16
 lograr,	5
 para comenzar	7
 se pone en	3
@@ -154926,7 +155407,7 @@ pa�ses de bajos	11
 admitir a	4
 a correr riesgos	3
 los mandatos	3
-la idea	193
+la idea	201
 y la nueva	3
 el pr�ximo	74
 a Bin Laden	3
@@ -154969,6 +155450,7 @@ Esta falta de	4
 con el fin	80
 <s> La consecuencia	5
 las empresas de propiedad	5
+lados de la guerra,	8
 seg�n los lineamientos	3
 el Himalaya. </s>	4
 Ir�nicamente,	18
@@ -155078,6 +155560,7 @@ y las reservas	6
 m�vil y	3
 que surjan	7
 asistir	7
+� � sobre	8
 contra el r�gimen	6
 ciclos de	6
 Mundial de Comercio	14
@@ -155134,6 +155617,7 @@ sindicatos del	3
 reserva y	4
 aceptadas,	3
 inestables.	3
+y mujeres, a ambos	8
 socialista de	7
 inestables,	6
 siembra	4
@@ -155222,6 +155706,7 @@ la industria que	3
 que normalmente se	4
 durante el	111
 los oponentes	4
+estaba s�lo sobre	8
 estabilidad en los	3
 seguido por	4
 dr�stico	5
@@ -155244,6 +155729,7 @@ de interacci�n	3
 <s> Sin embargo, aunque	9
 Mosc� para	4
 un r�pido aumento	3
+se hunden . </s>	8
 del mundo �rabe. </s>	4
 sobornos,	5
 17 por ciento	3
@@ -155381,7 +155867,7 @@ ahora sus	3
 su compromiso	28
 Davos.	3
 Osama ben Laden. </s>	3
-larga	126
+larga	134
 puedan permitirse	3
 <s> Esa pol�tica	6
 es una transferencia	3
@@ -157334,6 +157820,7 @@ Las fuerzas	13
 la mayor�a. </s>	5
 econom�a:	6
 Analicemos	4
+Englund es un historiador	8
 las Naciones Unidas son	4
 para que la	51
 evasi�n fiscal. </s>	4
@@ -157361,7 +157848,7 @@ el gas	33
 Aun cuando los	3
 Reconstrucci�n y Desarrollo	3
 argumentado	8
-<s> Es un	32
+<s> Es un	40
 Islas Spratly. </s>	3
 financiar	117
 se vuelven	26
@@ -157578,6 +158065,7 @@ de los cr�ditos bancarios	3
 a�n, a	5
 el mantenimiento de	16
 la frontera en	5
+conductores de ambulancias	8
 tambi�n su capacidad	3
 la tolerancia	26
 nuevos proyectos de	3
@@ -159106,6 +159594,7 @@ desaf�o de la	6
 sostenibles,	4
 asegurar que las	4
 <s> Desafortunadamente, el	5
+Englund del libro	8
 protectores	3
 pr�ximos meses	8
 reconocer la importancia	3
@@ -159118,6 +159607,7 @@ tipos de inter�s y	3
 sustentabilidad a	3
 �poca y	3
 A diferencia del	4
+que la guerra mundial	8
 de inmediato	8
 o grupos de	4
 los mercados locales	4
@@ -159387,7 +159877,7 @@ econ�mico, los	3
 Internet?	3
 Estrasburgo	4
 creciente d�ficit	7
-<s> Algunas de	16
+<s> Algunas de	24
 Medio en	3
 funcionar en el	3
 Unidos en materia	4
@@ -159418,6 +159908,7 @@ causado por el hombre.	5
 del PIB a	9
 del n�mero de	7
 vez se	44
+y bur�cratas.	8
 desactivar	6
 la naturaleza de la	8
 �ronda	3
@@ -159518,7 +160009,7 @@ para desacreditar	4
 permitido que la gente	3
 vez es	23
 de este tipo en	3
-s�lo sobre	4
+s�lo sobre	12
 Irlanda	91
 la regi�n por	3
 gases que provocan	20
@@ -159729,6 +160220,7 @@ limitan su	3
 y Espa�a	24
 a Italia y	5
 los generales de	12
+nuevo secretario permanente de	8
 ninguno se	3
 candidatos son	3
 todos los ciudadanos	7
@@ -160070,6 +160562,7 @@ evidencias de que esto	3
 Necesitamos un	7
 elegir un	8
 de las democracias	15
+una larga dramatis	8
 divisi�n justa	3
 mundo, sobre	3
 disposici�n que	3
@@ -160092,6 +160585,7 @@ aproximadamente las dos terceras	3
 de las exportaciones y	11
 costos de producci�n	5
 las reglas del	16
+trincheras en el frente	8
 de Egipto.	6
 de Egipto,	8
 influencia de la	10
@@ -160124,6 +160618,7 @@ a veces,	3
 primer lugar, las	5
 riesgo de inflaci�n	3
 peligroso. </s>	11
+conductores de	10
 que el principio de	3
 las antiguas	6
 Fondo Monetario Internacional, el	3
@@ -160237,6 +160732,7 @@ para los tipos de	3
 hace dif�cil	5
 de mayor edad	3
 fuertemente. </s>	3
+bur�cratas. </s>	9
 sin necesidad de	3
 la intolerancia	7
 comparaciones	27
@@ -160644,6 +161140,7 @@ de miembro	3
 al doble	4
 inhumanidad	4
 los pa�ses que lo	3
+las estudiantes y	8
 desempe�ar un papel	36
 Algunos de los	9
 sus l�neas de	4
@@ -160992,7 +161489,7 @@ rescate. </s>	6
 una burla	3
 y prosperidad	21
 y desarrollo y	3
-guerra de	88
+guerra de	96
 en enero,	4
 en el futuro que	3
 should	3
@@ -161184,6 +161681,7 @@ aument� significativamente	3
 Cada vez	24
 <s> Una soluci�n	12
 de Reforma,	4
+� cabos, los tiempos	8
 bilateral de	4
 la libertad de expresi�n	23
 a Estados Unidos,	11
@@ -161250,6 +161748,7 @@ mientras que los bancos	3
 efectos colaterales	6
 a las minor�as	6
 la transformaci�n del	4
+larga dramatis personae del	8
 Naciones Unidas, Ban	9
 m�s importante que	30
 hacer un esfuerzo	3
@@ -161654,7 +162153,7 @@ al hecho	13
 de poco m�s de	3
 culpan	13
 su gasto en	3
-estudiantes y	12
+estudiantes y	20
 ella puede	3
 parte del dinero que	3
 culpar	28
@@ -162071,6 +162570,7 @@ despu�s de la primera	5
 nuestros tiempos. </s>	4
 a Oriente	7
 profundizaci�n de la	7
+dolor � cabos,	8
 un juez	7
 la incorporaci�n	6
 a�os ochenta,	3
@@ -162104,6 +162604,7 @@ entonces, la	9
 de Estados Unidos es	10
 impide que los	4
 Basta	8
+y bighearted	8
 y el gasto de	6
 a los procesos	5
 puede que la	4
@@ -162323,7 +162824,7 @@ la orden	17
 casi 40	3
 hoy. </s>	63
 est� en el	3
-una larga	34
+una larga	42
 acostumbrado a	8
 la incesante	3
 acumulaci�n de reservas	4
@@ -162485,7 +162986,7 @@ de suma importancia	3
 Civil,	5
 eficientes.	11
 eficientes,	6
-de estas	112
+de estas	120
 �nico para	6
 de estar	47
 <s> En el transcurso	4
@@ -162791,6 +163292,7 @@ privado)	3
 Kyi.	4
 Cierto es que,	3
 enmienda	14
+que otorga el	8
 privado.	50
 Kyi,	7
 humanos. </s>	86
@@ -162834,6 +163336,7 @@ por dos razones.	3
 librarse de	3
 el 50 por	6
 Londres o	3
+� sobre la �	8
 no depende de	3
 funciones de	10
 �y no s�lo en	3
@@ -162903,6 +163406,7 @@ el mundo deber�a	4
 Lejano Oriente	4
 sus ataques	4
 e iniciar	4
+lo ocurrido,	8
 que adopte	4
 del Sur, Taiw�n	5
 un nuevo acuerdo	9
@@ -163233,6 +163737,7 @@ a pa�ses que	5
 burla	3
 de 1999,	9
 la reactivaci�n de la	3
+como. � �	8
 las grandes econom�as	4
 y la Ley	4
 en San	9
@@ -164028,7 +164533,7 @@ en alg�n momento,	3
 sexual de	3
 expectativas.	5
 expectativas,	4
-que puede	140
+que puede	148
 la Universidad de Chicago,	3
 Fondo Europeo para	4
 con el tiempo. </s>	10
@@ -164541,6 +165046,7 @@ trata	255
 ocio	7
 los gobernantes	48
 trato	71
+Englund � la intensa	8
 en general	53
 gasto europeo	3
 fortalecen	10
@@ -165011,6 +165517,7 @@ se extienda	5
 es peor que	4
 esas reservas	4
 m�s lento	25
+y mujeres,	9
 nivel de empleo en	4
 esa cooperaci�n	4
 el umbral del	3
@@ -165337,7 +165844,7 @@ los intereses propios	3
 recompensas	10
 recompensar	4
 sostienen que	53
-la guerra	347
+la guerra	355
 del nacionalismo	13
 la mano del	3
 principios de los noventa,	4
@@ -165766,6 +166273,7 @@ Funes,	4
 <s> Ciertamente	11
 la sentencia de	4
 <s> Existe el	4
+h�roes. </s>	9
 la afirmaci�n	19
 y alentar a los	3
 de crecimiento para	11
@@ -165819,6 +166327,7 @@ al Estado.	4
 <s> El principal problema	3
 las jaulas	7
 los gobiernos nacionales.	4
+No es tanto	8
 mental	16
 de Seguridad de	59
 anormal	4
@@ -165868,6 +166377,7 @@ ejemplo, el cambio	3
 compart�an	9
 favoritos	5
 en p�blico.	3
+y periodista	8
 en p�blico,	9
 ciudades y pueblos	5
 el resto de los	8
@@ -166092,6 +166602,7 @@ nueva estrategia de	5
 Estados se	3
 lucha contra el terrorismo	16
 mundo acad�mico	4
+forma poco precisa, como	8
 inexorable	3
 prefiri�	3
 <s> Dos a�os	4
@@ -166102,6 +166613,7 @@ de salud de la	3
 Par�s,	5
 a la polic�a	9
 FMI para	15
+libro sobre lo ocurrido,	8
 es algo	53
 justificar su	8
 pol�tico y econ�mico,	5

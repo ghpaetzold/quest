@@ -36,4 +36,8 @@
 	<feature index="WCE1034" description="Number of translations of each target word given a probability threshold of 10%." class="shef.mt.features.impl.wce.WordLevelFeature1034"></feature>
 	<feature index="WCE1035" description="Number of translations of each target word given a probability threshold of 20%." class="shef.mt.features.impl.wce.WordLevelFeature1035"></feature>
 	<feature index="WCE1036" description="Number of translations of each target word given a probability threshold of 50%." class="shef.mt.features.impl.wce.WordLevelFeature1036"></feature>
+	<feature index="WCE1037" description="Longest target n-gram length." class="shef.mt.features.impl.wce.WordLevelFeature1037"></feature>
+	<feature index="WCE1038" description="Longest source n-gram length." class="shef.mt.features.impl.wce.WordLevelFeature1038"></feature>
+	<feature index="WCE1039" description="Longest target POS n-gram length." class="shef.mt.features.impl.wce.WordLevelFeature1039"></feature>
+	<feature index="WCE1040" description="Longest source POS n-gram length." class="shef.mt.features.impl.wce.WordLevelFeature1040"></feature>
 </features>
