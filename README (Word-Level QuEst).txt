@@ -58,7 +58,8 @@ Creating a Configuration File:
 			- If left blank, QuEst will try to call your SRILM installation to automatically generate the file and place it into "<resourcesPath>/<source_language>/<source_language>.lm".
 		<source_language>.ngram:
 			- Path to an ngram counts file for <source_language>.
-			- To produce it manually, call SRILM's "ngram-count" binary with the "-write" option, and pass the resulting file to QuEst's the shef.mt.util.NGramSorter application.
+			- To produce it manually, call SRILM's "ngram-count" binary with the "-write" option, and pass the resulting file to QuEst's the shef.mt.util.NGramSorter application through the following command line:
+				java -cp QuEst.jar shef.mt.util.NGramSorter <srilm_ngram_file> <number_of_slices> <ngram_file_order> <frequency_cutoff> <output>
 			- If left blank, QuEst will try to call your SRILM installation to automatically generate the file and place it into "<resourcesPath>/<source_language>/<source_language>_ngram.ngram.clean".
 		<source_language>.stopwords:
 			- Path to a file of stop words for <source_language>.
@@ -79,7 +80,8 @@ Creating a Configuration File:
 			- If left blank, QuEst will try to call your SRILM installation to automatically generate the file and place it into "<resourcesPath>/<source_language>/<source_language>.lm".
 		<target_language>.ngram:
 			- Path to an ngram counts file for <source_language>.
-			- To produce it manually, call SRILM's "ngram-count" binary with the "-write" option, and pass the resulting file to QuEst's the shef.mt.util.NGramSorter application.
+			- To produce it manually, call SRILM's "ngram-count" binary with the "-write" option, and pass the resulting file to QuEst's the shef.mt.util.NGramSorter application through the following command line:
+				java -cp QuEst.jar shef.mt.util.NGramSorter <srilm_ngram_file> <number_of_slices> <ngram_file_order> <frequency_cutoff> <output>
 			- If left blank, QuEst will try to call your SRILM installation to automatically generate the file and place it into "<resourcesPath>/<source_language>/<source_language>_ngram.ngram.clean".
 		<target_language>.stopwords:
 			- Path to a file of stop words for <source_language>.
