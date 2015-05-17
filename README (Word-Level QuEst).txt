@@ -66,7 +66,7 @@ Creating a Configuration File:
 		<source_language>.translationProbs:
 			- Translation probabilities between words in source and target languages.
 			- The file must be produced by fast_align through the following command:
-				fast_align -i <parallel_data> -v -d -o <translation_probabilities>
+				fast_align -i <parallel_data> -v -d -o -c <translation_probabilities>
 				
 		<target_language>.corpus:
 			- Path to a corpus for <source_language>
